@@ -473,7 +473,7 @@ details.log summary:hover{text-decoration:underline}
           <p class="bio" id="bio">Replying to other people on X every day for 4 weeks: <span class="hl">30 → 40 → 50 → 60</span> replies a day. Public tracker, updated hourly. This page keeps me honest.</p>
           <div class="pmeta">
             <span><svg aria-hidden="true"><use href="#i-cal"/></svg><span id="dates">Oct 15 – Nov 11, 2026</span></span>
-            <span><svg aria-hidden="true"><use href="#i-loc"/></svg>Panama (UTC-5)</span>
+            <span><svg aria-hidden="true"><use href="#i-loc"/></svg>UTC-5</span>
             <a id="ann-meta" href="https://x.com/llermaly" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-link"/></svg>Announcement</a>
           </div>
           <div class="fol" id="fol">
@@ -547,11 +547,11 @@ Week 4: 60 a day
         <div class="ckey" aria-hidden="true"><span><i style="background:var(--blue)"></i>Goal hit</span><span><i style="background:rgba(244,33,46,.7)"></i>Missed</span><span><i style="background:repeating-linear-gradient(45deg,#1d9bf0 0 2px,rgba(29,155,240,.35) 2px 4px)"></i>Today</span><span><i style="background:var(--yellow);height:3px;border-radius:2px;vertical-align:3px"></i>Goal</span></div>
       </section>
       <section class="sec" aria-labelledby="fol-h">
-        <div class="sec-h"><div><h2 id="fol-h">Followers</h2><p id="fol-sub">Hourly snapshots, Panama time.</p></div></div>
+        <div class="sec-h"><div><h2 id="fol-h">Followers</h2><p id="fol-sub">Hourly snapshots, UTC-5.</p></div></div>
         <div class="chart" id="fchart"></div>
       </section>
       <section class="sec" aria-labelledby="heat-h">
-        <div class="sec-h"><div><h2 id="heat-h">When the replies happen</h2><p>Replies by hour of day, Panama time (UTC-5).</p></div></div>
+        <div class="sec-h"><div><h2 id="heat-h">When the replies happen</h2><p>Replies by hour of day, UTC-5.</p></div></div>
         <div id="heat" style="position:relative"></div>
       </section>
 
@@ -566,7 +566,7 @@ Week 4: 60 a day
         <h3>Counting rule</h3>
         <p id="rule">Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded.</p>
         <h3>Schedule</h3>
-        <p id="sched">Day 1 is Oct 15, 2026 and day 28 is Nov 11, 2026. A day is a Panama calendar day (UTC-5).</p>
+        <p id="sched">Day 1 is Oct 15, 2026 and day 28 is Nov 11, 2026. A day is a calendar day in UTC-5.</p>
         <p>Data: <a href="data.json">data.json</a> · refreshed hourly · not affiliated with X Corp.</p>
       </footer>
     </main>
@@ -591,7 +591,7 @@ Week 4: 60 a day
           <a class="btn light js-share" href="https://x.com/intent/post" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#xlogo"/></svg>Share on X</a>
         </div>
       </section>
-      <div class="rfoot">Counting rule · Panama time (UTC-5) · <a href="data.json">Data</a> · Not affiliated with X Corp.</div>
+      <div class="rfoot">Counting rule · UTC-5 · <a href="data.json">Data</a> · Not affiliated with X Corp.</div>
     </div>
   </aside>
 </div>
@@ -724,7 +724,7 @@ function renderProfile(){
   fd.textContent=signed(S.fchange)+" since day 1";fd.title="Baseline: "+fmt(m.baseline.followers)+" followers at the start of day 1";
   if(safeX(m.announcement)){["ann-meta","pin-link","pin-card","pin-time"].forEach(function(id){$(id).href=m.announcement})}
   if(m.rule)$("rule").textContent=m.rule;
-  $("sched").textContent="Day 1 is "+fmtDay(m.start_date,{year:"numeric"})+" and day "+m.total_days+" is "+fmtDay(m.end_date,{year:"numeric"})+". Goals: "+m.goal_schedule.map(function(s){return "week "+s.week+" "+s.goal+"/day"}).join(", ")+". A day is a Panama calendar day (UTC-5).";
+  $("sched").textContent="Day 1 is "+fmtDay(m.start_date,{year:"numeric"})+" and day "+m.total_days+" is "+fmtDay(m.end_date,{year:"numeric"})+". Goals: "+m.goal_schedule.map(function(s){return "week "+s.week+" "+s.goal+"/day"}).join(", ")+". A day is a calendar day in UTC-5.";
   var pt=$("pin-time").querySelector("time");pt.setAttribute("datetime",m.start_date);pt.textContent=fmtDay(m.start_date);
   var pin=$("pin-text"); pin.textContent="Starting "+fmtDay(m.start_date,{weekday:"long",month:"short"})+": I'm replying to other people on X every single day for "+m.weeks+" weeks.\n\n"+
     m.goal_schedule.map(function(s,i){return "Week "+s.week+": "+s.goal+(i?" a day":" replies a day")}).join("\n")+"\n\n"+m.total_days+" days, "+fmt(S.possible)+" replies. Tracking every one of them in public.";
@@ -743,7 +743,7 @@ function renderUpdated(){
   var age=(now()-new Date(iso).getTime())/60000;
   p.className="live"+(age<=95?"":" stale");
   t.textContent="Updated "+relTime(iso);
-  p.title=fmtTs(iso,{dateStyle:"medium",timeStyle:"short"})+" Panama time";
+  p.title=fmtTs(iso,{dateStyle:"medium",timeStyle:"short"})+" (UTC-5)";
 }
 
 /* ---------- today card ---------- */
@@ -800,7 +800,7 @@ function renderStats(){
     '<span><b class="'+(S.fchange>0?"pos":S.fchange<0?"neg":"")+'">'+cnt(Math.abs(S.fchange),S.fchange>0?"+":S.fchange<0?"−":"")+'</b>Followers</span>';
   countUp($("srow"));
   var m=D.meta, rows=[
-    {k:S.finished?"Final":S.started?"Today · Day "+S.dayNum+" of "+S.total:"Starts "+fmtDay(m.start_date),t:S.finished?"Challenge complete":S.started?fmt(S.val)+" / "+S.goal+" replies":"Week 1: "+m.goal_schedule[0].goal+" a day",s:S.finished?S.daysHit+" of "+S.total+" days on target":S.started?(S.done?"Goal hit":fmt(S.goal-S.val)+" to go"):"Day 1 at midnight, Panama time"},
+    {k:S.finished?"Final":S.started?"Today · Day "+S.dayNum+" of "+S.total:"Starts "+fmtDay(m.start_date),t:S.finished?"Challenge complete":S.started?fmt(S.val)+" / "+S.goal+" replies":"Week 1: "+m.goal_schedule[0].goal+" a day",s:S.finished?S.daysHit+" of "+S.total+" days on target":S.started?(S.done?"Goal hit":fmt(S.goal-S.val)+" to go"):"Day 1 at midnight, (UTC-5)"},
     {k:"Trending in Challenge",t:fmt(S.totalReplies)+" replies",s:"of "+fmt(S.possible)+" planned · "+Math.round(S.possible?S.totalReplies/S.possible*100:0)+"%"},
     {k:"Streak",t:plural(S.streak,"day"),s:"Best so far: "+plural(S.bestStreak,"day")},
     {k:"Best day",t:S.bestDay?plural(S.bestDay,"reply","replies"):"No days yet",s:S.bestDate?"Day "+(diffDays(m.start_date,S.bestDate)+1)+" · "+fmtDay(S.bestDate,{weekday:"short"}):"Waiting for day 1"},
@@ -988,7 +988,7 @@ function renderBars(){
 function renderFollowers(){
   var box=$("fchart"), W=Math.max(280,box.clientWidth), small=W<520, H=small?200:250;
   var base=D.meta.baseline, pts=D.snapshots.map(function(s){return{t:new Date(s.ts).getTime(),v:+s.followers,ts:s.ts}}).filter(function(p){return !isNaN(p.t)}).sort(function(a,b){return a.t-b.t});
-  if(!pts.length){box.innerHTML='<div class="empty"><b>No follower snapshots yet</b>The first hourly snapshot draws this line. Baseline: '+fmt(base.followers)+' followers at the start of day 1.</div>';$("fol-sub").textContent="Hourly snapshots, Panama time.";return}
+  if(!pts.length){box.innerHTML='<div class="empty"><b>No follower snapshots yet</b>The first hourly snapshot draws this line. Baseline: '+fmt(base.followers)+' followers at the start of day 1.</div>';$("fol-sub").textContent="Hourly snapshots, UTC-5.";return}
   var ml=40,mr=small?36:44,mt=14,mb=26,iw=W-ml-mr,ih=H-mt-mb;
   var t0=pts[0].t,t1=pts[pts.length-1].t; if(t1-t0<36e5){t0-=18e5;t1+=18e5}
   var vals=pts.map(function(p){return p.v}).concat([+base.followers]);
@@ -1019,7 +1019,7 @@ function renderFollowers(){
   s+='<g id="fhl" opacity="0"><line y1="'+mt+'" y2="'+(mt+ih)+'" stroke="var(--line2)"/><circle r="5" fill="var(--bg)" stroke="#1d9bf0" stroke-width="2.4"/></g>';
   box.innerHTML=svgEl(W,H,s,"Followers over time: "+fmt(pts[0].v)+" to "+fmt(last.v)+", baseline "+fmt(base.followers))+
     (pts.length<2?'<div class="overlay" style="align-items:flex-start;padding-top:16px"><div class="empty" style="padding:10px 14px">One snapshot so far. The line fills in hourly.</div></div>':'');
-  $("fol-sub").textContent=plural(pts.length,"snapshot")+" · "+signed(last.v-base.followers)+" since day 1 · Panama time.";
+  $("fol-sub").textContent=plural(pts.length,"snapshot")+" · "+signed(last.v-base.followers)+" since day 1 · UTC-5.";
   var svg=box.querySelector("svg"), g=box.querySelector("#fhl"), tip=tipFor(box);
   function at(ev){var rc=svg.getBoundingClientRect(),px=(ev.clientX-rc.left)*(W/rc.width);
     if(px<ml-10||px>W-mr+10){off();return}
@@ -1078,7 +1078,7 @@ function tweet(t,rank){
   var b=el("div","tw-b"),h=el("div","tw-h");
   h.appendChild(el("span","nm","Gustavo Llermaly"));h.appendChild(el("span","hd","@"+D.meta.handle));h.appendChild(el("span","dot","·"));
   var tl=el("a","inner");tl.href=url;tl.target="_blank";tl.rel="noopener";var tm=el("time",null,xTime(t.created_at));
-  if(t.created_at){tm.setAttribute("datetime",t.created_at);tl.title=fmtTs(t.created_at,{dateStyle:"medium",timeStyle:"short"})+" Panama time"}
+  if(t.created_at){tm.setAttribute("datetime",t.created_at);tl.title=fmtTs(t.created_at,{dateStyle:"medium",timeStyle:"short"})+" (UTC-5)"}
   tl.appendChild(tm);h.appendChild(tl);
   if(rank)h.appendChild(el("span","rk","#"+rank));
   b.appendChild(h);

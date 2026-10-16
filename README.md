@@ -1,7 +1,7 @@
 # 28 days of replies: 30 → 40 → 50 → 60 a day (@llermaly)
 
 Public tracker for Gustavo Llermaly's ([@llermaly](https://x.com/llermaly)) reply challenge on X.
-The challenge is **exactly 4 weeks (28 days)**, Panama time (UTC-5):
+The challenge is **exactly 4 weeks (28 days)**, UTC-5:
 
 | Week | Days | Dates | Goal |
 |---|---|---|---|
