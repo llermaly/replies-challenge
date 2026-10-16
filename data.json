@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-16T20:14:01Z",
+  "updated_at": "2026-10-16T21:18:31Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,15 +42,15 @@
   "day_number": 2,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 31,
+  "today_replies": 34,
   "streak": 2,
   "best_streak": 2,
   "days_hit": 2,
-  "total_replies": 65,
+  "total_replies": 68,
   "pre_start_replies": 22,
-  "followers": 191,
-  "following": 309,
-  "followers_change": 46,
+  "followers": 192,
+  "following": 310,
+  "followers_change": 47,
   "best_day": 34
  },
  "days": [
@@ -84,9 +84,9 @@
   {
    "date": "2026-10-16",
    "day": 2,
-   "replies": 31,
-   "followers_end": 191,
-   "delta": 43,
+   "replies": 34,
+   "followers_end": 192,
+   "delta": 44,
    "goal": 30,
    "hit": true
   }
@@ -186,8 +186,8 @@
    1,
    0,
    0,
-   0,
-   0,
+   1,
+   2,
    0,
    0,
    0,
@@ -287,12 +287,20 @@
    "followers": 187
   },
   {
+   "ts": "2026-10-16T19:21:14Z",
+   "followers": 191
+  },
+  {
    "ts": "2026-10-16T19:27:25Z",
    "followers": 191
   },
   {
    "ts": "2026-10-16T20:14:01Z",
    "followers": 191
+  },
+  {
+   "ts": "2026-10-16T21:18:31Z",
+   "followers": 192
   }
  ],
  "top": [
@@ -398,6 +406,36 @@
   }
  ],
  "recent": [
+  {
+   "id": "2111202399020826765",
+   "url": "https://x.com/llermaly/status/2111202399020826765",
+   "created_at": "2026-10-16T21:07:30.000Z",
+   "text": "@Da7_Tech Whats your take on videogen models in local machines compared to LLMs?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 4
+  },
+  {
+   "id": "2111201969117233403",
+   "url": "https://x.com/llermaly/status/2111201969117233403",
+   "created_at": "2026-10-16T21:05:48.000Z",
+   "text": "@andymewborn @bot Let's see how far do we get!",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2111192669787439571",
+   "url": "https://x.com/llermaly/status/2111192669787439571",
+   "created_at": "2026-10-16T20:28:51.000Z",
+   "text": "@BattMatter keep it up! I'm prepping for the Anthropic certs. would like to connect for some tips",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 6
+  },
   {
    "id": "2111148681420218655",
    "url": "https://x.com/llermaly/status/2111148681420218655",
@@ -567,36 +605,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 6
-  },
-  {
-   "id": "2111077545198375268",
-   "url": "https://x.com/llermaly/status/2111077545198375268",
-   "created_at": "2026-10-16T12:51:23.000Z",
-   "text": "@oneeyekeh @HeyGen that's cool. I see you are cooking sound effects too. \n\nI got bad feedback about that midi kind of effects it adds. I don't think they are that bad",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 8
-  },
-  {
-   "id": "2111077111083487288",
-   "url": "https://x.com/llermaly/status/2111077111083487288",
-   "created_at": "2026-10-16T12:49:39.000Z",
-   "text": "@buildwithmaya @X is this remotion? it clicked an idea I had a while ago about creating interactive e-learning videos.  \n\nhttps://t.co/lQbkUrMSEl allows interacting with videos\n\nThen I figured out the cursor was also a video, but anyways haha",
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "views": 20
-  },
-  {
-   "id": "2111076858334945672",
-   "url": "https://x.com/llermaly/status/2111076858334945672",
-   "created_at": "2026-10-16T12:48:39.000Z",
-   "text": "@darrxgh Such a good advice. It cost me a couple of years to learn that it is no bothering but quite the oposite.",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 11
   }
  ]
 }
