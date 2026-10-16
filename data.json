@@ -31,33 +31,42 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-16T04:14:03Z",
+  "updated_at": "2026-10-16T07:18:59Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "started": true,
   "finished": false,
-  "days_left": 28,
-  "day_number": 1,
+  "days_left": 27,
+  "day_number": 2,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 34,
+  "today_replies": 7,
   "streak": 1,
   "best_streak": 1,
   "days_hit": 1,
-  "total_replies": 34,
-  "pre_start_replies": 0,
-  "followers": 148,
-  "following": 239,
-  "followers_change": 3,
+  "total_replies": 41,
+  "pre_start_replies": 22,
+  "followers": 155,
+  "following": 264,
+  "followers_change": 10,
   "best_day": 34
  },
  "days": [
   {
+   "date": "2026-10-13",
+   "day": 0,
+   "replies": 14,
+   "followers_end": 145,
+   "delta": 0,
+   "goal": 30,
+   "hit": false
+  },
+  {
    "date": "2026-10-14",
    "day": 0,
-   "replies": 0,
+   "replies": 8,
    "followers_end": 145,
    "delta": 0,
    "goal": 30,
@@ -71,9 +80,70 @@
    "delta": 3,
    "goal": 30,
    "hit": true
+  },
+  {
+   "date": "2026-10-16",
+   "day": 2,
+   "replies": 7,
+   "followers_end": 155,
+   "delta": 7,
+   "goal": 30,
+   "hit": false
   }
  ],
  "hours": {
+  "2026-10-13": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   3,
+   1,
+   4,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   2,
+   2
+  ],
+  "2026-10-14": [
+   4,
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
   "2026-10-15": [
    0,
    0,
@@ -98,6 +168,32 @@
    10,
    13,
    6,
+   0
+  ],
+  "2026-10-16": [
+   5,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
    0
   ]
  },
@@ -125,9 +221,47 @@
   {
    "ts": "2026-10-16T04:14:03Z",
    "followers": 148
+  },
+  {
+   "ts": "2026-10-16T06:16:59Z",
+   "followers": 156
+  },
+  {
+   "ts": "2026-10-16T07:18:59Z",
+   "followers": 155
   }
  ],
  "top": [
+  {
+   "id": "2110885766016479705",
+   "url": "https://x.com/llermaly/status/2110885766016479705",
+   "created_at": "2026-10-16T00:09:19.000Z",
+   "text": "@LLMJunky Considering how fast Chinese labs are cooking efficient models, and that you can also use the studio for content I would go with 512. \n\nFrom a usage only perspective the investment is hard to justify anyways, so when they reach high tps + frontier intelligence you will want to",
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "views": 192
+  },
+  {
+   "id": "2110966986301682159",
+   "url": "https://x.com/llermaly/status/2110966986301682159",
+   "created_at": "2026-10-16T05:32:04.000Z",
+   "text": "@ankita0930 hello! whats your tech stack/favorite type of system to build?",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 12
+  },
+  {
+   "id": "2110942257444712818",
+   "url": "https://x.com/llermaly/status/2110942257444712818",
+   "created_at": "2026-10-16T03:53:48.000Z",
+   "text": "@ColdMorningGrit @ltx_io for the video avatar , @HyperFrames_  for video composition and @Blender for the 3D scene. All orchestrated with Opus5.5. Have you tried Hyperframes?",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 18
+  },
   {
    "id": "2110942019547812091",
    "url": "https://x.com/llermaly/status/2110942019547812091",
@@ -136,7 +270,7 @@
    "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 5
+   "views": 12
   },
   {
    "id": "2110935863400259798",
@@ -146,7 +280,17 @@
    "likes": 1,
    "replies": 1,
    "reposts": 0,
-   "views": 5
+   "views": 7
+  },
+  {
+   "id": "2110931833697309156",
+   "url": "https://x.com/llermaly/status/2110931833697309156",
+   "created_at": "2026-10-16T03:12:23.000Z",
+   "text": "@taylorotwell it is insane the time I spent just asking how things work to the LLM over and over",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 100
   },
   {
    "id": "2110920418945069549",
@@ -156,7 +300,17 @@
    "likes": 1,
    "replies": 1,
    "reposts": 0,
-   "views": 4
+   "views": 5
+  },
+  {
+   "id": "2110916646084776393",
+   "url": "https://x.com/llermaly/status/2110916646084776393",
+   "created_at": "2026-10-16T02:12:02.000Z",
+   "text": "@Gaus450 Absolutely. People thinks that everyone can deliver the same stuff using AI but that's false. It requires skills",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 74
   },
   {
    "id": "2110915183992586361",
@@ -166,7 +320,7 @@
    "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 38
+   "views": 88
   },
   {
    "id": "2110912114550583457",
@@ -174,51 +328,91 @@
    "created_at": "2026-10-16T01:54:01.000Z",
    "text": "@SadieSupaDoge tf ? is this real?",
    "likes": 1,
-   "replies": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 7
+  }
+ ],
+ "recent": [
+  {
+   "id": "2110989070860231001",
+   "url": "https://x.com/llermaly/status/2110989070860231001",
+   "created_at": "2026-10-16T06:59:49.000Z",
+   "text": "@darrxgh beast stats, success guaranteed!",
+   "likes": 0,
+   "replies": 0,
    "reposts": 0,
    "views": 5
   },
   {
-   "id": "2110885766016479705",
-   "url": "https://x.com/llermaly/status/2110885766016479705",
-   "created_at": "2026-10-16T00:09:19.000Z",
-   "text": "@LLMJunky Considering how fast Chinese labs are cooking efficient models, and that you can also use the studio for content I would go with 512. \n\nFrom a usage only perspective the investment is hard to justify anyways, so when they reach high tps + frontier intelligence you will want to",
-   "likes": 1,
-   "replies": 1,
+   "id": "2110977875172307317",
+   "url": "https://x.com/llermaly/status/2110977875172307317",
+   "created_at": "2026-10-16T06:15:20.000Z",
+   "text": "@rachell331 Looking forward to see some app examples. I'm working on a project about checking sites content and making sure they comply with data protection laws. What are you working on?",
+   "likes": 0,
+   "replies": 0,
    "reposts": 0,
-   "views": 53
+   "views": 3
   },
   {
-   "id": "2110883671045784044",
-   "url": "https://x.com/llermaly/status/2110883671045784044",
-   "created_at": "2026-10-16T00:01:00.000Z",
-   "text": "@ankita0930 is this your account? if that's the case I'm glad to see people with less than 1k followers being invited",
-   "likes": 1,
-   "replies": 1,
+   "id": "2110968411584966701",
+   "url": "https://x.com/llermaly/status/2110968411584966701",
+   "created_at": "2026-10-16T05:37:43.000Z",
+   "text": "@ankita0930 have you created any public app yet? I connected Elasticsearch once",
+   "likes": 0,
+   "replies": 0,
    "reposts": 0,
-   "views": 14
+   "views": 3
   },
   {
-   "id": "2110882792192221599",
-   "url": "https://x.com/llermaly/status/2110882792192221599",
-   "created_at": "2026-10-15T23:57:30.000Z",
-   "text": "@Henryf1w Finding people on my same situation, yes",
+   "id": "2110966986301682159",
+   "url": "https://x.com/llermaly/status/2110966986301682159",
+   "created_at": "2026-10-16T05:32:04.000Z",
+   "text": "@ankita0930 hello! whats your tech stack/favorite type of system to build?",
    "likes": 1,
    "replies": 1,
    "reposts": 0,
-   "views": 70
-  }
- ],
- "recent": [
+   "views": 12
+  },
+  {
+   "id": "2110966784325267859",
+   "url": "https://x.com/llermaly/status/2110966784325267859",
+   "created_at": "2026-10-16T05:31:15.000Z",
+   "text": "@BajrangRJ7 maybe you are too focused on the impressions? if you aim everywhere you are aiming nowhere",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
+  {
+   "id": "2110961522788765955",
+   "url": "https://x.com/llermaly/status/2110961522788765955",
+   "created_at": "2026-10-16T05:10:21.000Z",
+   "text": "@Bentist more speed would be nice though",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
+  {
+   "id": "2110960857538556143",
+   "url": "https://x.com/llermaly/status/2110960857538556143",
+   "created_at": "2026-10-16T05:07:42.000Z",
+   "text": "@panickssery @grok the big advantage is you can plug and play into AI desktop apps and do agentic querying without additional steps.\n\nProviders tried to do api schema based approaches and it was a mess.. everyone ended up agreeing on using mcp.\n\nBesides that compatibility in many cases using",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 127
+  },
   {
    "id": "2110942257444712818",
    "url": "https://x.com/llermaly/status/2110942257444712818",
    "created_at": "2026-10-16T03:53:48.000Z",
    "text": "@ColdMorningGrit @ltx_io for the video avatar , @HyperFrames_  for video composition and @Blender for the 3D scene. All orchestrated with Opus5.5. Have you tried Hyperframes?",
-   "likes": 0,
+   "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 8
+   "views": 18
   },
   {
    "id": "2110942019547812091",
@@ -228,7 +422,7 @@
    "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 5
+   "views": 12
   },
   {
    "id": "2110935863400259798",
@@ -238,7 +432,7 @@
    "likes": 1,
    "replies": 1,
    "reposts": 0,
-   "views": 5
+   "views": 7
   },
   {
    "id": "2110934808725422443",
@@ -248,17 +442,17 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 7
+   "views": 28
   },
   {
    "id": "2110931833697309156",
    "url": "https://x.com/llermaly/status/2110931833697309156",
    "created_at": "2026-10-16T03:12:23.000Z",
    "text": "@taylorotwell it is insane the time I spent just asking how things work to the LLM over and over",
-   "likes": 0,
+   "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 27
+   "views": 100
   },
   {
    "id": "2110931647520473211",
@@ -268,7 +462,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 2
+   "views": 17
   },
   {
    "id": "2110924565769494776",
@@ -278,7 +472,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 1
+   "views": 10
   },
   {
    "id": "2110924117579055119",
@@ -288,7 +482,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 1
+   "views": 6
   },
   {
    "id": "2110923471924670577",
@@ -298,7 +492,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 1
+   "views": 6
   },
   {
    "id": "2110922766929015201",
@@ -306,9 +500,9 @@
    "created_at": "2026-10-16T02:36:21.000Z",
    "text": "@rezoundous I still can't get that magical moment. Every time I try to do something with grok bot I find friction that I don't have with Codex+computer use which I hate because I love the grokbot concept.",
    "likes": 0,
-   "replies": 0,
+   "replies": 1,
    "reposts": 0,
-   "views": 5
+   "views": 32
   },
   {
    "id": "2110921768634626294",
@@ -318,7 +512,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 3
+   "views": 35
   },
   {
    "id": "2110921557459538033",
@@ -328,7 +522,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 15
+   "views": 143
   },
   {
    "id": "2110920418945069549",
@@ -338,77 +532,7 @@
    "likes": 1,
    "replies": 1,
    "reposts": 0,
-   "views": 4
-  },
-  {
-   "id": "2110918641596105154",
-   "url": "https://x.com/llermaly/status/2110918641596105154",
-   "created_at": "2026-10-16T02:19:57.000Z",
-   "text": "@MdrBwl I'm collecting @marclou skins 😅  . Let's connect!",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 1
-  },
-  {
-   "id": "2110918408464367851",
-   "url": "https://x.com/llermaly/status/2110918408464367851",
-   "created_at": "2026-10-16T02:19:02.000Z",
-   "text": "@darrxgh True. It's annoying to be so sure that repetition will get you there but still not being able to do it",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 1
-  },
-  {
-   "id": "2110917729897132413",
-   "url": "https://x.com/llermaly/status/2110917729897132413",
-   "created_at": "2026-10-16T02:16:20.000Z",
-   "text": "@pelloiafilippo using claude code, codex, opencode, muse and grok via @t3dotcodes https://t.co/ShjcTIt9ch",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 20
-  },
-  {
-   "id": "2110916929439359178",
-   "url": "https://x.com/llermaly/status/2110916929439359178",
-   "created_at": "2026-10-16T02:13:09.000Z",
-   "text": "@CliftonSellers @bot I just asked grokbot to create a public app to track my replies challenge. Haven't finished yet so I'm not sure if is capable of doing such thing",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 23
-  },
-  {
-   "id": "2110916646084776393",
-   "url": "https://x.com/llermaly/status/2110916646084776393",
-   "created_at": "2026-10-16T02:12:02.000Z",
-   "text": "@Gaus450 Absolutely. People thinks that everyone can deliver the same stuff using AI but that's false. It requires skills",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 11
-  },
-  {
-   "id": "2110915183992586361",
-   "url": "https://x.com/llermaly/status/2110915183992586361",
-   "created_at": "2026-10-16T02:06:13.000Z",
-   "text": "@theo I love T3 code. What I'm not sure if I'm doing correctly is updating. I'm just telling a thread to manually update the remote machine every time I update my local one. The agent created its own t3up command. https://t.co/DT4QPPARQY",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 38
-  },
-  {
-   "id": "2110913374360076593",
-   "url": "https://x.com/llermaly/status/2110913374360076593",
-   "created_at": "2026-10-16T01:59:01.000Z",
-   "text": "@ItsKamranK Codex still better for computer use than CC . I'm using @t3dotcodes though",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 8
+   "views": 5
   }
  ]
 }
