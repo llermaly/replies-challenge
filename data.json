@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-16T03:18:46Z",
+  "updated_at": "2026-10-16T04:14:03Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,16 +42,16 @@
   "day_number": 1,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 29,
-  "streak": 0,
-  "best_streak": 0,
-  "days_hit": 0,
-  "total_replies": 29,
+  "today_replies": 34,
+  "streak": 1,
+  "best_streak": 1,
+  "days_hit": 1,
+  "total_replies": 34,
   "pre_start_replies": 0,
   "followers": 148,
-  "following": 238,
+  "following": 239,
   "followers_change": 3,
-  "best_day": 29
+  "best_day": 34
  },
  "days": [
   {
@@ -66,11 +66,11 @@
   {
    "date": "2026-10-15",
    "day": 1,
-   "replies": 29,
+   "replies": 34,
    "followers_end": 148,
    "delta": 3,
    "goal": 30,
-   "hit": false
+   "hit": true
   }
  ],
  "hours": {
@@ -97,7 +97,7 @@
    2,
    10,
    13,
-   1,
+   6,
    0
   ]
  },
@@ -121,9 +121,33 @@
   {
    "ts": "2026-10-16T03:18:46Z",
    "followers": 148
+  },
+  {
+   "ts": "2026-10-16T04:14:03Z",
+   "followers": 148
   }
  ],
  "top": [
+  {
+   "id": "2110942019547812091",
+   "url": "https://x.com/llermaly/status/2110942019547812091",
+   "created_at": "2026-10-16T03:52:51.000Z",
+   "text": "@ankita0930 oh no, neither I ha",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 5
+  },
+  {
+   "id": "2110935863400259798",
+   "url": "https://x.com/llermaly/status/2110935863400259798",
+   "created_at": "2026-10-16T03:28:23.000Z",
+   "text": "@ColdMorningGrit Thank you! kinda nice being able to do it locally",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 5
+  },
   {
    "id": "2110920418945069549",
    "url": "https://x.com/llermaly/status/2110920418945069549",
@@ -186,6 +210,56 @@
   }
  ],
  "recent": [
+  {
+   "id": "2110942257444712818",
+   "url": "https://x.com/llermaly/status/2110942257444712818",
+   "created_at": "2026-10-16T03:53:48.000Z",
+   "text": "@ColdMorningGrit @ltx_io for the video avatar , @HyperFrames_  for video composition and @Blender for the 3D scene. All orchestrated with Opus5.5. Have you tried Hyperframes?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 8
+  },
+  {
+   "id": "2110942019547812091",
+   "url": "https://x.com/llermaly/status/2110942019547812091",
+   "created_at": "2026-10-16T03:52:51.000Z",
+   "text": "@ankita0930 oh no, neither I ha",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 5
+  },
+  {
+   "id": "2110935863400259798",
+   "url": "https://x.com/llermaly/status/2110935863400259798",
+   "created_at": "2026-10-16T03:28:23.000Z",
+   "text": "@ColdMorningGrit Thank you! kinda nice being able to do it locally",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 5
+  },
+  {
+   "id": "2110934808725422443",
+   "url": "https://x.com/llermaly/status/2110934808725422443",
+   "created_at": "2026-10-16T03:24:12.000Z",
+   "text": "@Raedchen_ said minute? not second? cool",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 7
+  },
+  {
+   "id": "2110931833697309156",
+   "url": "https://x.com/llermaly/status/2110931833697309156",
+   "created_at": "2026-10-16T03:12:23.000Z",
+   "text": "@taylorotwell it is insane the time I spent just asking how things work to the LLM over and over",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 27
+  },
   {
    "id": "2110931647520473211",
    "url": "https://x.com/llermaly/status/2110931647520473211",
@@ -335,56 +409,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 8
-  },
-  {
-   "id": "2110912961640575139",
-   "url": "https://x.com/llermaly/status/2110912961640575139",
-   "created_at": "2026-10-16T01:57:23.000Z",
-   "text": "@alexandr_wang will it run on a mac studio m2 ultra 192gb?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 26
-  },
-  {
-   "id": "2110912814629929000",
-   "url": "https://x.com/llermaly/status/2110912814629929000",
-   "created_at": "2026-10-16T01:56:48.000Z",
-   "text": "@0xSero did you use any particular skill?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 17
-  },
-  {
-   "id": "2110912476506181800",
-   "url": "https://x.com/llermaly/status/2110912476506181800",
-   "created_at": "2026-10-16T01:55:27.000Z",
-   "text": "@leonabboud people say start replying then post! I'm just starting so I think I will write some articles as posts are ephemereal and my reach is too small. Articles feel like something new followers will be able to see",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 4
-  },
-  {
-   "id": "2110912114550583457",
-   "url": "https://x.com/llermaly/status/2110912114550583457",
-   "created_at": "2026-10-16T01:54:01.000Z",
-   "text": "@SadieSupaDoge tf ? is this real?",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 5
-  },
-  {
-   "id": "2110911986967928861",
-   "url": "https://x.com/llermaly/status/2110911986967928861",
-   "created_at": "2026-10-16T01:53:31.000Z",
-   "text": "@builtwithrubel I'm pretty sure a rebranding of managed agents is coming:\n\nhttps://t.co/M7zc5edrMG",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 4
   }
  ]
 }
