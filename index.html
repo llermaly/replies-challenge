@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>100 replies a day · @llermaly</title>
+<meta name="description" content="Public tracker for Gustavo Llermaly's 100-replies-a-day X growth challenge.">
+<meta name="color-scheme" content="dark light">
+<style>
+:root{--bg:#0b0d12;--card:#141824;--fg:#eef1f7;--mut:#8b94a8;--line:#222a3b;--acc:#ff7a1a;--ok:#2fd27e;--bar:#3b82f6}
+@media (prefers-color-scheme:light){:root{--bg:#f5f6fa;--card:#fff;--fg:#10131c;--mut:#667089;--line:#e3e6ee;--bar:#2563eb}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:980px;margin:0 auto;padding:20px 14px 40px}
+h1{font-size:1.5rem;margin:0}h1 small{display:block;color:var(--mut);font-weight:500;font-size:.9rem;margin-top:4px}
+a{color:var(--acc)}header{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap;margin-bottom:16px}
+.pill{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:.8rem;color:var(--mut)}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.card h2{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:0 0 6px;font-weight:600}
+.big{font-size:2rem;font-weight:800;line-height:1.1}.sub{color:var(--mut);font-size:.85rem}
+.hero{display:flex;gap:20px;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:12px}
+.ring{position:relative;width:200px;height:200px}.ring svg{transform:rotate(-90deg)}
+.ring .c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring .c b{font-size:3rem;line-height:1}.msg{max-width:300px;font-size:1.05rem}
+.up{color:var(--ok)}.down{color:#ef5350}section{margin-top:12px}
+svg text{fill:var(--mut);font-size:10px}.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{padding:8px 6px;text-align:right;border-bottom:1px solid var(--line)}th:first-child,td:first-child{text-align:left}
+th{color:var(--mut);font-weight:600;font-size:.75rem;text-transform:uppercase}
+.hit{color:var(--ok);font-weight:700}.top li{margin:6px 0}.top .l{color:var(--acc);font-weight:700}
+footer{margin-top:24px;color:var(--mut);font-size:.8rem}
+.heat{display:grid;grid-template-columns:70px repeat(24,1fr);gap:2px;font-size:.65rem;color:var(--mut);min-width:560px}
+.heat i{aspect-ratio:1;border-radius:3px;background:var(--line)}
+</style></head><body><main>
+<header><h1>💬 100 replies a day<small>@llermaly's X growth challenge · live public tracker</small></h1>
+<div><span class="pill" id="upd">loading…</span></div></header>
+<div id="err" class="card" hidden></div>
+<div class="card hero" id="hero"></div>
+<div class="grid" id="stats"></div>
+<section class="card"><h2>Replies per day (goal: 100)</h2><div id="barc"></div></section>
+<section class="card"><h2>Followers over time</h2><div id="folc"></div></section>
+<section class="card"><h2>Followers gained per day</h2><div id="gainc"></div></section>
+<section class="card"><h2>Replies by hour (Panama time)</h2><div class="scroll" id="heat"></div></section>
+<section class="card"><h2>Days</h2><div class="scroll"><table id="tbl"></table></div></section>
+<section class="card"><h2>Best-performing replies</h2><ol class="top" id="top"></ol></section>
+<footer id="foot"></footer>
+</main>
+<script>
+const $=id=>document.getElementById(id), NS='http://www.w3.org/2000/svg';
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmtD=d=>new Date(d+'T12:00:00Z').toLocaleDateString(undefined,{month:'short',day:'numeric',timeZone:'UTC'});
+const sg=n=>n>0?'+'+n:String(n);
+function chart(el,w,h,series,opts){ // series: [{x:label,y:val}] bars or line
+  const p={l:34,r:8,t:10,b:22},iw=w-p.l-p.r,ih=h-p.t-p.b;
+  let max=Math.max(opts.min0??1,...series.map(s=>s.y),opts.goal||0), min=opts.line?Math.min(...series.map(s=>s.y)):0;
+  if(opts.line){const pad=Math.max(2,(max-min)*.2);max+=pad;min=Math.max(0,min-pad)}
+  const Y=v=>p.t+ih-(v-min)/(max-min||1)*ih; let o=`<svg viewBox="0 0 ${w} ${h}" width="100%" role="img" aria-label="${opts.label}">`;
+  for(let i=0;i<=4;i++){const v=min+(max-min)*i/4;o+=`<line x1="${p.l}" x2="${w-p.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${p.l-4}" y="${Y(v)+3}" text-anchor="end">${Math.round(v)}</text>`}
+  const n=series.length, step=iw/Math.max(n,1);
+  if(opts.line){const pts=series.map((s,i)=>[p.l+(n>1?i*iw/(n-1):iw/2),Y(s.y)]);
+    o+=`<polyline fill="none" stroke="var(--acc)" stroke-width="2.5" points="${pts.map(q=>q.join(',')).join(' ')}"/>`+pts.map(q=>`<circle cx="${q[0]}" cy="${q[1]}" r="3" fill="var(--acc)"/>`).join('')}
+  else series.forEach((s,i)=>{const bw=Math.min(40,step*.7),x=p.l+i*step+(step-bw)/2,y=Y(s.y);
+    o+=`<rect x="${x}" y="${y}" width="${bw}" height="${p.t+ih-y}" rx="4" fill="${opts.goal&&s.y>=opts.goal?'var(--ok)':'var(--bar)'}"><title>${s.x}: ${s.y}</title></rect>`;
+    if(s.y)o+=`<text x="${x+bw/2}" y="${y-3}" text-anchor="middle">${s.y}</text>`});
+  const every=Math.ceil(n/7);series.forEach((s,i)=>{if(i%every===0)o+=`<text x="${opts.line?p.l+(n>1?i*iw/(n-1):iw/2):p.l+i*step+step/2}" y="${h-6}" text-anchor="middle">${s.x}</text>`});
+  if(opts.goal)o+=`<line x1="${p.l}" x2="${w-p.r}" y1="${Y(opts.goal)}" y2="${Y(opts.goal)}" stroke="var(--acc)" stroke-dasharray="5 4" stroke-width="2"/><text x="${w-p.r}" y="${Y(opts.goal)-4}" text-anchor="end" style="fill:var(--acc)">goal ${opts.goal}</text>`;
+  el.innerHTML=o+'</svg>'}
+function render(d){
+  const m=d.meta,n=d.now,G=m.goal,pct=Math.min(1,n.today_replies/G),R=88,C=2*Math.PI*R;
+  const left=Math.max(0,G-n.today_replies);
+  const msg=!n.started?`Warm-up day. The challenge officially starts <b>${fmtD(m.start_date)}</b>. ${n.today_replies} replies so far.`
+    :n.today_replies>=G?'🔥 Goal hit today. Keep the streak alive!':`<b>${left}</b> more to hit today's goal. Keep going!`;
+  $('hero').innerHTML=`<div class="ring"><svg width="200" height="200"><circle cx="100" cy="100" r="${R}" fill="none" stroke="var(--line)" stroke-width="14"/><circle cx="100" cy="100" r="${R}" fill="none" stroke="${pct>=1?'var(--ok)':'var(--acc)'}" stroke-width="14" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-pct)}"/></svg><div class="c"><b>${n.today_replies}</b><span class="sub">of ${G} today</span></div></div><div class="msg">${msg}<div class="sub" style="margin-top:6px">${fmtD(n.date)} · Panama time</div></div>`;
+  const st=[['Day',n.started?n.day_number:'–','since '+fmtD(m.start_date)],['Streak',n.streak+' 🔥','days at 100+'],['Total replies',n.total_replies.toLocaleString(),n.warmup_replies?`+${n.warmup_replies} warm-up`:'since start'],
+   ['Followers',n.followers.toLocaleString(),`<span class="${n.followers_change>=0?'up':'down'}">${sg(n.followers_change)}</span> since ${fmtD(m.baseline.date)} (${m.baseline.followers})`],['Best day',n.best_day,'replies']];
+  $('stats').innerHTML=st.map(s=>`<div class="card"><h2>${s[0]}</h2><div class="big">${s[1]}</div><div class="sub">${s[2]}</div></div>`).join('');
+  const days=d.days;chart($('barc'),640,220,days.map(x=>({x:fmtD(x.date),y:x.replies})),{goal:G,min0:G*1.1,label:'Replies per day'});
+  const sn=d.snapshots;
+  chart($('folc'),640,200,sn.length?sn.map(s=>({x:new Date(s.ts).toLocaleDateString(undefined,{month:'short',day:'numeric'})+' '+new Date(s.ts).toLocaleTimeString([],{hour:'numeric'}),y:s.followers})):[{x:'',y:n.followers}],{line:1,label:'Followers over time'});
+  chart($('gainc'),640,180,days.filter(x=>x.date>m.baseline.date).map(x=>({x:fmtD(x.date),y:Math.max(0,x.delta)})),{min0:3,label:'Followers gained per day'});
+  if(days.filter(x=>x.date>m.baseline.date).length===0)$('gainc').innerHTML='<p class="sub">Daily gains appear after the first full day of snapshots.</p>';
+  const hd=Object.keys(d.hours).sort(),mx=Math.max(1,...hd.flatMap(k=>d.hours[k]));
+  let h='<div class="heat"><span></span>'+[...Array(24).keys()].map(i=>`<span>${i%6===0?i:''}</span>`).join('');
+  hd.forEach(k=>{h+=`<span>${fmtD(k)}</span>`+d.hours[k].map((v,i)=>`<i title="${fmtD(k)} ${i}:00 · ${v}" style="${v?`background:var(--acc);opacity:${.25+.75*v/mx}`:''}"></i>`).join('')});
+  $('heat').innerHTML=h+'</div>';
+  $('tbl').innerHTML='<tr><th>Date</th><th>Day</th><th>Replies</th><th>Followers</th><th>Δ</th></tr>'+[...days].reverse().map(x=>`<tr><td>${fmtD(x.date)}</td><td>${x.day||'warm-up'}</td><td class="${x.hit?'hit':''}">${x.replies}${x.hit?' ✓':''}</td><td>${x.followers_end}</td><td class="${x.delta>0?'up':x.delta<0?'down':''}">${sg(x.delta)}</td></tr>`).join('');
+  $('top').innerHTML=d.top.length?d.top.map(t=>`<li><span class="l">♥ ${t.likes}</span> <a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.text)}</a></li>`).join(''):'<li class="sub">No liked replies yet.</li>';
+  const u=new Date(m.updated_at);$('upd').textContent='Updated '+u.toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+  $('foot').innerHTML=`${esc(m.rule)} Days are calendar days in ${esc(m.tz)}. Followers are snapshotted roughly hourly; “followers at end of day” is the last snapshot of that day. Data refreshes automatically; <a href="data.json">data.json</a>. <a href="${esc(m.announcement)}" target="_blank" rel="noopener">The announcement</a> · <a href="https://x.com/${m.handle}" target="_blank" rel="noopener">@${m.handle}</a>. No cookies, no tracking.`}
+fetch('data.json?'+Date.now()).then(r=>r.json()).then(render).catch(e=>{$('err').hidden=false;$('err').textContent='Could not load data: '+e;$('upd').textContent='error'});
+</script></body></html>

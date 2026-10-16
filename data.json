@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "handle": "llermaly",
+  "goal": 100,
+  "start_date": "2026-10-16",
+  "baseline": {
+   "date": "2026-10-15",
+   "followers": 145
+  },
+  "tz": "America/Panama (UTC-5)",
+  "announcement": "https://x.com/llermaly/status/2110910573873393725",
+  "updated_at": "2026-10-16T01:52:16Z",
+  "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
+ },
+ "now": {
+  "date": "2026-10-15",
+  "started": false,
+  "day_number": 0,
+  "today_replies": 6,
+  "streak": 0,
+  "total_replies": 0,
+  "warmup_replies": 6,
+  "followers": 145,
+  "following": 220,
+  "followers_change": 0,
+  "best_day": 0
+ },
+ "days": [
+  {
+   "date": "2026-10-15",
+   "day": 0,
+   "replies": 6,
+   "followers_end": 145,
+   "delta": 0,
+   "hit": false
+  }
+ ],
+ "hours": {
+  "2026-10-15": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   2,
+   2,
+   1,
+   0,
+   0,
+   0
+  ]
+ },
+ "snapshots": [
+  {
+   "ts": "2026-10-16T01:52:16Z",
+   "followers": 145
+  }
+ ],
+ "top": [
+  {
+   "id": "2110885766016479705",
+   "url": "https://x.com/llermaly/status/2110885766016479705",
+   "created_at": "2026-10-16T00:09:19.000Z",
+   "text": "@LLMJunky Considering how fast Chinese labs are cooking efficient models, and that you can also use the studio for content I would go with 512. \n\nFrom a usage only perspective the investment is hard t",
+   "likes": 1
+  },
+  {
+   "id": "2110883671045784044",
+   "url": "https://x.com/llermaly/status/2110883671045784044",
+   "created_at": "2026-10-16T00:01:00.000Z",
+   "text": "@ankita0930 is this your account? if that's the case I'm glad to see people with less than 1k followers being invited",
+   "likes": 1
+  },
+  {
+   "id": "2110882792192221599",
+   "url": "https://x.com/llermaly/status/2110882792192221599",
+   "created_at": "2026-10-15T23:57:30.000Z",
+   "text": "@Henryf1w Finding people on my same situation, yes",
+   "likes": 1
+  }
+ ]
+}
