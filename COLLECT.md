@@ -22,4 +22,9 @@ does the same every hour without committing.
 Reply counts only advance when an agent does steps 1-4.
 
 Counting rule: reply to another user (`in_reply_to_user_id` != 45766709); self-thread replies, quotes, retweets excluded.
-Challenge day = Panama calendar day (UTC-5); day 1 = 2026-10-16; baseline 145 followers on 2026-10-15.
+Challenge day = Panama calendar day (UTC-5). The challenge is 4 weeks / 28 days: day 1 = 2026-10-15, day 28 = 2026-11-11.
+Goals: week 1 = 30/day, week 2 = 40, week 3 = 50, week 4 = 60 (capped; there is no week 5). Baseline: 145 followers at the start of day 1.
+Replies after 2026-11-11 are stored but not counted; `now.finished` turns true and `now.days_left` is 0.
+`data.json` also carries `top` (10 most-liked) and `recent` (20 newest) counted replies with likes/replies/reposts/views for the tweet cards.
+
+The hourly routine can stop after 2026-11-11 (a final run on Nov 12 captures day 28's late replies and like counts).

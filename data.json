@@ -19,56 +19,56 @@
    {
     "week": 4,
     "goal": 60
-   },
-   {
-    "week": 5,
-    "goal": 70
-   },
-   {
-    "week": 6,
-    "goal": 80
-   },
-   {
-    "week": 7,
-    "goal": 90
-   },
-   {
-    "week": 8,
-    "goal": 100
    }
   ],
-  "start_date": "2026-10-16",
+  "weeks": 4,
+  "total_days": 28,
+  "start_date": "2026-10-15",
+  "end_date": "2026-11-11",
   "baseline": {
-   "date": "2026-10-15",
+   "date": "2026-10-14",
    "followers": 145
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-16T03:12:19Z",
+  "updated_at": "2026-10-16T03:18:46Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
   "date": "2026-10-15",
-  "started": false,
-  "day_number": 0,
-  "week_number": 0,
+  "started": true,
+  "finished": false,
+  "days_left": 28,
+  "day_number": 1,
+  "week_number": 1,
   "today_goal": 30,
   "today_replies": 29,
   "streak": 0,
-  "total_replies": 0,
-  "warmup_replies": 29,
+  "best_streak": 0,
+  "days_hit": 0,
+  "total_replies": 29,
+  "pre_start_replies": 0,
   "followers": 148,
-  "following": 236,
+  "following": 238,
   "followers_change": 3,
-  "best_day": 0
+  "best_day": 29
  },
  "days": [
   {
-   "date": "2026-10-15",
+   "date": "2026-10-14",
    "day": 0,
+   "replies": 0,
+   "followers_end": 145,
+   "delta": 0,
+   "goal": 30,
+   "hit": false
+  },
+  {
+   "date": "2026-10-15",
+   "day": 1,
    "replies": 29,
    "followers_end": 148,
-   "delta": 0,
+   "delta": 3,
    "goal": 30,
    "hit": false
   }
@@ -119,7 +119,7 @@
    "followers": 146
   },
   {
-   "ts": "2026-10-16T03:12:19Z",
+   "ts": "2026-10-16T03:18:46Z",
    "followers": 148
   }
  ],
@@ -129,42 +129,262 @@
    "url": "https://x.com/llermaly/status/2110920418945069549",
    "created_at": "2026-10-16T02:27:01.000Z",
    "text": "@manxlab The Terminator",
-   "likes": 1
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 4
   },
   {
    "id": "2110915183992586361",
    "url": "https://x.com/llermaly/status/2110915183992586361",
    "created_at": "2026-10-16T02:06:13.000Z",
-   "text": "@theo I love T3 code. What I'm not sure if I'm doing correctly is updating. I'm just telling a thread to manually update the remote machine every time I update my local one. The agent created its own ",
-   "likes": 1
+   "text": "@theo I love T3 code. What I'm not sure if I'm doing correctly is updating. I'm just telling a thread to manually update the remote machine every time I update my local one. The agent created its own t3up command. https://t.co/DT4QPPARQY",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 38
   },
   {
    "id": "2110912114550583457",
    "url": "https://x.com/llermaly/status/2110912114550583457",
    "created_at": "2026-10-16T01:54:01.000Z",
    "text": "@SadieSupaDoge tf ? is this real?",
-   "likes": 1
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 5
   },
   {
    "id": "2110885766016479705",
    "url": "https://x.com/llermaly/status/2110885766016479705",
    "created_at": "2026-10-16T00:09:19.000Z",
-   "text": "@LLMJunky Considering how fast Chinese labs are cooking efficient models, and that you can also use the studio for content I would go with 512. \n\nFrom a usage only perspective the investment is hard t",
-   "likes": 1
+   "text": "@LLMJunky Considering how fast Chinese labs are cooking efficient models, and that you can also use the studio for content I would go with 512. \n\nFrom a usage only perspective the investment is hard to justify anyways, so when they reach high tps + frontier intelligence you will want to",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 53
   },
   {
    "id": "2110883671045784044",
    "url": "https://x.com/llermaly/status/2110883671045784044",
    "created_at": "2026-10-16T00:01:00.000Z",
    "text": "@ankita0930 is this your account? if that's the case I'm glad to see people with less than 1k followers being invited",
-   "likes": 1
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 14
   },
   {
    "id": "2110882792192221599",
    "url": "https://x.com/llermaly/status/2110882792192221599",
    "created_at": "2026-10-15T23:57:30.000Z",
    "text": "@Henryf1w Finding people on my same situation, yes",
-   "likes": 1
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 70
+  }
+ ],
+ "recent": [
+  {
+   "id": "2110931647520473211",
+   "url": "https://x.com/llermaly/status/2110931647520473211",
+   "created_at": "2026-10-16T03:11:38.000Z",
+   "text": "@Denche2005 5 will end up in something worse, the other 4 will reinvent and do something better with AI as well.",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2110924565769494776",
+   "url": "https://x.com/llermaly/status/2110924565769494776",
+   "created_at": "2026-10-16T02:43:30.000Z",
+   "text": "@jackfriks did you look at earshot?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2110924117579055119",
+   "url": "https://x.com/llermaly/status/2110924117579055119",
+   "created_at": "2026-10-16T02:41:43.000Z",
+   "text": "@JinjingLiang There is no strongest ingredient, only the strongest chef. Applies the same",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2110923471924670577",
+   "url": "https://x.com/llermaly/status/2110923471924670577",
+   "created_at": "2026-10-16T02:39:09.000Z",
+   "text": "@GohilHardy @t3dotcodes  combine all of them",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2110922766929015201",
+   "url": "https://x.com/llermaly/status/2110922766929015201",
+   "created_at": "2026-10-16T02:36:21.000Z",
+   "text": "@rezoundous I still can't get that magical moment. Every time I try to do something with grok bot I find friction that I don't have with Codex+computer use which I hate because I love the grokbot concept.",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 5
+  },
+  {
+   "id": "2110921768634626294",
+   "url": "https://x.com/llermaly/status/2110921768634626294",
+   "created_at": "2026-10-16T02:32:23.000Z",
+   "text": "@anah_sahh Taste Engineer",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
+  {
+   "id": "2110921557459538033",
+   "url": "https://x.com/llermaly/status/2110921557459538033",
+   "created_at": "2026-10-16T02:31:32.000Z",
+   "text": "@thekitze nice. I thought I was the only one just using codex threads to do stuff instead of connecting to whatsapp/telegram/discord. Excited about testing pip",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 15
+  },
+  {
+   "id": "2110920418945069549",
+   "url": "https://x.com/llermaly/status/2110920418945069549",
+   "created_at": "2026-10-16T02:27:01.000Z",
+   "text": "@manxlab The Terminator",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 4
+  },
+  {
+   "id": "2110918641596105154",
+   "url": "https://x.com/llermaly/status/2110918641596105154",
+   "created_at": "2026-10-16T02:19:57.000Z",
+   "text": "@MdrBwl I'm collecting @marclou skins 😅  . Let's connect!",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2110918408464367851",
+   "url": "https://x.com/llermaly/status/2110918408464367851",
+   "created_at": "2026-10-16T02:19:02.000Z",
+   "text": "@darrxgh True. It's annoying to be so sure that repetition will get you there but still not being able to do it",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2110917729897132413",
+   "url": "https://x.com/llermaly/status/2110917729897132413",
+   "created_at": "2026-10-16T02:16:20.000Z",
+   "text": "@pelloiafilippo using claude code, codex, opencode, muse and grok via @t3dotcodes https://t.co/ShjcTIt9ch",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 20
+  },
+  {
+   "id": "2110916929439359178",
+   "url": "https://x.com/llermaly/status/2110916929439359178",
+   "created_at": "2026-10-16T02:13:09.000Z",
+   "text": "@CliftonSellers @bot I just asked grokbot to create a public app to track my replies challenge. Haven't finished yet so I'm not sure if is capable of doing such thing",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 23
+  },
+  {
+   "id": "2110916646084776393",
+   "url": "https://x.com/llermaly/status/2110916646084776393",
+   "created_at": "2026-10-16T02:12:02.000Z",
+   "text": "@Gaus450 Absolutely. People thinks that everyone can deliver the same stuff using AI but that's false. It requires skills",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 11
+  },
+  {
+   "id": "2110915183992586361",
+   "url": "https://x.com/llermaly/status/2110915183992586361",
+   "created_at": "2026-10-16T02:06:13.000Z",
+   "text": "@theo I love T3 code. What I'm not sure if I'm doing correctly is updating. I'm just telling a thread to manually update the remote machine every time I update my local one. The agent created its own t3up command. https://t.co/DT4QPPARQY",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 38
+  },
+  {
+   "id": "2110913374360076593",
+   "url": "https://x.com/llermaly/status/2110913374360076593",
+   "created_at": "2026-10-16T01:59:01.000Z",
+   "text": "@ItsKamranK Codex still better for computer use than CC . I'm using @t3dotcodes though",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 8
+  },
+  {
+   "id": "2110912961640575139",
+   "url": "https://x.com/llermaly/status/2110912961640575139",
+   "created_at": "2026-10-16T01:57:23.000Z",
+   "text": "@alexandr_wang will it run on a mac studio m2 ultra 192gb?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 26
+  },
+  {
+   "id": "2110912814629929000",
+   "url": "https://x.com/llermaly/status/2110912814629929000",
+   "created_at": "2026-10-16T01:56:48.000Z",
+   "text": "@0xSero did you use any particular skill?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 17
+  },
+  {
+   "id": "2110912476506181800",
+   "url": "https://x.com/llermaly/status/2110912476506181800",
+   "created_at": "2026-10-16T01:55:27.000Z",
+   "text": "@leonabboud people say start replying then post! I'm just starting so I think I will write some articles as posts are ephemereal and my reach is too small. Articles feel like something new followers will be able to see",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 4
+  },
+  {
+   "id": "2110912114550583457",
+   "url": "https://x.com/llermaly/status/2110912114550583457",
+   "created_at": "2026-10-16T01:54:01.000Z",
+   "text": "@SadieSupaDoge tf ? is this real?",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 5
+  },
+  {
+   "id": "2110911986967928861",
+   "url": "https://x.com/llermaly/status/2110911986967928861",
+   "created_at": "2026-10-16T01:53:31.000Z",
+   "text": "@builtwithrubel I'm pretty sure a rebranding of managed agents is coming:\n\nhttps://t.co/M7zc5edrMG",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 4
   }
  ]
 }

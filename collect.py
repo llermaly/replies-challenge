@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replies-a-day tracker (30/day, +10 each week) collector. Stdlib only. Idempotent.
+"""Replies-a-day tracker collector: 4-week challenge, 30/40/50/60 replies a day. Stdlib only. Idempotent.
 
 Usage:
   collect.py next-query                      -> JSON telling an agent which X search call to make
@@ -16,15 +16,19 @@ D = os.path.join(ROOT, "data")
 REPLIES, HIST, OUT = (os.path.join(D, "replies.jsonl"), os.path.join(D, "history.jsonl"),
                       os.path.join(ROOT, "data.json"))
 HANDLE, UID = "llermaly", "45766709"
-BASE_GOAL, STEP = 30, 10                      # week 1 = 30/day, then +10 each week (40, 50, 60...)
+BASE_GOAL, STEP = 30, 10                      # week 1 = 30/day, then +10 each week: 30, 40, 50, 60
+WEEKS = 4                                     # the challenge is exactly 4 weeks (28 days)
+TOTAL_DAYS = WEEKS * 7
 TZ = timezone(timedelta(hours=-5))            # America/Panama, no DST
-START = "2026-10-16"                          # challenge day 1 (Panama)
-BASE_DATE, BASE_FOLLOWERS = "2026-10-15", 145
+START = "2026-10-15"                          # challenge day 1 (Panama)
+END = "2026-11-11"                            # challenge day 28 (Panama), last day
+BASE_DATE, BASE_FOLLOWERS = "2026-10-14", 145   # follower count at the start of day 1
 WINDOW_START_UTC = "2026-10-15T05:00:00Z"     # Panama midnight of baseline day
 ANNOUNCE = "https://x.com/llermaly/status/2110910573873393725"
 
 def goal_for(daynum):
-    return BASE_GOAL + STEP * ((max(daynum, 1) - 1) // 7)
+    week = min(WEEKS, (max(daynum, 1) - 1) // 7 + 1)   # capped at week 4 (60/day)
+    return BASE_GOAL + STEP * (week - 1)
 
 def now_utc(): return datetime.now(timezone.utc)
 def iso(dt): return dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -100,14 +104,16 @@ def rebuild():
     hist = read_jsonl(HIST)
     per, hours = {}, {}
     for r in replies:
-        dd = pday(r["created_at"]); per[dd] = per.get(dd, 0) + 1
+        dd = pday(r["created_at"])
+        if dd > END: continue                      # challenge over: later replies don't count
+        per[dd] = per.get(dd, 0) + 1
         h = parse(r["created_at"]).astimezone(TZ).hour
         hours.setdefault(dd, [0] * 24)[h] += 1
     first = min([BASE_DATE] + list(per))
     last_f = {}
     for s in hist: last_f[pday(s["ts"])] = s["followers"]
     days, prev = [], BASE_FOLLOWERS
-    for dd in daterange(first, max(today, START if today >= START else today)):
+    for dd in daterange(first, min(today, END)):   # never extend past day 28
         end = last_f.get(dd)
         if dd == BASE_DATE and end is None: end = BASE_FOLLOWERS
         f = end if end is not None else prev
@@ -121,27 +127,41 @@ def rebuild():
         if d["hit"]: streak += 1
         elif d["date"] == today: continue   # today still in progress
         else: break
+    best_streak = run = 0
+    for d in chal:
+        if d["hit"]: run += 1; best_streak = max(best_streak, run)
+        elif d["date"] != today: run = 0
     cur_f = hist[-1]["followers"] if hist else BASE_FOLLOWERS
-    started = today >= START
-    dnum = (datetime.strptime(today, "%Y-%m-%d") - datetime.strptime(START, "%Y-%m-%d")).days + 1
-    top = sorted([r for r in replies], key=lambda r: (-r["likes"], -int(r["id"])))[:10]
+    started, finished = today >= START, today > END
+    dnum = min(TOTAL_DAYS, (datetime.strptime(today, "%Y-%m-%d") - datetime.strptime(START, "%Y-%m-%d")).days + 1)
+    days_left = 0 if finished else (TOTAL_DAYS - dnum + 1 if started else TOTAL_DAYS)   # includes today
+    counted = [r for r in replies if START <= pday(r["created_at"]) <= END]
+    top = sorted(counted, key=lambda r: (-r["likes"], -int(r["id"])))[:10]
+    recent = sorted(counted, key=lambda r: (r["created_at"], int(r["id"])), reverse=True)[:20]
+    def card(r):
+        return {"id": r["id"], "url": f"https://x.com/{HANDLE}/status/{r['id']}", "created_at": r["created_at"],
+                "text": r["text"][:600], "likes": r.get("likes", 0), "replies": r.get("replies", 0),
+                "reposts": r.get("reposts", 0), "views": r.get("views")}
     out = {
-        "meta": {"handle": HANDLE, "goal": BASE_GOAL, "goal_step": STEP, "goal_schedule": [{"week": w, "goal": BASE_GOAL + STEP * (w - 1)} for w in range(1, 9)], "start_date": START, "baseline": {"date": BASE_DATE, "followers": BASE_FOLLOWERS},
+        "meta": {"handle": HANDLE, "goal": BASE_GOAL, "goal_step": STEP, "goal_schedule": [{"week": w, "goal": BASE_GOAL + STEP * (w - 1)} for w in range(1, WEEKS + 1)],
+                 "weeks": WEEKS, "total_days": TOTAL_DAYS, "start_date": START, "end_date": END, "baseline": {"date": BASE_DATE, "followers": BASE_FOLLOWERS},
                  "tz": "America/Panama (UTC-5)", "announcement": ANNOUNCE, "updated_at": iso(n),
                  "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."},
-        "now": {"date": today, "started": started, "day_number": dnum if started else 0, "week_number": ((dnum - 1) // 7 + 1) if started else 0,
+        "now": {"date": today, "started": started, "finished": finished, "days_left": days_left,
+                "day_number": dnum if started else 0, "week_number": ((dnum - 1) // 7 + 1) if started else 0,
                 "today_goal": goal_for(dnum) if started else BASE_GOAL,
-                "today_replies": per.get(today, 0), "streak": streak,
-                "total_replies": sum(v for k, v in per.items() if k >= START),
-                "warmup_replies": sum(v for k, v in per.items() if k < START),
+                "today_replies": per.get(today, 0) if started and not finished else 0, "streak": streak,
+                "best_streak": best_streak, "days_hit": sum(1 for d in chal if d["hit"]),
+                "total_replies": sum(v for k, v in per.items() if START <= k <= END),
+                "pre_start_replies": sum(v for k, v in per.items() if k < START),
                 "followers": cur_f, "following": hist[-1]["following"] if hist else None,
                 "followers_change": cur_f - BASE_FOLLOWERS,
                 "best_day": max([d["replies"] for d in chal] or [0])},
         "days": days,
         "hours": hours,
         "snapshots": [{"ts": s["ts"], "followers": s["followers"]} for s in hist],
-        "top": [{"id": r["id"], "url": f"https://x.com/{HANDLE}/status/{r['id']}", "created_at": r["created_at"],
-                 "text": r["text"][:200], "likes": r["likes"]} for r in top if r["likes"] > 0],
+        "top": [card(r) for r in top if r["likes"] > 0],
+        "recent": [card(r) for r in recent],
     }
     json.dump(out, open(OUT + ".tmp", "w"), indent=1, ensure_ascii=False); os.replace(OUT + ".tmp", OUT)
     return out
