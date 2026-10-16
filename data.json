@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-16T15:18:30Z",
+  "updated_at": "2026-10-16T16:23:48Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,15 +42,15 @@
   "day_number": 2,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 23,
-  "streak": 1,
-  "best_streak": 1,
-  "days_hit": 1,
-  "total_replies": 57,
+  "today_replies": 30,
+  "streak": 2,
+  "best_streak": 2,
+  "days_hit": 2,
+  "total_replies": 64,
   "pre_start_replies": 22,
-  "followers": 175,
+  "followers": 179,
   "following": 291,
-  "followers_change": 30,
+  "followers_change": 34,
   "best_day": 34
  },
  "days": [
@@ -84,11 +84,11 @@
   {
    "date": "2026-10-16",
    "day": 2,
-   "replies": 23,
-   "followers_end": 175,
-   "delta": 27,
+   "replies": 30,
+   "followers_end": 179,
+   "delta": 31,
    "goal": 30,
-   "hit": false
+   "hit": true
   }
  ],
  "hours": {
@@ -181,7 +181,7 @@
    8,
    7,
    1,
-   0,
+   7,
    0,
    0,
    0,
@@ -265,6 +265,14 @@
   {
    "ts": "2026-10-16T15:18:30Z",
    "followers": 175
+  },
+  {
+   "ts": "2026-10-16T15:57:38Z",
+   "followers": 178
+  },
+  {
+   "ts": "2026-10-16T16:23:48Z",
+   "followers": 179
   }
  ],
  "top": [
@@ -277,6 +285,36 @@
    "replies": 1,
    "reposts": 0,
    "views": 192
+  },
+  {
+   "id": "2111120367875961050",
+   "url": "https://x.com/llermaly/status/2111120367875961050",
+   "created_at": "2026-10-16T15:41:33.000Z",
+   "text": "@tonysimons starting liking grok bot a lot. It feels snappy and simpler than hermes",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 22
+  },
+  {
+   "id": "2111115285604577740",
+   "url": "https://x.com/llermaly/status/2111115285604577740",
+   "created_at": "2026-10-16T15:21:21.000Z",
+   "text": "@KI_Vater I'm experimenting with local models: LTX 2.5 for video + Qwen TTS for voice and running a youtube channel based on that. Not the fastest but I'm pretty happy with the results. Do you think Hermes is better than grokbot?",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 12
+  },
+  {
+   "id": "2111114810775785890",
+   "url": "https://x.com/llermaly/status/2111114810775785890",
+   "created_at": "2026-10-16T15:19:28.000Z",
+   "text": "@joshua_xu_ I agree. It is moving super fast. Last year was impossible to imagine generating anything useful locally with a consumer PC. Today I'm generating 5s of video in 2minutes which is not bad at all. I go with Heygen video when I feel impatient ha.",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 33
   },
   {
    "id": "2111108448892968997",
@@ -337,39 +375,79 @@
    "replies": 1,
    "reposts": 0,
    "views": 7
-  },
-  {
-   "id": "2110931833697309156",
-   "url": "https://x.com/llermaly/status/2110931833697309156",
-   "created_at": "2026-10-16T03:12:23.000Z",
-   "text": "@taylorotwell it is insane the time I spent just asking how things work to the LLM over and over",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 100
-  },
-  {
-   "id": "2110920418945069549",
-   "url": "https://x.com/llermaly/status/2110920418945069549",
-   "created_at": "2026-10-16T02:27:01.000Z",
-   "text": "@manxlab The Terminator",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 5
-  },
-  {
-   "id": "2110916646084776393",
-   "url": "https://x.com/llermaly/status/2110916646084776393",
-   "created_at": "2026-10-16T02:12:02.000Z",
-   "text": "@Gaus450 Absolutely. People thinks that everyone can deliver the same stuff using AI but that's false. It requires skills",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 74
   }
  ],
  "recent": [
+  {
+   "id": "2111122338456752191",
+   "url": "https://x.com/llermaly/status/2111122338456752191",
+   "created_at": "2026-10-16T15:49:22.000Z",
+   "text": "@ardent__dev why not use @t3dotcodes and have both",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
+  {
+   "id": "2111122196680585320",
+   "url": "https://x.com/llermaly/status/2111122196680585320",
+   "created_at": "2026-10-16T15:48:49.000Z",
+   "text": "@pelloiafilippo @t3dotcodes the cool thing is you just add to your AGENTS.md something like: Use codex subagents if you need images, GLM 5.3 subagents if you need to do repetitive boring stuff, etc .. and it will automatically delegate",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 7
+  },
+  {
+   "id": "2111120677457817719",
+   "url": "https://x.com/llermaly/status/2111120677457817719",
+   "created_at": "2026-10-16T15:42:46.000Z",
+   "text": "@KI_Vater I mean the Grok Bot you download on your PC. Hermes felt too confusing so I just then moved to Codex with self thread creation, now I'm using @t3dotcodes + grok bot but I don't really have a lot of automated pipelines",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 12
+  },
+  {
+   "id": "2111120367875961050",
+   "url": "https://x.com/llermaly/status/2111120367875961050",
+   "created_at": "2026-10-16T15:41:33.000Z",
+   "text": "@tonysimons starting liking grok bot a lot. It feels snappy and simpler than hermes",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 22
+  },
+  {
+   "id": "2111115607093788977",
+   "url": "https://x.com/llermaly/status/2111115607093788977",
+   "created_at": "2026-10-16T15:22:38.000Z",
+   "text": "@darrxgh invoicing for sure. What I'm preparing to do is to help me more actively finding opportunities (e.g prospecting). Have you tried something like that?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 12
+  },
+  {
+   "id": "2111115285604577740",
+   "url": "https://x.com/llermaly/status/2111115285604577740",
+   "created_at": "2026-10-16T15:21:21.000Z",
+   "text": "@KI_Vater I'm experimenting with local models: LTX 2.5 for video + Qwen TTS for voice and running a youtube channel based on that. Not the fastest but I'm pretty happy with the results. Do you think Hermes is better than grokbot?",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 12
+  },
+  {
+   "id": "2111114810775785890",
+   "url": "https://x.com/llermaly/status/2111114810775785890",
+   "created_at": "2026-10-16T15:19:28.000Z",
+   "text": "@joshua_xu_ I agree. It is moving super fast. Last year was impossible to imagine generating anything useful locally with a consumer PC. Today I'm generating 5s of video in 2minutes which is not bad at all. I go with Heygen video when I feel impatient ha.",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 33
+  },
   {
    "id": "2111108448892968997",
    "url": "https://x.com/llermaly/status/2111108448892968997",
@@ -499,76 +577,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 38
-  },
-  {
-   "id": "2111073496331599879",
-   "url": "https://x.com/llermaly/status/2111073496331599879",
-   "created_at": "2026-10-16T12:35:18.000Z",
-   "text": "@jay_k At the end of the day it's all about finding the exact data to send to the LLM. When models had 32k input tokens, a good search engine was THE way to make it work.\n\nNow it's more permissive, but 1M context still isn't enough for many enterprise systems.",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 4
-  },
-  {
-   "id": "2111069857487769602",
-   "url": "https://x.com/llermaly/status/2111069857487769602",
-   "created_at": "2026-10-16T12:20:50.000Z",
-   "text": "@Denche2005 reminds me before people googled something, read the first one or two results and then copy-pasted/send the link , now is not even that",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 10
-  },
-  {
-   "id": "2111068115908042880",
-   "url": "https://x.com/llermaly/status/2111068115908042880",
-   "created_at": "2026-10-16T12:13:55.000Z",
-   "text": "@itsmwaura Anthropic acquiring Heygen you said?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
-  },
-  {
-   "id": "2110989070860231001",
-   "url": "https://x.com/llermaly/status/2110989070860231001",
-   "created_at": "2026-10-16T06:59:49.000Z",
-   "text": "@darrxgh beast stats, success guaranteed!",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 5
-  },
-  {
-   "id": "2110977875172307317",
-   "url": "https://x.com/llermaly/status/2110977875172307317",
-   "created_at": "2026-10-16T06:15:20.000Z",
-   "text": "@rachell331 Looking forward to see some app examples. I'm working on a project about checking sites content and making sure they comply with data protection laws. What are you working on?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
-  },
-  {
-   "id": "2110968411584966701",
-   "url": "https://x.com/llermaly/status/2110968411584966701",
-   "created_at": "2026-10-16T05:37:43.000Z",
-   "text": "@ankita0930 have you created any public app yet? I connected Elasticsearch once",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
-  },
-  {
-   "id": "2110966986301682159",
-   "url": "https://x.com/llermaly/status/2110966986301682159",
-   "created_at": "2026-10-16T05:32:04.000Z",
-   "text": "@ankita0930 hello! whats your tech stack/favorite type of system to build?",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 12
   }
  ]
 }
