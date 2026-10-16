@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-16T14:18:36Z",
+  "updated_at": "2026-10-16T15:18:30Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,15 +42,15 @@
   "day_number": 2,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 22,
+  "today_replies": 23,
   "streak": 1,
   "best_streak": 1,
   "days_hit": 1,
-  "total_replies": 56,
+  "total_replies": 57,
   "pre_start_replies": 22,
-  "followers": 171,
-  "following": 276,
-  "followers_change": 26,
+  "followers": 175,
+  "following": 291,
+  "followers_change": 30,
   "best_day": 34
  },
  "days": [
@@ -84,9 +84,9 @@
   {
    "date": "2026-10-16",
    "day": 2,
-   "replies": 22,
-   "followers_end": 171,
-   "delta": 23,
+   "replies": 23,
+   "followers_end": 175,
+   "delta": 27,
    "goal": 30,
    "hit": false
   }
@@ -180,7 +180,7 @@
    0,
    8,
    7,
-   0,
+   1,
    0,
    0,
    0,
@@ -259,8 +259,12 @@
    "followers": 167
   },
   {
-   "ts": "2026-10-16T14:18:36Z",
-   "followers": 171
+   "ts": "2026-10-16T14:25:35Z",
+   "followers": 172
+  },
+  {
+   "ts": "2026-10-16T15:18:30Z",
+   "followers": 175
   }
  ],
  "top": [
@@ -273,6 +277,16 @@
    "replies": 1,
    "reposts": 0,
    "views": 192
+  },
+  {
+   "id": "2111108448892968997",
+   "url": "https://x.com/llermaly/status/2111108448892968997",
+   "created_at": "2026-10-16T14:54:11.000Z",
+   "text": "@KI_Vater I'm super into cloning ourselves with AI",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 7
   },
   {
    "id": "2111069857487769602",
@@ -353,19 +367,19 @@
    "replies": 0,
    "reposts": 0,
    "views": 74
-  },
-  {
-   "id": "2110915183992586361",
-   "url": "https://x.com/llermaly/status/2110915183992586361",
-   "created_at": "2026-10-16T02:06:13.000Z",
-   "text": "@theo I love T3 code. What I'm not sure if I'm doing correctly is updating. I'm just telling a thread to manually update the remote machine every time I update my local one. The agent created its own t3up command. https://t.co/DT4QPPARQY",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 88
   }
  ],
  "recent": [
+  {
+   "id": "2111108448892968997",
+   "url": "https://x.com/llermaly/status/2111108448892968997",
+   "created_at": "2026-10-16T14:54:11.000Z",
+   "text": "@KI_Vater I'm super into cloning ourselves with AI",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 7
+  },
   {
    "id": "2111093509646176686",
    "url": "https://x.com/llermaly/status/2111093509646176686",
@@ -555,16 +569,6 @@
    "replies": 1,
    "reposts": 0,
    "views": 12
-  },
-  {
-   "id": "2110966784325267859",
-   "url": "https://x.com/llermaly/status/2110966784325267859",
-   "created_at": "2026-10-16T05:31:15.000Z",
-   "text": "@BajrangRJ7 maybe you are too focused on the impressions? if you aim everywhere you are aiming nowhere",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
   }
  ]
 }
