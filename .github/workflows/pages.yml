@@ -1,8 +1,21 @@
-name: Deploy static site to GitHub Pages
+name: Deploy to GitHub Pages
 
+# Deploys the static site (index.html + data.json + data/) to GitHub Pages.
+# - push to main: normal deploys when you commit changes
+# - workflow_dispatch: manual deploy from the Actions tab
+# - workflow_call: used by followers.yml right after its hourly commit, because a commit
+#   pushed with GITHUB_TOKEN does NOT trigger other `push` workflows.
 on:
   push:
-    branches: ["main"]
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      ref:
+        description: Branch or SHA to deploy (defaults to the triggering ref)
+        type: string
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -15,28 +28,23 @@ concurrency:
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v6
-
-      - name: Assemble site
-        run: |
-          mkdir -p _site
-          cp index.html data.json _site/
-          cp -a data _site/data
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/checkout@v4
         with:
-          path: _site
-
-      - name: Deploy to GitHub Pages
+          # An explicit ref makes checkout take the branch tip, so the commit just pushed by
+          # followers.yml is included (github.sha would be the older commit that started the run).
+          ref: ${{ inputs.ref || github.ref }}
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4

@@ -1,88 +1,718 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>100 replies a day · @llermaly</title>
-<meta name="description" content="Public tracker for Gustavo Llermaly's 100-replies-a-day X growth challenge.">
-<meta name="color-scheme" content="dark light">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>30 replies a day, +10 every week · @llermaly's public challenge</title>
+<meta name="description" content="Live public tracker: Gustavo Llermaly (@llermaly) replies to other people on X: 30 replies a day in week 1, then +10 every week. Daily progress, streak, followers and best replies, updated hourly.">
+<meta name="author" content="Gustavo Llermaly">
+<meta name="theme-color" content="#0a0c11">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Replies Challenge Tracker">
+<meta property="og:title" content="30 replies a day, +10 every week">
+<meta property="og:description" content="@llermaly replies to other people on X: 30 a day in week 1, then +10 every week. Live progress, streak and follower growth, updated hourly.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@llermaly">
+<meta name="twitter:creator" content="@llermaly">
+<meta name="twitter:title" content="30 replies a day, +10 every week">
+<meta name="twitter:description" content="Live tracker for @llermaly's reply challenge: daily progress, streak, followers and best replies. Updated hourly.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0c11'/%3E%3Ccircle cx='32' cy='32' r='19' fill='none' stroke='%23262c3a' stroke-width='7'/%3E%3Cpath d='M32 13a19 19 0 1 1-18.1 24.9' fill='none' stroke='%2390a4ff' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
 <style>
-:root{--bg:#0b0d12;--card:#141824;--fg:#eef1f7;--mut:#8b94a8;--line:#222a3b;--acc:#ff7a1a;--ok:#2fd27e;--bar:#3b82f6}
-@media (prefers-color-scheme:light){:root{--bg:#f5f6fa;--card:#fff;--fg:#10131c;--mut:#667089;--line:#e3e6ee;--bar:#2563eb}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-main{max-width:980px;margin:0 auto;padding:20px 14px 40px}
-h1{font-size:1.5rem;margin:0}h1 small{display:block;color:var(--mut);font-weight:500;font-size:.9rem;margin-top:4px}
-a{color:var(--acc)}header{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap;margin-bottom:16px}
-.pill{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:.8rem;color:var(--mut)}
-.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
-.card h2{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:0 0 6px;font-weight:600}
-.big{font-size:2rem;font-weight:800;line-height:1.1}.sub{color:var(--mut);font-size:.85rem}
-.hero{display:flex;gap:20px;align-items:center;flex-wrap:wrap;justify-content:center;margin-bottom:12px}
-.ring{position:relative;width:200px;height:200px}.ring svg{transform:rotate(-90deg)}
-.ring .c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.ring .c b{font-size:3rem;line-height:1}.msg{max-width:300px;font-size:1.05rem}
-.up{color:var(--ok)}.down{color:#ef5350}section{margin-top:12px}
-svg text{fill:var(--mut);font-size:10px}.scroll{overflow-x:auto}
-table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{padding:8px 6px;text-align:right;border-bottom:1px solid var(--line)}th:first-child,td:first-child{text-align:left}
-th{color:var(--mut);font-weight:600;font-size:.75rem;text-transform:uppercase}
-.hit{color:var(--ok);font-weight:700}.top li{margin:6px 0}.top .l{color:var(--acc);font-weight:700}
-footer{margin-top:24px;color:var(--mut);font-size:.8rem}
-.heat{display:grid;grid-template-columns:70px repeat(24,1fr);gap:2px;font-size:.65rem;color:var(--mut);min-width:560px}
-.heat i{aspect-ratio:1;border-radius:3px;background:var(--line)}
-</style></head><body><main>
-<header><h1>💬 100 replies a day<small>@llermaly's X growth challenge · live public tracker</small></h1>
-<div><span class="pill" id="upd">loading…</span></div></header>
-<div id="err" class="card" hidden></div>
-<div class="card hero" id="hero"></div>
-<div class="grid" id="stats"></div>
-<section class="card"><h2>Replies per day (goal: 100)</h2><div id="barc"></div></section>
-<section class="card"><h2>Followers over time</h2><div id="folc"></div></section>
-<section class="card"><h2>Followers gained per day</h2><div id="gainc"></div></section>
-<section class="card"><h2>Replies by hour (Panama time)</h2><div class="scroll" id="heat"></div></section>
-<section class="card"><h2>Days</h2><div class="scroll"><table id="tbl"></table></div></section>
-<section class="card"><h2>Best-performing replies</h2><ol class="top" id="top"></ol></section>
-<footer id="foot"></footer>
-</main>
+:root{
+  --bg:#0a0c11;--bg2:#0e1117;--card:#121620;--card2:#181d29;--line:rgba(255,255,255,.075);--line2:rgba(255,255,255,.13);
+  --text:#eef0f6;--muted:#a1a9ba;--dim:#8a93a6;
+  --accent:#90a4ff;--accent2:#5fe0c5;--gold:#f5c35f;--miss:#f07f86;--ok:#56d6a6;
+  --radius:20px;--pad:clamp(16px,4vw,28px);
+  --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font:16px/1.55 var(--font);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(900px 520px at 85% -8%,rgba(144,164,255,.16),transparent 60%),
+             radial-gradient(700px 480px at -10% 18%,rgba(95,224,197,.08),transparent 60%),
+             linear-gradient(var(--bg),var(--bg2))}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 var(--pad)}
+.num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0 6px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:650;letter-spacing:-.01em;min-width:0}
+.avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;flex:none;font-weight:800;font-size:.95rem;color:#0a0c11;
+  background:conic-gradient(from 200deg,var(--accent),var(--accent2),var(--accent))}
+.brand span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand small{color:var(--muted);font-weight:500}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;border:1px solid var(--line2);
+  background:rgba(18,22,32,.7);backdrop-filter:blur(8px);font-size:.8rem;color:var(--muted);white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(86,214,166,.6);flex:none}
+.pill.live .dot{animation:ping 2.4s var(--ease) infinite}
+.pill.stale .dot{background:var(--gold)}
+.pill.err .dot{background:var(--miss)}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(86,214,166,.55)}70%,100%{box-shadow:0 0 0 9px rgba(86,214,166,0)}}
+
+/* hero */
+.hero{display:grid;gap:clamp(28px,5vw,56px);align-items:center;padding:clamp(28px,7vw,72px) 0 clamp(28px,5vw,48px)}
+@media(min-width:900px){.hero{grid-template-columns:1.25fr .75fr}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent2);margin:0 0 18px}
+.eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:currentColor}
+h1{font-size:clamp(2.45rem,9.4vw,4.6rem);line-height:.98;letter-spacing:-.045em;margin:0 0 22px;font-weight:800;text-wrap:balance}
+h1 .grad{background:linear-gradient(100deg,var(--accent) 10%,var(--accent2) 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:clamp(1.05rem,2.4vw,1.2rem);color:var(--muted);max-width:36ch;margin:0 0 28px;text-wrap:pretty}
+.lede b{color:var(--text);font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;
+  border:1px solid var(--line2);background:var(--card);transition:transform .2s var(--ease),background .2s,border-color .2s}
+.btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.25);background:var(--card2)}
+.btn.primary{background:var(--text);color:#0a0c11;border-color:transparent}
+.btn.primary:hover{background:#fff}
+.btn svg{width:16px;height:16px}
+@media(max-width:520px){.ctas .btn{flex:1 1 auto;justify-content:center}.brand small{display:none}}
+
+/* cards */
+.card{background:linear-gradient(180deg,rgba(255,255,255,.025),transparent 40%),var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--pad);position:relative}
+section{margin:0 0 clamp(16px,2.6vw,24px)}
+.sec-h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 18px}
+h2{font-size:clamp(1.15rem,2.6vw,1.4rem);letter-spacing:-.02em;margin:0;font-weight:700}
+.sec-h p{margin:4px 0 0;color:var(--muted);font-size:.9rem}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.78rem;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.legend i.line{height:2px;width:14px;border-radius:2px;vertical-align:3px}
+
+/* today ring */
+.today{display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:clamp(24px,4vw,32px)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:600;padding:5px 11px;border-radius:999px;background:rgba(144,164,255,.12);color:var(--accent);border:1px solid rgba(144,164,255,.22)}
+.chip.warm{background:rgba(245,195,95,.1);color:var(--gold);border-color:rgba(245,195,95,.25)}
+.chip.ok{background:rgba(86,214,166,.1);color:var(--ok);border-color:rgba(86,214,166,.25)}
+.ring{position:relative;width:min(240px,64vw);aspect-ratio:1;margin:20px 0 14px}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg);overflow:visible}
+.ring .track{stroke:rgba(255,255,255,.07)}
+.ring .prog{transition:stroke-dashoffset 1.4s var(--ease);filter:drop-shadow(0 0 10px rgba(144,164,255,.35))}
+.ring.done .prog{filter:drop-shadow(0 0 14px rgba(95,224,197,.5))}
+.ring .center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring .big{font-size:clamp(3rem,15vw,4.2rem);font-weight:800;letter-spacing:-.05em;line-height:1}
+.ring .of{color:var(--muted);font-size:.95rem;margin-top:6px}
+.today .status{font-size:1.05rem;font-weight:600;margin:0 0 4px}
+.today .sub{color:var(--muted);font-size:.9rem;margin:0}
+.countdown{margin-top:16px;display:flex;gap:8px;justify-content:center}
+.countdown div{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:8px 12px;min-width:62px}
+.countdown b{display:block;font-size:1.35rem;letter-spacing:-.02em}
+.countdown span{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dim)}
+
+/* ladder */
+.ladder{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:clamp(6px,1.4vw,14px);align-items:end;height:200px;padding-top:6px}
+.rung{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:8px;min-width:0}
+.rung .val{font-size:clamp(.8rem,2.4vw,1rem);font-weight:700;color:var(--muted)}
+.rung .bar{width:100%;max-width:84px;border-radius:10px 10px 4px 4px;background:var(--card2);border:1px solid var(--line);position:relative;
+  transform-origin:bottom;transition:transform .9s var(--ease)}
+.rung .wk{font-size:.72rem;color:var(--dim);font-weight:600;letter-spacing:.04em}
+.rung.past .bar{background:linear-gradient(180deg,rgba(144,164,255,.35),rgba(144,164,255,.12));border-color:rgba(144,164,255,.25)}
+.rung.past .val{color:var(--text)}
+.rung.cur .bar{background:linear-gradient(180deg,var(--accent2),var(--accent));border-color:transparent;box-shadow:0 0 0 4px rgba(144,164,255,.14),0 12px 40px -8px rgba(144,164,255,.6)}
+.rung.cur .val{color:var(--text);font-size:clamp(.95rem,2.8vw,1.2rem)}
+.rung.cur .wk{color:var(--accent2)}
+.rung .tag{position:absolute;left:50%;top:-30px;transform:translateX(-50%);font-size:.62rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  background:var(--text);color:#0a0c11;padding:2px 7px;border-radius:999px;white-space:nowrap}
+.rung .check{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);width:16px;height:16px;color:var(--accent)}
+.ladder-note{margin:18px 0 0;color:var(--muted);font-size:.92rem}
+.ladder-note b{color:var(--text)}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(10px,2vw,16px)}
+@media(min-width:820px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.stat{padding:clamp(16px,3vw,22px)}
+.stat .lbl{display:flex;align-items:center;gap:8px;font-size:.8rem;color:var(--muted);font-weight:600}
+.stat .lbl svg{width:16px;height:16px;color:var(--accent)}
+.stat .v{font-size:clamp(1.9rem,6.5vw,2.6rem);font-weight:800;letter-spacing:-.04em;line-height:1.1;margin:10px 0 2px}
+.stat .v small{font-size:.45em;font-weight:600;color:var(--muted);letter-spacing:0;margin-left:4px}
+.stat .s{font-size:.8rem;color:var(--dim)}
+.pos{color:var(--ok)}.neg{color:var(--miss)}
+
+/* charts */
+.chart{position:relative;width:100%;touch-action:pan-y}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart text{fill:var(--dim);font-size:11px;font-family:var(--font)}
+.chart .halo{paint-order:stroke;stroke:#121620;stroke-width:4px;stroke-linejoin:round}
+.chart .grid line{stroke:rgba(255,255,255,.06)}
+.chart .bar{transition:opacity .2s}
+.chart .grow{transform-box:fill-box;transform-origin:bottom;animation:grow .9s var(--ease) both}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.chart .draw{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 1.6s var(--ease) .1s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.empty{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;padding:28px 12px;color:var(--muted);font-size:.92rem}
+.empty b{color:var(--text);font-size:1rem}
+.overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.overlay .empty{background:rgba(14,17,23,.82);border:1px solid var(--line);border-radius:14px;backdrop-filter:blur(4px);padding:16px 20px;max-width:300px}
+.tip{position:absolute;z-index:5;pointer-events:none;background:rgba(10,12,17,.96);border:1px solid var(--line2);border-radius:12px;padding:9px 12px;
+  font-size:.8rem;line-height:1.4;box-shadow:0 12px 30px rgba(0,0,0,.45);opacity:0;transform:translate(-50%,calc(-100% - 6px));transition:opacity .12s;white-space:nowrap}
+.tip.on{opacity:1}
+.tip b{font-size:.95rem}
+.tip .t{color:var(--dim)}
+
+/* heatmap */
+.heat{display:grid;grid-template-columns:var(--lab,62px) repeat(24,minmax(0,1fr));gap:3px;font-size:.68rem;color:var(--dim);position:relative}
+@media(max-width:520px){.heat{gap:2px;--lab:46px}}
+.heat .rl{display:flex;align-items:center;white-space:nowrap;overflow:hidden;padding-right:6px}
+.heat .rl.tot{color:var(--text);font-weight:600}
+.heat .hl{text-align:left;white-space:nowrap;overflow:visible;height:16px}
+.heat .c{height:clamp(9px,calc((100vw - 150px) / 24),22px);border-radius:3px;background:rgba(255,255,255,.04)}
+.heat .sep{grid-column:1/-1;height:6px}
+.heat-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:14px;font-size:.8rem;color:var(--muted)}
+.scale{display:flex;align-items:center;gap:4px}
+.scale i{width:12px;height:12px;border-radius:3px}
+
+/* table */
+.tbl-wrap{overflow-x:auto;margin:0 calc(var(--pad) * -1);padding:0 var(--pad)}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--dim);font-weight:600;text-align:left;padding:0 10px 10px}
+td{padding:12px 10px;border-top:1px solid var(--line);vertical-align:middle}
+th:first-child,td:first-child{padding-left:0}th:last-child,td:last-child{padding-right:0;text-align:right}
+td .d{font-weight:600}td .dt{display:block;color:var(--dim);font-size:.78rem}
+.meter{display:flex;align-items:center;gap:10px;min-width:120px}
+.meter .m{flex:1;height:6px;border-radius:6px;background:rgba(255,255,255,.07);overflow:hidden;max-width:160px}
+.meter .m i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.meter .m i.miss{background:var(--miss);opacity:.75}
+.meter .m i.prog{background:repeating-linear-gradient(-45deg,var(--accent) 0 6px,rgba(144,164,255,.55) 6px 12px)}
+.meter span{white-space:nowrap}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:.74rem;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.badge.hit{background:rgba(86,214,166,.12);color:var(--ok)}
+.badge.miss{background:rgba(240,127,134,.12);color:var(--miss)}
+.badge.live{background:rgba(144,164,255,.13);color:var(--accent)}
+.badge.warm{background:rgba(245,195,95,.11);color:var(--gold)}
+.fd{font-size:.78rem;margin-left:4px}
+@media(max-width:560px){.hide-sm{display:none}}
+.more{margin-top:14px;background:none;border:1px solid var(--line2);color:var(--text);font:inherit;font-size:.88rem;font-weight:600;padding:9px 16px;border-radius:999px;cursor:pointer}
+.more:hover{background:var(--card2)}
+
+/* best replies */
+.best{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+@media(min-width:820px){.best{grid-template-columns:1fr 1fr}}
+.best a{display:flex;gap:14px;text-decoration:none;padding:16px;border-radius:16px;background:var(--card2);border:1px solid var(--line);height:100%;
+  transition:border-color .2s,transform .2s var(--ease)}
+.best a:hover{border-color:rgba(144,164,255,.4);transform:translateY(-2px)}
+.best .rk{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:.8rem;font-weight:800;background:rgba(144,164,255,.13);color:var(--accent)}
+.best .bd{min-width:0;flex:1}
+.best .tx{margin:0 0 10px;overflow-wrap:anywhere;color:var(--text);font-size:.95rem}
+.best .tx .at{color:var(--accent)}
+.best .mt{display:flex;gap:14px;align-items:center;font-size:.8rem;color:var(--dim)}
+.best .mt .lk{color:var(--miss);font-weight:700;display:inline-flex;align-items:center;gap:4px}
+.best .mt .go{margin-left:auto;color:var(--muted)}
+
+/* announcement */
+.announce{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+  background:radial-gradient(600px 200px at 0% 0%,rgba(144,164,255,.16),transparent 70%),var(--card)}
+.announce h2{font-size:clamp(1.2rem,3vw,1.6rem)}
+.announce p{margin:6px 0 0;color:var(--muted);max-width:52ch}
+
+footer{border-top:1px solid var(--line);margin-top:clamp(28px,5vw,48px);padding:28px 0 44px;color:var(--muted);font-size:.86rem}
+footer .cols{display:grid;gap:18px}
+@media(min-width:760px){footer .cols{grid-template-columns:1.4fr 1fr}}
+footer h3{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);margin:0 0 6px}
+footer p{margin:0}
+footer a{color:var(--text)}
+.err-box{margin-top:16px}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.skel{background:linear-gradient(90deg,rgba(255,255,255,.04),rgba(255,255,255,.08),rgba(255,255,255,.04));background-size:200% 100%;animation:sh 1.4s linear infinite;border-radius:10px}
+@keyframes sh{to{background-position:-200% 0}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+  .chart .draw{stroke-dasharray:none;stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="https://x.com/llermaly" target="_blank" rel="noopener" id="brand">
+      <span class="avatar" aria-hidden="true">G</span>
+      <span>Gustavo Llermaly <small>@llermaly</small></span>
+    </a>
+    <span class="pill" id="updated" role="status" aria-live="polite"><span class="dot"></span><span id="updated-t">Loading…</span></span>
+  </header>
+
+  <main id="main">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Public challenge · live tracker</p>
+        <h1><span class="grad">30 replies a day.</span><br>+10 every week.</h1>
+        <p class="lede" id="lede">I'm replying to other people's posts on X every single day. Week 1 is <b>30 replies a day</b>, and the bar rises by <b>10 every week</b>: 40, 50, 60… This page keeps me honest.</p>
+        <div class="ctas">
+          <a class="btn primary" id="cta-ann" href="https://x.com/llermaly" target="_blank" rel="noopener">Read the announcement
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
+          <a class="btn" href="https://x.com/intent/follow?screen_name=llermaly" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-7.2 8.2L23.3 22h-6.6l-5.2-6.8L5.5 22H2.4l7.7-8.8L1.9 2h6.8l4.7 6.2L18.9 2Zm-1.2 18h1.8L7.4 3.9H5.5L17.7 20Z"/></svg>
+            Follow @llermaly</a>
+        </div>
+      </div>
+      <div class="card today" id="today" aria-labelledby="today-h">
+        <h2 class="sr" id="today-h">Today's progress</h2>
+        <span class="chip skel" style="width:120px;height:26px"></span>
+        <div class="ring"><svg viewBox="0 0 240 240" aria-hidden="true"><circle class="track" cx="120" cy="120" r="102" fill="none" stroke-width="16"/></svg></div>
+        <p class="sub">Loading today's numbers…</p>
+      </div>
+    </div>
+
+    <div id="error" class="err-box" hidden></div>
+
+    <section class="card reveal" aria-labelledby="ladder-h">
+      <div class="sec-h"><div><h2 id="ladder-h">The goal ladder</h2><p>Daily target for each week. It only goes up.</p></div></div>
+      <div class="ladder" id="ladder"></div>
+      <p class="ladder-note" id="ladder-note"></p>
+    </section>
+
+    <section class="stats reveal" id="stats" aria-label="Key stats"></section>
+
+    <section class="card reveal" aria-labelledby="bars-h">
+      <div class="sec-h">
+        <div><h2 id="bars-h">Replies per day</h2><p>The goal line steps up every 7 days.</p></div>
+        <div class="legend" aria-hidden="true"><span><i style="background:linear-gradient(var(--accent2),var(--accent))"></i>Goal hit</span><span><i style="background:var(--miss)"></i>Missed</span><span><i style="background:repeating-linear-gradient(-45deg,var(--accent) 0 3px,rgba(144,164,255,.4) 3px 6px)"></i>Today</span><span><i class="line" style="background:var(--gold)"></i>Goal</span></div>
+      </div>
+      <div class="chart" id="bars"></div>
+    </section>
+
+    <section class="card reveal" aria-labelledby="fol-h">
+      <div class="sec-h">
+        <div><h2 id="fol-h">Followers over time</h2><p id="fol-sub">Hourly snapshots, Panama time.</p></div>
+        <div class="legend" aria-hidden="true"><span><i class="line" style="background:var(--accent2)"></i>Followers</span><span><i class="line" style="background:repeating-linear-gradient(90deg,var(--muted) 0 3px,transparent 3px 6px)"></i>Baseline</span></div>
+      </div>
+      <div class="chart" id="followers"></div>
+    </section>
+
+    <section class="card reveal" aria-labelledby="heat-h">
+      <div class="sec-h"><div><h2 id="heat-h">When the replies happen</h2><p>Replies by hour of day, Panama time (UTC-5).</p></div></div>
+      <div id="heat"></div>
+    </section>
+
+    <section class="card reveal" aria-labelledby="days-h">
+      <div class="sec-h"><div><h2 id="days-h">Day by day</h2><p>Every day of the challenge, newest first.</p></div></div>
+      <div id="days"></div>
+    </section>
+
+    <section class="card reveal" aria-labelledby="best-h">
+      <div class="sec-h"><div><h2 id="best-h">Best replies</h2><p>Most-liked replies so far. Tap one to open it on X.</p></div></div>
+      <div id="best"></div>
+    </section>
+
+    <section class="card announce reveal" aria-labelledby="ann-h">
+      <div><h2 id="ann-h">Why I'm doing this</h2><p>The full premise, the rules, and the replies from people following along are in the announcement post.</p></div>
+      <a class="btn primary" id="ann-link" href="https://x.com/llermaly" target="_blank" rel="noopener">Open the post on X
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="cols">
+      <div><h3>Counting rule</h3><p id="rule">Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded.</p></div>
+      <div><h3>Data</h3><p>Updated hourly · Days run midnight to midnight, Panama time (UTC-5) · <a href="data.json">data.json</a></p></div>
+    </div>
+  </footer>
+</div>
+<noscript><p style="text-align:center;color:#a1a9ba;padding:20px">This tracker needs JavaScript to load its live data.</p></noscript>
+
 <script>
-const $=id=>document.getElementById(id), NS='http://www.w3.org/2000/svg';
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const fmtD=d=>new Date(d+'T12:00:00Z').toLocaleDateString(undefined,{month:'short',day:'numeric',timeZone:'UTC'});
-const sg=n=>n>0?'+'+n:String(n);
-function chart(el,w,h,series,opts){ // series: [{x:label,y:val}] bars or line
-  const p={l:34,r:8,t:10,b:22},iw=w-p.l-p.r,ih=h-p.t-p.b;
-  let max=Math.max(opts.min0??1,...series.map(s=>s.y),opts.goal||0), min=opts.line?Math.min(...series.map(s=>s.y)):0;
-  if(opts.line){const pad=Math.max(2,(max-min)*.2);max+=pad;min=Math.max(0,min-pad)}
-  const Y=v=>p.t+ih-(v-min)/(max-min||1)*ih; let o=`<svg viewBox="0 0 ${w} ${h}" width="100%" role="img" aria-label="${opts.label}">`;
-  for(let i=0;i<=4;i++){const v=min+(max-min)*i/4;o+=`<line x1="${p.l}" x2="${w-p.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)"/><text x="${p.l-4}" y="${Y(v)+3}" text-anchor="end">${Math.round(v)}</text>`}
-  const n=series.length, step=iw/Math.max(n,1);
-  if(opts.line){const pts=series.map((s,i)=>[p.l+(n>1?i*iw/(n-1):iw/2),Y(s.y)]);
-    o+=`<polyline fill="none" stroke="var(--acc)" stroke-width="2.5" points="${pts.map(q=>q.join(',')).join(' ')}"/>`+pts.map(q=>`<circle cx="${q[0]}" cy="${q[1]}" r="3" fill="var(--acc)"/>`).join('')}
-  else series.forEach((s,i)=>{const bw=Math.min(40,step*.7),x=p.l+i*step+(step-bw)/2,y=Y(s.y);
-    o+=`<rect x="${x}" y="${y}" width="${bw}" height="${p.t+ih-y}" rx="4" fill="${opts.goal&&s.y>=opts.goal?'var(--ok)':'var(--bar)'}"><title>${s.x}: ${s.y}</title></rect>`;
-    if(s.y)o+=`<text x="${x+bw/2}" y="${y-3}" text-anchor="middle">${s.y}</text>`});
-  const every=Math.ceil(n/7);series.forEach((s,i)=>{if(i%every===0)o+=`<text x="${opts.line?p.l+(n>1?i*iw/(n-1):iw/2):p.l+i*step+step/2}" y="${h-6}" text-anchor="middle">${s.x}</text>`});
-  if(opts.goal)o+=`<line x1="${p.l}" x2="${w-p.r}" y1="${Y(opts.goal)}" y2="${Y(opts.goal)}" stroke="var(--acc)" stroke-dasharray="5 4" stroke-width="2"/><text x="${w-p.r}" y="${Y(opts.goal)-4}" text-anchor="end" style="fill:var(--acc)">goal ${opts.goal}</text>`;
-  el.innerHTML=o+'</svg>'}
-function render(d){
-  const m=d.meta,n=d.now,G=m.goal,pct=Math.min(1,n.today_replies/G),R=88,C=2*Math.PI*R;
-  const left=Math.max(0,G-n.today_replies);
-  const msg=!n.started?`Warm-up day. The challenge officially starts <b>${fmtD(m.start_date)}</b>. ${n.today_replies} replies so far.`
-    :n.today_replies>=G?'🔥 Goal hit today. Keep the streak alive!':`<b>${left}</b> more to hit today's goal. Keep going!`;
-  $('hero').innerHTML=`<div class="ring"><svg width="200" height="200"><circle cx="100" cy="100" r="${R}" fill="none" stroke="var(--line)" stroke-width="14"/><circle cx="100" cy="100" r="${R}" fill="none" stroke="${pct>=1?'var(--ok)':'var(--acc)'}" stroke-width="14" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-pct)}"/></svg><div class="c"><b>${n.today_replies}</b><span class="sub">of ${G} today</span></div></div><div class="msg">${msg}<div class="sub" style="margin-top:6px">${fmtD(n.date)} · Panama time</div></div>`;
-  const st=[['Day',n.started?n.day_number:'–','since '+fmtD(m.start_date)],['Streak',n.streak+' 🔥','days at 100+'],['Total replies',n.total_replies.toLocaleString(),n.warmup_replies?`+${n.warmup_replies} warm-up`:'since start'],
-   ['Followers',n.followers.toLocaleString(),`<span class="${n.followers_change>=0?'up':'down'}">${sg(n.followers_change)}</span> since ${fmtD(m.baseline.date)} (${m.baseline.followers})`],['Best day',n.best_day,'replies']];
-  $('stats').innerHTML=st.map(s=>`<div class="card"><h2>${s[0]}</h2><div class="big">${s[1]}</div><div class="sub">${s[2]}</div></div>`).join('');
-  const days=d.days;chart($('barc'),640,220,days.map(x=>({x:fmtD(x.date),y:x.replies})),{goal:G,min0:G*1.1,label:'Replies per day'});
-  const sn=d.snapshots;
-  chart($('folc'),640,200,sn.length?sn.map(s=>({x:new Date(s.ts).toLocaleDateString(undefined,{month:'short',day:'numeric'})+' '+new Date(s.ts).toLocaleTimeString([],{hour:'numeric'}),y:s.followers})):[{x:'',y:n.followers}],{line:1,label:'Followers over time'});
-  chart($('gainc'),640,180,days.filter(x=>x.date>m.baseline.date).map(x=>({x:fmtD(x.date),y:Math.max(0,x.delta)})),{min0:3,label:'Followers gained per day'});
-  if(days.filter(x=>x.date>m.baseline.date).length===0)$('gainc').innerHTML='<p class="sub">Daily gains appear after the first full day of snapshots.</p>';
-  const hd=Object.keys(d.hours).sort(),mx=Math.max(1,...hd.flatMap(k=>d.hours[k]));
-  let h='<div class="heat"><span></span>'+[...Array(24).keys()].map(i=>`<span>${i%6===0?i:''}</span>`).join('');
-  hd.forEach(k=>{h+=`<span>${fmtD(k)}</span>`+d.hours[k].map((v,i)=>`<i title="${fmtD(k)} ${i}:00 · ${v}" style="${v?`background:var(--acc);opacity:${.25+.75*v/mx}`:''}"></i>`).join('')});
-  $('heat').innerHTML=h+'</div>';
-  $('tbl').innerHTML='<tr><th>Date</th><th>Day</th><th>Replies</th><th>Followers</th><th>Δ</th></tr>'+[...days].reverse().map(x=>`<tr><td>${fmtD(x.date)}</td><td>${x.day||'warm-up'}</td><td class="${x.hit?'hit':''}">${x.replies}${x.hit?' ✓':''}</td><td>${x.followers_end}</td><td class="${x.delta>0?'up':x.delta<0?'down':''}">${sg(x.delta)}</td></tr>`).join('');
-  $('top').innerHTML=d.top.length?d.top.map(t=>`<li><span class="l">♥ ${t.likes}</span> <a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.text)}</a></li>`).join(''):'<li class="sub">No liked replies yet.</li>';
-  const u=new Date(m.updated_at);$('upd').textContent='Updated '+u.toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
-  $('foot').innerHTML=`${esc(m.rule)} Days are calendar days in ${esc(m.tz)}. Followers are snapshotted roughly hourly; “followers at end of day” is the last snapshot of that day. Data refreshes automatically; <a href="data.json">data.json</a>. <a href="${esc(m.announcement)}" target="_blank" rel="noopener">The announcement</a> · <a href="https://x.com/${m.handle}" target="_blank" rel="noopener">@${m.handle}</a>. No cookies, no tracking.`}
-fetch('data.json?'+Date.now()).then(r=>r.json()).then(render).catch(e=>{$('err').hidden=false;$('err').textContent='Could not load data: '+e;$('upd').textContent='error'});
-</script></body></html>
+(function(){
+"use strict";
+var TZ="America/Panama";
+var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+var D=null, first=true;
+function $(id){return document.getElementById(id)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function fmt(n){return (n==null||isNaN(n))?"–":Number(n).toLocaleString("en-US")}
+function signed(n){return (n>0?"+":n<0?"−":"±")+fmt(Math.abs(n))}
+function dayDate(s){return new Date(s+"T12:00:00Z")}
+function fmtDay(s,o){return dayDate(s).toLocaleDateString("en-US",Object.assign({timeZone:"UTC",month:"short",day:"numeric"},o||{}))}
+function fmtTs(iso,o){return new Date(iso).toLocaleString("en-US",Object.assign({timeZone:TZ},o||{}))}
+function addDays(s,n){var d=dayDate(s);d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10)}
+function svgEl(w,h,inner,label){return '<svg viewBox="0 0 '+w+' '+h+'" width="'+w+'" height="'+h+'" role="img" aria-label="'+esc(label)+'">'+inner+'</svg>'}
+function niceStep(v){if(v<=0)return 1;var p=Math.pow(10,Math.floor(Math.log10(v))),f=v/p;return Math.max(1,(f<=1?1:f<=2?2:f<=5?5:10)*p)}
+function niceMax(v){if(v<=0)return 10;var p=Math.pow(10,Math.floor(Math.log10(v))),f=v/p;return (f<=1?1:f<=2?2:f<=2.5?2.5:f<=5?5:10)*p}
+function relTime(iso){
+  var s=(Date.now()-new Date(iso).getTime())/1000;
+  if(isNaN(s))return "unknown";
+  if(s<45)return "just now";
+  var m=Math.round(s/60); if(m<60)return m+" min ago";
+  var h=Math.round(m/60); if(h<24)return h+(h===1?" hour ago":" hours ago");
+  var d=Math.round(h/24); return d+(d===1?" day ago":" days ago");
+}
+var ICON={
+  flame:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4 0 7-2.7 7-6.8 0-3.6-2.6-6.1-4.3-8.7-.4 2-1.6 3.4-3 4C12 7 10.5 4.3 8.6 2.5 8.4 6.8 5 9.3 5 15.2 5 19.3 8 22 12 22Z"/></svg>',
+  reply:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.6A8 8 0 1 1 21 12Z"/></svg>',
+  trophy:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg>',
+  users:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>',
+  check:'<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m3.5 8.5 3 3 6-7"/></svg>',
+  heart:'<svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M8 14.2 6.9 13.2C3 9.7.5 7.4.5 4.6.5 2.3 2.3.5 4.6.5c1.3 0 2.5.6 3.4 1.6.9-1 2.1-1.6 3.4-1.6 2.3 0 4.1 1.8 4.1 4.1 0 2.8-2.5 5.1-6.4 8.6L8 14.2Z"/></svg>'
+};
+
+/* ---------- data normalisation (display only) ---------- */
+function norm(d){
+  d=d||{}; var m=d.meta||{}, n=d.now||{};
+  m.handle=m.handle||"llermaly"; m.goal=+m.goal||30; m.goal_step=(m.goal_step==null?10:+m.goal_step);
+  m.start_date=m.start_date||"2026-10-16"; m.baseline=m.baseline||{date:"2026-10-15",followers:145};
+  if(!Array.isArray(m.goal_schedule)||!m.goal_schedule.length){m.goal_schedule=[];for(var w=1;w<=8;w++)m.goal_schedule.push({week:w,goal:m.goal+m.goal_step*(w-1)})}
+  n.day_number=+n.day_number||0; n.week_number=+n.week_number||0; n.today_goal=+n.today_goal||m.goal;
+  n.today_replies=+n.today_replies||0; n.streak=+n.streak||0; n.total_replies=+n.total_replies||0;
+  n.warmup_replies=+n.warmup_replies||0; n.best_day=+n.best_day||0; n.started=!!n.started;
+  if(n.followers==null)n.followers=m.baseline.followers;
+  if(n.followers_change==null)n.followers_change=n.followers-m.baseline.followers;
+  d.meta=m; d.now=n; d.days=Array.isArray(d.days)?d.days:[]; d.hours=d.hours||{};
+  d.snapshots=(Array.isArray(d.snapshots)?d.snapshots:[]).filter(function(s){return s&&s.ts&&s.followers!=null});
+  d.top=Array.isArray(d.top)?d.top:[];
+  return d;
+}
+function goalFor(day){var m=D.meta;return m.goal+m.goal_step*Math.floor((Math.max(day,1)-1)/7)}
+function startMs(){return new Date(D.meta.start_date+"T00:00:00-05:00").getTime()}
+
+/* ---------- updated pill ---------- */
+function renderUpdated(){
+  var p=$("updated"), t=$("updated-t"), iso=D&&D.meta.updated_at;
+  if(!iso){t.textContent="Waiting for first update";return}
+  var age=(Date.now()-new Date(iso).getTime())/60000;
+  p.className="pill "+(age<=95?"live":"stale");
+  t.textContent="Updated "+relTime(iso);
+  p.title=fmtTs(iso,{dateStyle:"medium",timeStyle:"short"})+" Panama time";
+}
+
+/* ---------- hero: today ring ---------- */
+function renderToday(){
+  var n=D.now, m=D.meta, started=n.started;
+  var goal=n.today_goal, val=n.today_replies;
+  var pct=Math.max(0,Math.min(1,goal?val/goal:0)), done=val>=goal&&goal>0;
+  var r=102, C=2*Math.PI*r;
+  var chip, status, sub;
+  if(!started){
+    chip='<span class="chip warm">Warm-up · starts '+fmtDay(m.start_date,{weekday:"short"})+'</span>';
+    status=val?fmt(val)+" warm-up "+(val===1?"reply":"replies")+" today":"The challenge hasn't started yet";
+    sub="Day 1 is "+fmtDay(m.start_date,{weekday:"long",month:"long"})+". Week 1 target: "+fmt(m.goal)+" a day.";
+  }else{
+    chip='<span class="chip'+(done?' ok':'')+'">Day '+n.day_number+' · Week '+n.week_number+'</span>';
+    status=done?(val>goal?"Goal smashed, "+fmt(val-goal)+" over":"Goal hit for today"):fmt(goal-val)+" to go today";
+    sub="Today's target is "+fmt(goal)+" replies"+(n.week_number?" (week "+n.week_number+")":"")+".";
+  }
+  var el=$("today");
+  el.innerHTML='<h2 class="sr" id="today-h">Today\'s progress</h2>'+chip+
+    '<div class="ring'+(done?' done':'')+'" role="img" aria-label="'+esc(fmt(val)+" of "+fmt(goal)+" replies today")+'">'+
+    '<svg viewBox="0 0 240 240" aria-hidden="true"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">'+
+    '<stop offset="0" stop-color="'+(done?'#5fe0c5':'#90a4ff')+'"/><stop offset="1" stop-color="'+(done?'#56d6a6':'#5fe0c5')+'"/></linearGradient></defs>'+
+    '<circle class="track" cx="120" cy="120" r="'+r+'" fill="none" stroke-width="16"/>'+
+    '<circle class="prog" id="ringp" cx="120" cy="120" r="'+r+'" fill="none" stroke="url(#rg)" stroke-width="16" stroke-linecap="round" stroke-dasharray="'+C+'" stroke-dashoffset="'+C+'"'+(pct===0?' opacity="0"':'')+'/></svg>'+
+    '<div class="center"><span class="big num" data-count="'+val+'">0</span><span class="of num">of '+fmt(goal)+(started?' today':' (week 1 pace)')+'</span></div></div>'+
+    '<p class="status">'+esc(status)+'</p><p class="sub">'+esc(sub)+'</p>'+
+    (!started?'<div class="countdown num" id="cd" aria-label="Time until day 1"></div>':'');
+  requestAnimationFrame(function(){requestAnimationFrame(function(){var c=$("ringp");if(c)c.style.strokeDashoffset=C*(1-pct)})});
+  countUp(el);
+  if(!started)tickCountdown();
+}
+function tickCountdown(){
+  var cd=$("cd"); if(!cd)return;
+  var ms=startMs()-Date.now();
+  if(ms<=0){cd.innerHTML='<div style="min-width:auto"><b style="font-size:1rem">Day 1 is live</b><span>first numbers land within the hour</span></div>';return}
+  var d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5),mi=Math.floor(ms%36e5/6e4),s=Math.floor(ms%6e4/1e3);
+  var parts=d>0?[[d,"days"],[h,"hrs"],[mi,"min"]]:[[h,"hrs"],[mi,"min"],[s,"sec"]];
+  cd.innerHTML=parts.map(function(p){return '<div><b>'+String(p[0]).padStart(2,"0")+'</b><span>'+p[1]+'</span></div>'}).join("");
+}
+function countUp(root){
+  [].forEach.call(root.querySelectorAll("[data-count]"),function(e){
+    var to=+e.getAttribute("data-count"),pre=e.getAttribute("data-pre")||"";
+    if(reduce||!first||to===0||isNaN(to)){e.textContent=pre+fmt(to);return}
+    var t0=performance.now(),dur=1100;
+    (function f(t){var k=Math.min(1,(t-t0)/dur),v=Math.round(to*(1-Math.pow(1-k,3)));e.textContent=pre+fmt(v);if(k<1)requestAnimationFrame(f)})(t0);
+  });
+}
+
+/* ---------- ladder ---------- */
+function renderLadder(){
+  var n=D.now, m=D.meta, sched=m.goal_schedule.slice();
+  var cur=n.started?n.week_number:0, show=Math.max(sched.length,cur+1);
+  while(sched.length<show){var w=sched.length+1;sched.push({week:w,goal:m.goal+m.goal_step*(w-1)})}
+  if(sched.length>10&&cur>5){sched=sched.slice(cur-5,cur+3)}else if(sched.length>10){sched=sched.slice(0,8)}
+  var max=Math.max.apply(null,sched.map(function(s){return s.goal}));
+  var nextWeek=cur||1;
+  $("ladder").innerHTML=sched.map(function(s,i){
+    var cls=s.week<cur?"past":s.week===cur?"cur":"";
+    var h=Math.max(14,Math.round(s.goal/max*100));
+    var wkStart=addDays(m.start_date,(s.week-1)*7), wkEnd=addDays(wkStart,6);
+    var tag=s.week===cur?'<span class="tag">Now</span>':(!n.started&&s.week===1?'<span class="tag">Next</span>':'');
+    return '<div class="rung '+cls+(!n.started&&s.week===1?' cur':'')+'" title="Week '+s.week+': '+fmtDay(wkStart)+' – '+fmtDay(wkEnd)+'">'+
+      '<span class="val num">'+s.goal+'</span>'+
+      '<div class="bar" style="height:'+h+'%;'+(reduce||!first?'':'transform:scaleY(0);transition-delay:'+(i*60)+'ms')+'">'+tag+(s.week<cur?'<span class="check">'+ICON.check+'</span>':'')+'</div>'+
+      '<span class="wk">W'+s.week+'</span></div>';
+  }).join("");
+  $("ladder").setAttribute("aria-label","Weekly goals: "+sched.map(function(s){return "week "+s.week+" "+s.goal+" a day"}).join(", "));
+  $("ladder").setAttribute("role","img");
+  if(!reduce&&first)setTimeout(function(){[].forEach.call(document.querySelectorAll("#ladder .bar"),function(b){b.style.transform="scaleY(1)"})},60);
+  var note;
+  if(!n.started){note="Week 1 starts <b>"+fmtDay(m.start_date,{weekday:"long",month:"long"})+"</b> at <b>"+m.goal+" replies a day</b>. Week 2 jumps to <b>"+(m.goal+m.goal_step)+"</b>."}
+  else{var wkEnd2=addDays(m.start_date,cur*7-1),left=Math.round((dayDate(wkEnd2)-dayDate(n.date))/864e5);
+    note="Week "+cur+": <b>"+n.today_goal+" a day</b> through "+fmtDay(wkEnd2,{weekday:"short"})+" ("+(left===0?"last day of the week":left+(left===1?" day":" days")+" left")+"). Next week: <b>"+(n.today_goal+m.goal_step)+" a day</b>."}
+  $("ladder-note").innerHTML=note;
+}
+
+/* ---------- stats ---------- */
+function renderStats(){
+  var n=D.now, m=D.meta, bestDate=null;
+  D.days.forEach(function(d){if(d.day>=1&&d.replies===n.best_day&&n.best_day>0&&!bestDate)bestDate=d.date});
+  var fc=n.followers_change;
+  var cards=[
+    {i:"flame",l:"Streak",v:n.streak,u:n.streak===1?"day":"days",s:n.started?(n.streak?"Consecutive days on target":"Hit today's goal to start one"):"Starts on day 1"},
+    {i:"reply",l:"Total replies",v:n.total_replies,s:n.warmup_replies?"+"+fmt(n.warmup_replies)+" warm-up before day 1":"Since day 1"},
+    {i:"trophy",l:"Best day",v:n.best_day,u:"replies",s:bestDate?fmtDay(bestDate,{weekday:"short"}):"No challenge days yet"},
+    {i:"users",l:"Followers gained",v:Math.abs(fc),pre:fc>0?"+":fc<0?"−":"",cls:fc>0?"pos":fc<0?"neg":"",s:fmt(n.followers)+" now · baseline "+fmt(m.baseline.followers)}
+  ];
+  $("stats").innerHTML=cards.map(function(c){
+    return '<div class="card stat"><div class="lbl">'+ICON[c.i]+c.l+'</div><div class="v num '+(c.cls||"")+'"><span data-count="'+c.v+'" data-pre="'+(c.pre||"")+'">'+(c.pre||"")+'0</span>'+(c.u?'<small>'+c.u+'</small>':'')+'</div><div class="s">'+esc(c.s)+'</div></div>';
+  }).join("");
+  countUp($("stats"));
+}
+
+/* ---------- tooltip helper ---------- */
+function tipFor(box){
+  var t=box.querySelector(".tip"); if(!t){t=document.createElement("div");t.className="tip";t.setAttribute("aria-hidden","true");box.appendChild(t)}
+  return {show:function(x,y,html){t.innerHTML=html;var w=box.clientWidth,tw=t.offsetWidth||140;
+      var cx=Math.max(tw/2+2,Math.min(w-tw/2-2,x));t.style.left=cx+"px";t.style.top=Math.max(y,t.offsetHeight+8)+"px";t.classList.add("on")},
+    hide:function(){t.classList.remove("on")}};
+}
+
+/* ---------- bar chart ---------- */
+function renderBars(){
+  var box=$("bars"), W=Math.max(280,box.clientWidth), small=W<520, H=small?230:290;
+  var n=D.now, today=n.date;
+  var days=D.days.filter(function(d){return d.day>=1});
+  var len=days.length, slots=len?Math.max(7,Math.ceil(len/7)*7):28;
+  if(len&&days[len-1].date===today&&days[len-1].day%7===0)slots=Math.max(slots,len);
+  var rows=[];
+  for(var i=0;i<slots;i++){var d=days[i];rows.push(d?{date:d.date,day:d.day,replies:d.replies,goal:d.goal||goalFor(d.day),hit:d.hit,future:false}
+    :{date:addDays(D.meta.start_date,i),day:i+1,replies:null,goal:goalFor(i+1),future:true})}
+  var ml=34,mr=8,mt=26,mb=26, iw=W-ml-mr, ih=H-mt-mb;
+  var maxV=Math.max.apply(null,rows.map(function(r){return Math.max(r.replies||0,r.goal)}));
+  var yStep=niceStep(maxV*1.12/4), yMax=yStep*Math.ceil(maxV*1.12/yStep), y=function(v){return mt+ih-(v/yMax)*ih};
+  var band=iw/slots, bw=Math.max(2,Math.min(38,band*(slots>40?.78:.66)));
+  var s='<defs><linearGradient id="bh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5fe0c5"/><stop offset="1" stop-color="#90a4ff"/></linearGradient>'+
+    '<pattern id="bp" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="rgba(144,164,255,.35)"/><rect width="3" height="6" fill="#90a4ff"/></pattern></defs>';
+  s+='<g class="grid">';
+  for(var v=0;v<=yMax+1e-9;v+=yStep){var yy=y(v);s+='<line x1="'+ml+'" x2="'+(W-mr)+'" y1="'+yy+'" y2="'+yy+'"/><text x="'+(ml-8)+'" y="'+(yy+4)+'" text-anchor="end" class="num">'+fmt(Math.round(v))+'</text>'}
+  s+='</g>';
+  // week bands
+  for(var wk=0;wk*7<slots;wk++){var x0=ml+wk*7*band;
+    if(wk>0)s+='<line x1="'+x0+'" x2="'+x0+'" y1="'+(mt-14)+'" y2="'+(mt+ih)+'" stroke="rgba(255,255,255,.08)" stroke-dasharray="2 4"/>';
+    var wn=wk+1, isCur=n.started&&wn===n.week_number;
+    s+='<text x="'+(x0+6)+'" y="'+(mt-10)+'" style="font-weight:600;fill:'+(isCur?'#5fe0c5':'')+'">'+(small&&slots>21?'W'+wn:'Week '+wn)+'</text>'}
+  // bars
+  var delay=reduce?0:Math.min(40,900/slots), growCls=first?' grow':'';
+  rows.forEach(function(r,i){
+    var cx=ml+band*i+band/2;
+    if(r.future){s+='<rect x="'+(cx-bw/2)+'" y="'+(mt+ih-3)+'" width="'+bw+'" height="3" rx="1.5" fill="rgba(255,255,255,.07)"/>';return}
+    var isToday=r.date===today, h=Math.max(r.replies>0?2:0,(r.replies/yMax)*ih);
+    var fill=r.hit?'url(#bh)':isToday?'url(#bp)':'#f07f86', op=(!r.hit&&!isToday)?'.8':'1';
+    if(r.replies===0)s+='<rect x="'+(cx-bw/2)+'" y="'+(mt+ih-3)+'" width="'+bw+'" height="3" rx="1.5" fill="'+(isToday?'#90a4ff':'#f07f86')+'" opacity=".6"/>';
+    else s+='<rect class="bar'+growCls+'" data-i="'+i+'" x="'+(cx-bw/2)+'" y="'+y(r.replies)+'" width="'+bw+'" height="'+h+'" rx="'+Math.min(5,bw/3)+'" fill="'+fill+'" opacity="'+op+'" style="animation-delay:'+(i*delay)+'ms"/>';
+  });
+  // goal step line
+  var pathPast="",pathFut="",prevY=null;
+  rows.forEach(function(r,i){var x0=ml+band*i,x1=x0+band,gy=y(r.goal),seg;
+    seg=(prevY===null||r.future!==(rows[i-1]||{}).future)?"M"+x0+" "+gy:(prevY!==gy?"L"+x0+" "+gy:"");
+    seg+="L"+x1+" "+gy; if(r.future)pathFut+=(prevY!==null&&!(rows[i-1]||{}).future?"M"+x0+" "+prevY+"L"+x0+" "+gy:"")+seg; else pathPast+=seg; prevY=gy});
+  if(pathPast)s+='<path d="'+pathPast+'" fill="none" stroke="#f5c35f" stroke-width="2" stroke-linejoin="round"/>';
+  if(pathFut)s+='<path d="'+pathFut+'" fill="none" stroke="#f5c35f" stroke-width="1.6" stroke-dasharray="4 5" opacity=".55"/>';
+  // goal labels at each week start
+  for(var w2=0;w2*7<slots;w2++){var r0=rows[w2*7];if(!r0)continue;var lx=ml+band*w2*7+4;
+    s+='<text x="'+lx+'" y="'+(y(r0.goal)-6)+'" style="fill:#f5c35f;font-weight:600" class="num halo">'+r0.goal+'</text>'}
+  // x labels
+  var every=Math.max(1,Math.ceil(30/band)); if(every>1&&every<7)every=every<=2?2:every<=4?3:7;
+  rows.forEach(function(r,i){if(i%every!==0&&i!==rows.length-1)return;if(i===rows.length-1&&i%every!==0&&(i%every)<every*.6)return;
+    s+='<text x="'+(ml+band*i+band/2)+'" y="'+(H-8)+'" text-anchor="middle" class="num"'+(r.date===today?' style="fill:#eef0f6;font-weight:700"':'')+'>'+r.day+'</text>'});
+  s+='<rect id="bars-hl" x="0" y="'+mt+'" width="'+band+'" height="'+ih+'" fill="rgba(255,255,255,.05)" rx="4" opacity="0"/>';
+  var label="Replies per day bar chart. "+(len?len+" days so far.":"No challenge days yet.");
+  box.innerHTML=svgEl(W,H,s,label)+(len?'':'<div class="overlay"><div class="empty"><b>Bars start on Day 1</b>'+esc(fmtDay(D.meta.start_date,{weekday:"long",month:"long"}))+'. Dashed line shows the target staircase.</div></div>');
+  var svg=box.querySelector("svg"), hl=box.querySelector("#bars-hl"), tip=tipFor(box);
+  // move highlight rect behind bars
+  svg.insertBefore(hl,svg.querySelector(".grid").nextSibling);
+  function at(ev){var rc=svg.getBoundingClientRect(),px=(ev.clientX-rc.left)*(W/rc.width),i=Math.floor((px-ml)/band);
+    if(i<0||i>=slots){off();return}var r=rows[i];hl.setAttribute("x",ml+band*i);hl.setAttribute("opacity","1");
+    var cx=(ml+band*i+band/2)*(rc.width/W), top=y(Math.max(r.replies||0,r.goal))*(rc.height/H);
+    var st=r.future?'<span class="t">Upcoming</span>':r.date===today&&!r.hit?'<span style="color:#90a4ff">In progress</span>':r.hit?'<span style="color:#56d6a6">✓ Goal hit</span>':'<span style="color:#f07f86">Missed</span>';
+    tip.show(cx,top,'<div class="t">Day '+r.day+' · '+fmtDay(r.date,{weekday:"short"})+'</div><b class="num">'+(r.future?'–':fmt(r.replies))+'</b> <span class="t">/ '+r.goal+' goal</span><br>'+st)}
+  function off(){hl.setAttribute("opacity","0");tip.hide()}
+  svg.addEventListener("pointermove",at);svg.addEventListener("pointerdown",at);svg.addEventListener("pointerleave",function(e){if(e.pointerType==="mouse")off()});
+  document.addEventListener("pointerdown",function(e){if(!box.contains(e.target))off()});
+}
+
+/* ---------- followers line ---------- */
+function renderFollowers(){
+  var box=$("followers"), W=Math.max(280,box.clientWidth), small=W<520, H=small?220:280;
+  var base=D.meta.baseline, pts=D.snapshots.map(function(s){return{t:new Date(s.ts).getTime(),v:+s.followers,ts:s.ts}}).sort(function(a,b){return a.t-b.t});
+  if(!pts.length){box.innerHTML='<div class="empty"><b>No follower snapshots yet</b>The first hourly snapshot will draw this line. Baseline: '+fmt(base.followers)+' followers on '+fmtDay(base.date)+'.</div>';return}
+  var ml=40,mr=small?38:46,mt=16,mb=28,iw=W-ml-mr,ih=H-mt-mb;
+  var t0=pts[0].t,t1=pts[pts.length-1].t; if(t1-t0<36e5){t0-=18e5;t1+=18e5}
+  var vals=pts.map(function(p){return p.v}).concat([base.followers]);
+  var lo=Math.min.apply(null,vals),hi=Math.max.apply(null,vals),span=Math.max(4,hi-lo);
+  var step=niceMax(span/4); if(step<1)step=1; lo=Math.floor((lo-span*.12)/step)*step; hi=Math.ceil((hi+span*.12)/step)*step; if(hi===lo)hi=lo+step;
+  var x=function(t){return ml+(t-t0)/(t1-t0)*iw}, y=function(v){return mt+ih-(v-lo)/(hi-lo)*ih};
+  var s='<defs><linearGradient id="fa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5fe0c5" stop-opacity=".28"/><stop offset="1" stop-color="#5fe0c5" stop-opacity="0"/></linearGradient></defs><g class="grid">';
+  for(var v=lo;v<=hi+1e-9;v+=step){var yy=y(v);s+='<line x1="'+ml+'" x2="'+(W-mr)+'" y1="'+yy+'" y2="'+yy+'"/><text x="'+(ml-8)+'" y="'+(yy+4)+'" text-anchor="end" class="num">'+fmt(Math.round(v))+'</text>'}
+  s+='</g>';
+  // x ticks
+  var spanH=(t1-t0)/36e5, maxT=small?4:7, ticks=[], OFF=5*36e5, daily=spanH>36;
+  var unit=daily?864e5:36e5, cnt=(t1-t0)/unit, mult=(daily?[1,2,3,4,7,14]:[.25,.5,1,2,3,4,6,12]).filter(function(k){return cnt/k<=maxT})[0]||Math.ceil(cnt/maxT), stp=unit*mult;
+  for(var tt=Math.ceil((t0-(daily?OFF:0))/stp)*stp+(daily?OFF:0);tt<=t1;tt+=stp)ticks.push(tt);
+  ticks.forEach(function(t){var X=x(t);if(X<ml+14||X>W-mr-14)return;
+    var lab=daily?fmtTs(new Date(t).toISOString(),{month:"short",day:"numeric"}):fmtTs(new Date(t).toISOString(),stp<36e5?{hour:"numeric",minute:"2-digit"}:{hour:"numeric"});
+    s+='<line x1="'+X+'" x2="'+X+'" y1="'+(mt+ih)+'" y2="'+(mt+ih+4)+'" stroke="rgba(255,255,255,.18)"/><text x="'+X+'" y="'+(H-8)+'" text-anchor="middle">'+lab+'</text>'});
+  // baseline
+  var by=y(base.followers);
+  s+='<line x1="'+ml+'" x2="'+(W-mr)+'" y1="'+by+'" y2="'+by+'" stroke="#a1a9ba" stroke-dasharray="3 5" opacity=".7"/>'+
+     '<text x="'+(W-mr+6)+'" y="'+(by+4)+'" style="fill:#a1a9ba;font-weight:600" class="num">'+fmt(base.followers)+'</text>'+
+     '<text x="'+(ml+6)+'" y="'+(by+(by>mt+ih-14?-7:15))+'" style="fill:#a1a9ba">Baseline · '+fmtDay(base.date)+'</text>';
+  var line=pts.map(function(p,i){return(i?"L":"M")+x(p.t).toFixed(1)+" "+y(p.v).toFixed(1)}).join("");
+  var last=pts[pts.length-1];
+  if(pts.length>1){
+    s+='<path d="'+line+"L"+x(last.t)+" "+(mt+ih)+"L"+x(pts[0].t)+" "+(mt+ih)+'Z" fill="url(#fa)"/>';
+    var L=0;for(var j=1;j<pts.length;j++)L+=Math.hypot(x(pts[j].t)-x(pts[j-1].t),y(pts[j].v)-y(pts[j-1].v));
+    s+='<path class="'+(first?'draw':'')+'" style="--len:'+Math.ceil(L+2)+'" d="'+line+'" fill="none" stroke="#5fe0c5" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>';
+  }
+  s+='<circle cx="'+x(last.t)+'" cy="'+y(last.v)+'" r="9" fill="#5fe0c5" opacity=".18"/><circle cx="'+x(last.t)+'" cy="'+y(last.v)+'" r="4.5" fill="#5fe0c5" stroke="#0a0c11" stroke-width="2"/>';
+  if(Math.abs(y(last.v)-by)>12)s+='<text x="'+(W-mr+6)+'" y="'+(y(last.v)+4)+'" style="fill:#5fe0c5;font-weight:700" class="num">'+fmt(last.v)+'</text>';
+  s+='<g id="fhl" opacity="0"><line y1="'+mt+'" y2="'+(mt+ih)+'" stroke="rgba(255,255,255,.25)"/><circle r="5" fill="#0a0c11" stroke="#5fe0c5" stroke-width="2.4"/></g>';
+  box.innerHTML=svgEl(W,H,s,"Followers over time: "+fmt(pts[0].v)+" to "+fmt(last.v)+", baseline "+fmt(base.followers))+
+    (pts.length<2?'<div class="overlay" style="align-items:flex-start;padding-top:20px"><div class="empty">One snapshot so far. The line fills in hourly.</div></div>':'');
+  $("fol-sub").textContent=pts.length+" snapshot"+(pts.length===1?"":"s")+" · "+signed(last.v-base.followers)+" since baseline · Panama time.";
+  var svg=box.querySelector("svg"), g=box.querySelector("#fhl"), tip=tipFor(box);
+  function at(ev){var rc=svg.getBoundingClientRect(),px=(ev.clientX-rc.left)*(W/rc.width);
+    if(px<ml-10||px>W-mr+10){off();return}
+    var best=pts[0],bd=1e18;pts.forEach(function(p){var d=Math.abs(x(p.t)-px);if(d<bd){bd=d;best=p}});
+    var X=x(best.t),Y=y(best.v);g.setAttribute("opacity","1");g.querySelector("line").setAttribute("x1",X);g.querySelector("line").setAttribute("x2",X);
+    g.querySelector("circle").setAttribute("cx",X);g.querySelector("circle").setAttribute("cy",Y);
+    var dlt=best.v-base.followers;
+    tip.show(X*(rc.width/W),Y*(rc.height/H)-6,'<div class="t">'+fmtTs(best.ts,{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})+'</div><b class="num">'+fmt(best.v)+'</b> <span class="t">followers</span><br><span class="'+(dlt>0?"pos":dlt<0?"neg":"t")+'">'+signed(dlt)+' vs baseline</span>')}
+  function off(){g.setAttribute("opacity","0");tip.hide()}
+  svg.addEventListener("pointermove",at);svg.addEventListener("pointerdown",at);svg.addEventListener("pointerleave",function(e){if(e.pointerType==="mouse")off()});
+  document.addEventListener("pointerdown",function(e){if(!box.contains(e.target))off()});
+}
+
+/* ---------- heatmap ---------- */
+function renderHeat(){
+  var box=$("heat"), keys=Object.keys(D.hours).sort();
+  if(!keys.length){box.innerHTML='<div class="empty"><b>No replies logged yet</b>Once replies come in, this shows which hours of the day they happen.</div>';return}
+  var tot=new Array(24).fill(0);keys.forEach(function(k){(D.hours[k]||[]).forEach(function(v,h){tot[h]+=+v||0})});
+  var rows=keys.slice(-14).reverse(), max=0;
+  rows.forEach(function(k){(D.hours[k]||[]).forEach(function(v){if(v>max)max=v})});
+  var tmax=Math.max.apply(null,tot)||1, dayOf={};D.days.forEach(function(d){dayOf[d.date]=d.day});
+  function col(v,mx){if(!v)return "rgba(255,255,255,.04)";var a=.18+.82*Math.sqrt(v/mx);return "rgba(144,164,255,"+a.toFixed(2)+")"}
+  function hr(h){return h===0?"12a":h<12?h+"a":h===12?"12p":(h-12)+"p"}
+  var narrow=box.clientWidth<520, h='<div class="heat" role="img" aria-label="Heatmap of replies by hour">';
+  h+='<span></span>';for(var i=0;i<24;i++)h+='<span class="hl">'+(i%(narrow?6:3)===0?hr(i):"")+'</span>';
+  h+='<span class="rl tot">All days</span>';tot.forEach(function(v,i){h+='<span class="c" data-tip="All days · '+hr(i)+'–'+hr((i+1)%24)+'|'+v+'" style="background:'+(v?"rgba(95,224,197,"+(.18+.82*Math.sqrt(v/tmax)).toFixed(2)+")":"rgba(255,255,255,.04)")+'"></span>'});
+  h+='<span class="sep"></span>';
+  rows.forEach(function(k){var dn=dayOf[k], lab=dn>=1?(narrow?"D"+dn:"Day "+dn):(dn===0?"Warm-up":fmtDay(k));
+    if(narrow&&dn===0)lab="Warm";
+    h+='<span class="rl" title="'+fmtDay(k,{weekday:"short"})+'">'+lab+'</span>';
+    for(var i=0;i<24;i++){var v=+(D.hours[k]||[])[i]||0;h+='<span class="c" data-tip="'+(dn>=1?"Day "+dn+" · ":"")+fmtDay(k)+' · '+hr(i)+'–'+hr((i+1)%24)+'|'+v+'" style="background:'+col(v,max||1)+'"></span>'}});
+  h+='</div>';
+  var peak=tot.indexOf(tmax), sum=tot.reduce(function(a,b){return a+b},0);
+  h+='<div class="heat-foot"><span>'+(sum?'Peak hour: <b style="color:var(--text)">'+hr(peak)+'–'+hr((peak+1)%24)+'</b> · '+fmt(tmax)+' of '+fmt(sum)+' replies':'')+(keys.length>14?' · last 14 days shown':'')+'</span>'+
+     '<span class="scale">Less<i style="background:rgba(255,255,255,.04)"></i><i style="background:rgba(144,164,255,.3)"></i><i style="background:rgba(144,164,255,.6)"></i><i style="background:rgba(144,164,255,1)"></i>More</span></div>';
+  box.innerHTML=h; box.style.position="relative";
+  var grid=box.querySelector(".heat"), tip=tipFor(box);
+  function at(ev){var c=ev.target.closest&&ev.target.closest(".c");if(!c){tip.hide();return}var p=c.getAttribute("data-tip").split("|"),br=box.getBoundingClientRect(),cr=c.getBoundingClientRect();
+    tip.show(cr.left-br.left+cr.width/2,cr.top-br.top-2,'<div class="t">'+esc(p[0])+'</div><b class="num">'+p[1]+'</b> <span class="t">'+(p[1]==="1"?"reply":"replies")+'</span>')}
+  grid.addEventListener("pointermove",at);grid.addEventListener("pointerdown",at);grid.addEventListener("pointerleave",function(){tip.hide()});
+}
+
+/* ---------- table ---------- */
+var showAll=false;
+function renderDays(){
+  var box=$("days"), today=D.now.date, rows=D.days.slice().reverse();
+  if(!rows.length){box.innerHTML='<div class="empty"><b>Day 1 hasn\'t happened yet</b>Each day lands here with its count, target and a hit or miss badge.</div>';return}
+  var lim=showAll?rows.length:14, h='<div class="tbl-wrap"><table><thead><tr><th scope="col">Day</th><th scope="col">Replies / goal</th><th scope="col" class="hide-sm">Followers</th><th scope="col">Status</th></tr></thead><tbody>';
+  rows.slice(0,lim).forEach(function(d){
+    var warm=d.day<1, live=d.date===today&&!d.hit&&!warm, pct=Math.min(100,d.goal?d.replies/d.goal*100:0);
+    var badge=warm?'<span class="badge warm">Warm-up</span>':d.hit?'<span class="badge hit">✓ Hit</span>':live?'<span class="badge live">In progress</span>':'<span class="badge miss">✕ Missed</span>';
+    h+='<tr><td><span class="d">'+(warm?"Warm-up":"Day "+d.day)+'</span><span class="dt">'+fmtDay(d.date,{weekday:"short"})+'</span></td>'+
+      '<td><div class="meter"><span class="num"><b>'+fmt(d.replies)+'</b><span style="color:var(--dim)"> / '+(warm?"–":d.goal)+'</span></span><span class="m"><i class="'+(d.hit?"":live?"prog":warm?"":"miss")+'" style="width:'+(warm?Math.min(100,d.replies/D.meta.goal*100):pct)+'%"></i></span></div></td>'+
+      '<td class="hide-sm num">'+fmt(d.followers_end)+(d.delta?'<span class="fd '+(d.delta>0?"pos":"neg")+'">'+signed(d.delta)+'</span>':'')+'</td><td>'+badge+'</td></tr>';
+  });
+  h+='</tbody></table></div>';
+  if(rows.length>14)h+='<button class="more" id="more" type="button">'+(showAll?"Show fewer":"Show all "+rows.length+" days")+'</button>';
+  box.innerHTML=h;
+  var b=$("more");if(b)b.onclick=function(){showAll=!showAll;renderDays()};
+}
+
+/* ---------- best replies ---------- */
+var bestAll=false;
+function renderBest(){
+  var box=$("best"), top=D.top.filter(function(t){return t&&t.url});
+  if(!top.length){box.innerHTML='<div class="empty"><b>No liked replies yet</b>The most-liked replies will show up here as the challenge goes on.</div>';return}
+  var ul=document.createElement("ol");ul.className="best";
+  top.slice(0,10).forEach(function(t,i){
+    if(i>=6&&!bestAll)return;
+    var li=document.createElement("li"), a=document.createElement("a");
+    var safe=/^https:\/\/(x|twitter)\.com\//.test(t.url)?t.url:"https://x.com/"+D.meta.handle;
+    a.href=safe;a.target="_blank";a.rel="noopener";
+    a.setAttribute("aria-label","Reply "+(i+1)+", "+(t.likes||0)+" likes, open on X");
+    var txt=String(t.text||"").trim(), p=document.createElement("p");p.className="tx";
+    // highlight leading @mentions safely
+    txt.split(/(@\w{1,15})/).forEach(function(part){if(/^@\w+$/.test(part)){var s=document.createElement("span");s.className="at";s.textContent=part;p.appendChild(s)}else p.appendChild(document.createTextNode(part))});
+    if((t.text||"").length>=200)p.appendChild(document.createTextNode("…"));
+    var bd=document.createElement("div");bd.className="bd";bd.appendChild(p);
+    var mt=document.createElement("div");mt.className="mt";
+    mt.innerHTML='<span class="lk num">'+ICON.heart+fmt(t.likes||0)+'</span><span>'+(t.created_at?esc(fmtTs(t.created_at,{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})):"")+'</span><span class="go">View on X ↗</span>';
+    bd.appendChild(mt);
+    var rk=document.createElement("span");rk.className="rk num";rk.textContent=i+1;
+    a.appendChild(rk);a.appendChild(bd);li.appendChild(a);ul.appendChild(li);
+  });
+  box.innerHTML="";box.appendChild(ul);
+  if(top.length>6){var b=document.createElement("button");b.className="more";b.type="button";b.textContent=bestAll?"Show fewer":"Show all "+Math.min(10,top.length);b.onclick=function(){bestAll=!bestAll;renderBest()};box.appendChild(b)}
+}
+
+/* ---------- glue ---------- */
+function renderStatic(){
+  var m=D.meta;
+  if(m.announcement){$("ann-link").href=m.announcement;$("cta-ann").href=m.announcement}
+  if(m.rule)$("rule").textContent=m.rule;
+  $("lede").innerHTML="I'm replying to other people's posts on X every single day. Week 1 is <b>"+m.goal+" replies a day</b>, and the bar rises by <b>"+m.goal_step+" every week</b>: "+[1,2,3].map(function(k){return m.goal+m.goal_step*k}).join(", ")+"… This page keeps me honest.";
+}
+function renderCharts(){renderBars();renderFollowers();renderHeat()}
+function renderAll(){
+  $("error").hidden=true;
+  [renderStatic,renderUpdated,renderToday,renderLadder,renderStats,renderCharts,renderDays,renderBest].forEach(function(f){try{f()}catch(e){console.error(f.name,e)}});
+}
+function showError(msg){
+  var p=$("updated");p.className="pill err";$("updated-t").textContent="Data unavailable";
+  var e=$("error");e.hidden=false;
+  e.innerHTML='<div class="card empty"><b>Couldn\'t load the latest numbers</b>'+esc(msg)+'<button class="more" type="button" id="retry">Try again</button></div>';
+  $("retry").onclick=function(){load()};
+  if(!D)$("today").innerHTML='<div class="empty"><b>No data yet</b>Check back soon.</div>';
+}
+function load(){
+  return fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json()})
+    .then(function(d){D=norm(d);renderAll();first=false}).catch(function(e){console.error(e);if(!D)showError("The data file may be updating. Give it a minute.")});
+}
+// reveal on scroll
+function reveal(){
+  var els=document.querySelectorAll(".reveal");
+  if(reduce||!("IntersectionObserver" in window)){[].forEach.call(els,function(e){e.classList.add("in")});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target)}})},{rootMargin:"0px 0px -6% 0px"});
+  [].forEach.call(els,function(e){io.observe(e)});
+}
+var lastW=0,rt;
+window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(function(){var w=document.documentElement.clientWidth;if(D&&w!==lastW){lastW=w;try{renderCharts()}catch(e){console.error(e)}}},150)});
+lastW=document.documentElement.clientWidth;
+reveal();
+load();
+setInterval(function(){if(D){renderUpdated();tickCountdown()}},1000);
+setInterval(function(){if(!document.hidden)load()},10*60*1000);
+document.addEventListener("visibilitychange",function(){if(!document.hidden&&D&&(Date.now()-new Date(D.meta.updated_at).getTime())>65*60*1000)load()});
+})();
+</script>
+</body>
+</html>

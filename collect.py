@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""100-replies-a-day tracker collector. Stdlib only. Idempotent.
+"""Replies-a-day tracker (30/day, +10 each week) collector. Stdlib only. Idempotent.
 
 Usage:
   collect.py next-query                      -> JSON telling an agent which X search call to make
@@ -15,12 +15,16 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 D = os.path.join(ROOT, "data")
 REPLIES, HIST, OUT = (os.path.join(D, "replies.jsonl"), os.path.join(D, "history.jsonl"),
                       os.path.join(ROOT, "data.json"))
-HANDLE, UID, GOAL = "llermaly", "45766709", 100
+HANDLE, UID = "llermaly", "45766709"
+BASE_GOAL, STEP = 30, 10                      # week 1 = 30/day, then +10 each week (40, 50, 60...)
 TZ = timezone(timedelta(hours=-5))            # America/Panama, no DST
 START = "2026-10-16"                          # challenge day 1 (Panama)
 BASE_DATE, BASE_FOLLOWERS = "2026-10-15", 145
 WINDOW_START_UTC = "2026-10-15T05:00:00Z"     # Panama midnight of baseline day
 ANNOUNCE = "https://x.com/llermaly/status/2110910573873393725"
+
+def goal_for(daynum):
+    return BASE_GOAL + STEP * ((max(daynum, 1) - 1) // 7)
 
 def now_utc(): return datetime.now(timezone.utc)
 def iso(dt): return dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -109,7 +113,7 @@ def rebuild():
         f = end if end is not None else prev
         daynum = (datetime.strptime(dd, "%Y-%m-%d") - datetime.strptime(START, "%Y-%m-%d")).days + 1
         days.append({"date": dd, "day": max(daynum, 0), "replies": per.get(dd, 0), "followers_end": f,
-                     "delta": (f - prev) if dd != BASE_DATE else 0, "hit": per.get(dd, 0) >= GOAL})
+                     "delta": (f - prev) if dd != BASE_DATE else 0, "goal": goal_for(daynum), "hit": per.get(dd, 0) >= goal_for(daynum)})
         prev = f
     chal = [d for d in days if d["date"] >= START]
     streak = 0
@@ -122,10 +126,11 @@ def rebuild():
     dnum = (datetime.strptime(today, "%Y-%m-%d") - datetime.strptime(START, "%Y-%m-%d")).days + 1
     top = sorted([r for r in replies], key=lambda r: (-r["likes"], -int(r["id"])))[:10]
     out = {
-        "meta": {"handle": HANDLE, "goal": GOAL, "start_date": START, "baseline": {"date": BASE_DATE, "followers": BASE_FOLLOWERS},
+        "meta": {"handle": HANDLE, "goal": BASE_GOAL, "goal_step": STEP, "goal_schedule": [{"week": w, "goal": BASE_GOAL + STEP * (w - 1)} for w in range(1, 9)], "start_date": START, "baseline": {"date": BASE_DATE, "followers": BASE_FOLLOWERS},
                  "tz": "America/Panama (UTC-5)", "announcement": ANNOUNCE, "updated_at": iso(n),
                  "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."},
-        "now": {"date": today, "started": started, "day_number": dnum if started else 0,
+        "now": {"date": today, "started": started, "day_number": dnum if started else 0, "week_number": ((dnum - 1) // 7 + 1) if started else 0,
+                "today_goal": goal_for(dnum) if started else BASE_GOAL,
                 "today_replies": per.get(today, 0), "streak": streak,
                 "total_replies": sum(v for k, v in per.items() if k >= START),
                 "warmup_replies": sum(v for k, v in per.items() if k < START),

@@ -1,7 +1,42 @@
 {
  "meta": {
   "handle": "llermaly",
-  "goal": 100,
+  "goal": 30,
+  "goal_step": 10,
+  "goal_schedule": [
+   {
+    "week": 1,
+    "goal": 30
+   },
+   {
+    "week": 2,
+    "goal": 40
+   },
+   {
+    "week": 3,
+    "goal": 50
+   },
+   {
+    "week": 4,
+    "goal": 60
+   },
+   {
+    "week": 5,
+    "goal": 70
+   },
+   {
+    "week": 6,
+    "goal": 80
+   },
+   {
+    "week": 7,
+    "goal": 90
+   },
+   {
+    "week": 8,
+    "goal": 100
+   }
+  ],
   "start_date": "2026-10-16",
   "baseline": {
    "date": "2026-10-15",
@@ -9,29 +44,32 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-16T01:52:16Z",
+  "updated_at": "2026-10-16T02:45:05Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
   "date": "2026-10-15",
   "started": false,
   "day_number": 0,
-  "today_replies": 6,
+  "week_number": 0,
+  "today_goal": 30,
+  "today_replies": 28,
   "streak": 0,
   "total_replies": 0,
-  "warmup_replies": 6,
-  "followers": 145,
-  "following": 220,
-  "followers_change": 0,
+  "warmup_replies": 28,
+  "followers": 146,
+  "following": 232,
+  "followers_change": 1,
   "best_day": 0
  },
  "days": [
   {
    "date": "2026-10-15",
    "day": 0,
-   "replies": 6,
-   "followers_end": 145,
+   "replies": 28,
+   "followers_end": 146,
    "delta": 0,
+   "goal": 30,
    "hit": false
   }
  ],
@@ -57,8 +95,8 @@
    0,
    2,
    2,
-   1,
-   0,
+   10,
+   13,
    0,
    0
   ]
@@ -67,9 +105,38 @@
   {
    "ts": "2026-10-16T01:52:16Z",
    "followers": 145
+  },
+  {
+   "ts": "2026-10-16T02:30:17Z",
+   "followers": 146
+  },
+  {
+   "ts": "2026-10-16T02:45:05Z",
+   "followers": 146
   }
  ],
  "top": [
+  {
+   "id": "2110920418945069549",
+   "url": "https://x.com/llermaly/status/2110920418945069549",
+   "created_at": "2026-10-16T02:27:01.000Z",
+   "text": "@manxlab The Terminator",
+   "likes": 1
+  },
+  {
+   "id": "2110915183992586361",
+   "url": "https://x.com/llermaly/status/2110915183992586361",
+   "created_at": "2026-10-16T02:06:13.000Z",
+   "text": "@theo I love T3 code. What I'm not sure if I'm doing correctly is updating. I'm just telling a thread to manually update the remote machine every time I update my local one. The agent created its own ",
+   "likes": 1
+  },
+  {
+   "id": "2110912114550583457",
+   "url": "https://x.com/llermaly/status/2110912114550583457",
+   "created_at": "2026-10-16T01:54:01.000Z",
+   "text": "@SadieSupaDoge tf ? is this real?",
+   "likes": 1
+  },
   {
    "id": "2110885766016479705",
    "url": "https://x.com/llermaly/status/2110885766016479705",
