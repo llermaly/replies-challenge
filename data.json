@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-16T23:23:24Z",
+  "updated_at": "2026-10-17T01:14:28Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,16 +42,16 @@
   "day_number": 2,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 35,
+  "today_replies": 37,
   "streak": 2,
   "best_streak": 2,
   "days_hit": 2,
-  "total_replies": 69,
+  "total_replies": 71,
   "pre_start_replies": 22,
-  "followers": 194,
-  "following": 313,
-  "followers_change": 49,
-  "best_day": 35
+  "followers": 195,
+  "following": 317,
+  "followers_change": 50,
+  "best_day": 37
  },
  "days": [
   {
@@ -84,9 +84,9 @@
   {
    "date": "2026-10-16",
    "day": 2,
-   "replies": 35,
-   "followers_end": 194,
-   "delta": 46,
+   "replies": 37,
+   "followers_end": 195,
+   "delta": 47,
    "goal": 30,
    "hit": true
   }
@@ -189,7 +189,7 @@
    1,
    2,
    0,
-   1,
+   3,
    0,
    0,
    0,
@@ -309,6 +309,10 @@
   {
    "ts": "2026-10-16T23:23:24Z",
    "followers": 194
+  },
+  {
+   "ts": "2026-10-17T01:14:28Z",
+   "followers": 195
   }
  ],
  "top": [
@@ -321,6 +325,26 @@
    "replies": 1,
    "reposts": 0,
    "views": 192
+  },
+  {
+   "id": "2111243533185130807",
+   "url": "https://x.com/llermaly/status/2111243533185130807",
+   "created_at": "2026-10-16T23:50:57.000Z",
+   "text": "@KI_Vater After installing connecting whatsapp was challenging already. Then I noticed that started consuming my limits no idea why. Also trying to install and orchestrate multiple models was hard. After getting it going one of the models started throttling my requests and then I stopped",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 14
+  },
+  {
+   "id": "2111236577242533921",
+   "url": "https://x.com/llermaly/status/2111236577242533921",
+   "created_at": "2026-10-16T23:23:19.000Z",
+   "text": "@leodev you post good stuff! I bet you will be on the top soon",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 37
   },
   {
    "id": "2111148681420218655",
@@ -391,29 +415,29 @@
    "replies": 1,
    "reposts": 0,
    "views": 12
-  },
-  {
-   "id": "2110942257444712818",
-   "url": "https://x.com/llermaly/status/2110942257444712818",
-   "created_at": "2026-10-16T03:53:48.000Z",
-   "text": "@ColdMorningGrit @ltx_io for the video avatar , @HyperFrames_  for video composition and @Blender for the 3D scene. All orchestrated with Opus5.5. Have you tried Hyperframes?",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 18
-  },
-  {
-   "id": "2110942019547812091",
-   "url": "https://x.com/llermaly/status/2110942019547812091",
-   "created_at": "2026-10-16T03:52:51.000Z",
-   "text": "@ankita0930 oh no, neither I ha",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 12
   }
  ],
  "recent": [
+  {
+   "id": "2111243533185130807",
+   "url": "https://x.com/llermaly/status/2111243533185130807",
+   "created_at": "2026-10-16T23:50:57.000Z",
+   "text": "@KI_Vater After installing connecting whatsapp was challenging already. Then I noticed that started consuming my limits no idea why. Also trying to install and orchestrate multiple models was hard. After getting it going one of the models started throttling my requests and then I stopped",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 14
+  },
+  {
+   "id": "2111236577242533921",
+   "url": "https://x.com/llermaly/status/2111236577242533921",
+   "created_at": "2026-10-16T23:23:19.000Z",
+   "text": "@leodev you post good stuff! I bet you will be on the top soon",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 37
+  },
   {
    "id": "2111235300659716271",
    "url": "https://x.com/llermaly/status/2111235300659716271",
@@ -593,26 +617,6 @@
    "replies": 1,
    "reposts": 0,
    "views": 61
-  },
-  {
-   "id": "2111082187768680717",
-   "url": "https://x.com/llermaly/status/2111082187768680717",
-   "created_at": "2026-10-16T13:09:50.000Z",
-   "text": "@therealmokam what would you say is the best part of replying a lot daily?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 4
-  },
-  {
-   "id": "2111080825361993747",
-   "url": "https://x.com/llermaly/status/2111080825361993747",
-   "created_at": "2026-10-16T13:04:25.000Z",
-   "text": "@Da7_Tech Astra was not that bad. The computer use stuff was cool",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 21
   }
  ]
 }
