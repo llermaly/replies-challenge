@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-17T08:17:52Z",
+  "updated_at": "2026-10-17T09:17:17Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -48,9 +48,9 @@
   "days_hit": 2,
   "total_replies": 84,
   "pre_start_replies": 22,
-  "followers": 199,
+  "followers": 200,
   "following": 331,
-  "followers_change": 54,
+  "followers_change": 55,
   "best_day": 40
  },
  "days": [
@@ -94,8 +94,8 @@
    "date": "2026-10-17",
    "day": 3,
    "replies": 10,
-   "followers_end": 199,
-   "delta": 4,
+   "followers_end": 200,
+   "delta": 5,
    "goal": 30,
    "hit": false
   }
@@ -238,19 +238,7 @@
    "followers": 145
   },
   {
-   "ts": "2026-10-16T01:52:16Z",
-   "followers": 145
-  },
-  {
    "ts": "2026-10-16T02:30:17Z",
-   "followers": 146
-  },
-  {
-   "ts": "2026-10-16T02:30:17Z",
-   "followers": 146
-  },
-  {
-   "ts": "2026-10-16T02:45:05Z",
    "followers": 146
   },
   {
@@ -262,19 +250,7 @@
    "followers": 146
   },
   {
-   "ts": "2026-10-16T02:59:22Z",
-   "followers": 146
-  },
-  {
    "ts": "2026-10-16T03:18:46Z",
-   "followers": 148
-  },
-  {
-   "ts": "2026-10-16T03:18:46Z",
-   "followers": 148
-  },
-  {
-   "ts": "2026-10-16T04:14:03Z",
    "followers": 148
   },
   {
@@ -286,20 +262,8 @@
    "followers": 156
   },
   {
-   "ts": "2026-10-16T06:16:59Z",
-   "followers": 156
-  },
-  {
    "ts": "2026-10-16T07:18:59Z",
    "followers": 155
-  },
-  {
-   "ts": "2026-10-16T07:18:59Z",
-   "followers": 155
-  },
-  {
-   "ts": "2026-10-16T08:20:49Z",
-   "followers": 159
   },
   {
    "ts": "2026-10-16T08:20:49Z",
@@ -310,27 +274,11 @@
    "followers": 160
   },
   {
-   "ts": "2026-10-16T09:19:42Z",
-   "followers": 160
-  },
-  {
-   "ts": "2026-10-16T10:22:06Z",
-   "followers": 162
-  },
-  {
    "ts": "2026-10-16T10:22:06Z",
    "followers": 162
   },
   {
    "ts": "2026-10-16T11:20:34Z",
-   "followers": 163
-  },
-  {
-   "ts": "2026-10-16T11:20:34Z",
-   "followers": 163
-  },
-  {
-   "ts": "2026-10-16T12:15:35Z",
    "followers": 163
   },
   {
@@ -342,20 +290,8 @@
    "followers": 164
   },
   {
-   "ts": "2026-10-16T12:27:43Z",
-   "followers": 164
-  },
-  {
    "ts": "2026-10-16T13:19:18Z",
    "followers": 167
-  },
-  {
-   "ts": "2026-10-16T13:19:18Z",
-   "followers": 167
-  },
-  {
-   "ts": "2026-10-16T14:18:36Z",
-   "followers": 171
   },
   {
    "ts": "2026-10-16T14:18:36Z",
@@ -366,20 +302,8 @@
    "followers": 172
   },
   {
-   "ts": "2026-10-16T14:25:35Z",
-   "followers": 172
-  },
-  {
    "ts": "2026-10-16T15:18:30Z",
    "followers": 175
-  },
-  {
-   "ts": "2026-10-16T15:18:30Z",
-   "followers": 175
-  },
-  {
-   "ts": "2026-10-16T15:57:38Z",
-   "followers": 178
   },
   {
    "ts": "2026-10-16T15:57:38Z",
@@ -390,14 +314,6 @@
    "followers": 179
   },
   {
-   "ts": "2026-10-16T16:23:48Z",
-   "followers": 179
-  },
-  {
-   "ts": "2026-10-16T17:20:19Z",
-   "followers": 183
-  },
-  {
    "ts": "2026-10-16T17:20:19Z",
    "followers": 183
   },
@@ -406,19 +322,7 @@
    "followers": 187
   },
   {
-   "ts": "2026-10-16T18:18:33Z",
-   "followers": 187
-  },
-  {
    "ts": "2026-10-16T19:21:14Z",
-   "followers": 191
-  },
-  {
-   "ts": "2026-10-16T19:21:14Z",
-   "followers": 191
-  },
-  {
-   "ts": "2026-10-16T19:27:25Z",
    "followers": 191
   },
   {
@@ -430,20 +334,8 @@
    "followers": 191
   },
   {
-   "ts": "2026-10-16T20:14:01Z",
-   "followers": 191
-  },
-  {
    "ts": "2026-10-16T21:18:31Z",
    "followers": 192
-  },
-  {
-   "ts": "2026-10-16T21:18:31Z",
-   "followers": 192
-  },
-  {
-   "ts": "2026-10-16T22:14:13Z",
-   "followers": 193
   },
   {
    "ts": "2026-10-16T22:14:13Z",
@@ -454,14 +346,6 @@
    "followers": 194
   },
   {
-   "ts": "2026-10-16T23:23:24Z",
-   "followers": 194
-  },
-  {
-   "ts": "2026-10-17T01:14:28Z",
-   "followers": 195
-  },
-  {
    "ts": "2026-10-17T01:14:28Z",
    "followers": 195
   },
@@ -470,19 +354,7 @@
    "followers": 195
   },
   {
-   "ts": "2026-10-17T02:17:04Z",
-   "followers": 195
-  },
-  {
    "ts": "2026-10-17T03:20:31Z",
-   "followers": 195
-  },
-  {
-   "ts": "2026-10-17T03:20:31Z",
-   "followers": 195
-  },
-  {
-   "ts": "2026-10-17T04:15:14Z",
    "followers": 195
   },
   {
@@ -508,6 +380,10 @@
   {
    "ts": "2026-10-17T08:17:52Z",
    "followers": 199
+  },
+  {
+   "ts": "2026-10-17T09:17:17Z",
+   "followers": 200
   }
  ],
  "top": [
