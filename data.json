@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-17T14:15:49Z",
+  "updated_at": "2026-10-17T15:16:32Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,15 +42,15 @@
   "day_number": 3,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 10,
+  "today_replies": 20,
   "streak": 2,
   "best_streak": 2,
   "days_hit": 2,
-  "total_replies": 84,
+  "total_replies": 94,
   "pre_start_replies": 22,
-  "followers": 210,
+  "followers": 209,
   "following": 331,
-  "followers_change": 65,
+  "followers_change": 64,
   "best_day": 40
  },
  "days": [
@@ -93,9 +93,9 @@
   {
    "date": "2026-10-17",
    "day": 3,
-   "replies": 10,
-   "followers_end": 210,
-   "delta": 15,
+   "replies": 20,
+   "followers_end": 209,
+   "delta": 14,
    "goal": 30,
    "hit": false
   }
@@ -215,8 +215,8 @@
    0,
    0,
    0,
-   0,
-   0,
+   7,
+   3,
    0,
    0,
    0,
@@ -408,6 +408,10 @@
   {
    "ts": "2026-10-17T14:15:49Z",
    "followers": 210
+  },
+  {
+   "ts": "2026-10-17T15:16:32Z",
+   "followers": 209
   }
  ],
  "top": [
@@ -440,6 +444,16 @@
    "replies": 1,
    "reposts": 0,
    "views": 149
+  },
+  {
+   "id": "2111466035010555971",
+   "url": "https://x.com/llermaly/status/2111466035010555971",
+   "created_at": "2026-10-17T14:35:06.000Z",
+   "text": "@buildwithmaya @mansfieldrv6 Yeah kinda fun to brainstorm ideas with an AI and then finding out It was already done multiple times. The trick is to intentionally “leak” the context of your conversations so everything has a bit of you",
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "views": 6
   },
   {
    "id": "2111120367875961050",
@@ -500,19 +514,109 @@
    "replies": 1,
    "reposts": 0,
    "views": 222
-  },
-  {
-   "id": "2111356423645061405",
-   "url": "https://x.com/llermaly/status/2111356423645061405",
-   "created_at": "2026-10-17T07:19:33.000Z",
-   "text": "@zachteramura Agree physical jobs will be the last ones, but with robots who knows.",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
   }
  ],
  "recent": [
+  {
+   "id": "2111476095396753912",
+   "url": "https://x.com/llermaly/status/2111476095396753912",
+   "created_at": "2026-10-17T15:15:05.000Z",
+   "text": "@Ionkosm Opus 5.5 it was. Sometimes just for curiosity I ask the same thing to another model and compare and there is no comparison",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2111474295801040927",
+   "url": "https://x.com/llermaly/status/2111474295801040927",
+   "created_at": "2026-10-17T15:07:56.000Z",
+   "text": "@RuiCarrilho5 We have a couple of years to adapt. Normal of people is not as fast. I agree the level of effort required goes up and up",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 7
+  },
+  {
+   "id": "2111472763764367528",
+   "url": "https://x.com/llermaly/status/2111472763764367528",
+   "created_at": "2026-10-17T15:01:50.000Z",
+   "text": "@ElitzaVasileva I think subagents and self reviewing can burn tokens very fast. I found one of my threads was sending the same video frames over and over for correction because the prompt was too perfection focused",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2111472079811862691",
+   "url": "https://x.com/llermaly/status/2111472079811862691",
+   "created_at": "2026-10-17T14:59:07.000Z",
+   "text": "@patrick_kuhnke_ poteto skills and hopefully starting the project as something that is intended to be used. Asking the AI to create a prototype and then ask to promote is usually not a good idea",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2111471456294990334",
+   "url": "https://x.com/llermaly/status/2111471456294990334",
+   "created_at": "2026-10-17T14:56:39.000Z",
+   "text": "@julianleiss @paper @midjourney Slop is getting fancier and harder to identify. I wonder what will be the new format that’s totally different. Cool video though",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2111470991687762387",
+   "url": "https://x.com/llermaly/status/2111470991687762387",
+   "created_at": "2026-10-17T14:54:48.000Z",
+   "text": "@0xSero Getting closer to the frontier !",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 44
+  },
+  {
+   "id": "2111468225250890229",
+   "url": "https://x.com/llermaly/status/2111468225250890229",
+   "created_at": "2026-10-17T14:43:48.000Z",
+   "text": "@buildwithmaya @_aurumX Camouflage 🦎",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2111466710989775293",
+   "url": "https://x.com/llermaly/status/2111466710989775293",
+   "created_at": "2026-10-17T14:37:47.000Z",
+   "text": "@aaayandev There is this friend of a friend rule to be able to see more profiles. Be aware of the accounts market.",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 8
+  },
+  {
+   "id": "2111466035010555971",
+   "url": "https://x.com/llermaly/status/2111466035010555971",
+   "created_at": "2026-10-17T14:35:06.000Z",
+   "text": "@buildwithmaya @mansfieldrv6 Yeah kinda fun to brainstorm ideas with an AI and then finding out It was already done multiple times. The trick is to intentionally “leak” the context of your conversations so everything has a bit of you",
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "views": 6
+  },
+  {
+   "id": "2111465069695344971",
+   "url": "https://x.com/llermaly/status/2111465069695344971",
+   "created_at": "2026-10-17T14:31:16.000Z",
+   "text": "@pretzelhds @levelsio That’s cool. I like how thin the prompt is. Using too many skills/instructions can limit creativity",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 86
+  },
   {
    "id": "2111365950473728427",
    "url": "https://x.com/llermaly/status/2111365950473728427",
@@ -612,106 +716,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 2
-  },
-  {
-   "id": "2111311581996777511",
-   "url": "https://x.com/llermaly/status/2111311581996777511",
-   "created_at": "2026-10-17T04:21:22.000Z",
-   "text": "@melvindvivas so precise https://t.co/UYkVxsHOfx",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 21
-  },
-  {
-   "id": "2111288498896712177",
-   "url": "https://x.com/llermaly/status/2111288498896712177",
-   "created_at": "2026-10-17T02:49:38.000Z",
-   "text": "@anusri_official really ? you need the impressions?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 8
-  },
-  {
-   "id": "2111265688774177235",
-   "url": "https://x.com/llermaly/status/2111265688774177235",
-   "created_at": "2026-10-17T01:19:00.000Z",
-   "text": "@Cristina_AC_X I;m just starting here. So all that peopl thats doing 100+ replies a day is using AI? I thought they were only doing quick/light replies. I try to only jump in when I have something to sya",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 18
-  },
-  {
-   "id": "2111243533185130807",
-   "url": "https://x.com/llermaly/status/2111243533185130807",
-   "created_at": "2026-10-16T23:50:57.000Z",
-   "text": "@KI_Vater After installing connecting whatsapp was challenging already. Then I noticed that started consuming my limits no idea why. Also trying to install and orchestrate multiple models was hard. After getting it going one of the models started throttling my requests and then I stopped",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 14
-  },
-  {
-   "id": "2111236577242533921",
-   "url": "https://x.com/llermaly/status/2111236577242533921",
-   "created_at": "2026-10-16T23:23:19.000Z",
-   "text": "@leodev you post good stuff! I bet you will be on the top soon",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 51
-  },
-  {
-   "id": "2111235300659716271",
-   "url": "https://x.com/llermaly/status/2111235300659716271",
-   "created_at": "2026-10-16T23:18:15.000Z",
-   "text": "@JaiOnX20 @HyperFrames_ There is no limits with todays tech",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 4
-  },
-  {
-   "id": "2111202399020826765",
-   "url": "https://x.com/llermaly/status/2111202399020826765",
-   "created_at": "2026-10-16T21:07:30.000Z",
-   "text": "@Da7_Tech Whats your take on videogen models in local machines compared to LLMs?",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 30
-  },
-  {
-   "id": "2111201969117233403",
-   "url": "https://x.com/llermaly/status/2111201969117233403",
-   "created_at": "2026-10-16T21:05:48.000Z",
-   "text": "@andymewborn @bot Let's see how far do we get!",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 5
-  },
-  {
-   "id": "2111192669787439571",
-   "url": "https://x.com/llermaly/status/2111192669787439571",
-   "created_at": "2026-10-16T20:28:51.000Z",
-   "text": "@BattMatter keep it up! I'm prepping for the Anthropic certs. would like to connect for some tips",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 10
-  },
-  {
-   "id": "2111148681420218655",
-   "url": "https://x.com/llermaly/status/2111148681420218655",
-   "created_at": "2026-10-16T17:34:03.000Z",
-   "text": "@darrxgh I think whatever transmit the information the fastest. \n\nA well made video can be very effective if you are able to transmit the feelings around the project and speed.\n\nI've been experimenting with this concept of \"boring\" enterprise videos for a while with pretty good results.",
-   "likes": 3,
-   "replies": 1,
-   "reposts": 0,
-   "views": 32
   }
  ]
 }
