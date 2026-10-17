@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-17T07:17:31Z",
+  "updated_at": "2026-10-17T08:17:52Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,15 +42,15 @@
   "day_number": 3,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 8,
+  "today_replies": 10,
   "streak": 2,
   "best_streak": 2,
   "days_hit": 2,
-  "total_replies": 82,
+  "total_replies": 84,
   "pre_start_replies": 22,
-  "followers": 196,
-  "following": 326,
-  "followers_change": 51,
+  "followers": 199,
+  "following": 331,
+  "followers_change": 54,
   "best_day": 40
  },
  "days": [
@@ -93,9 +93,9 @@
   {
    "date": "2026-10-17",
    "day": 3,
-   "replies": 8,
-   "followers_end": 196,
-   "delta": 1,
+   "replies": 10,
+   "followers_end": 199,
+   "delta": 4,
    "goal": 30,
    "hit": false
   }
@@ -208,7 +208,7 @@
   "2026-10-17": [
    0,
    4,
-   4,
+   6,
    0,
    0,
    0,
@@ -504,6 +504,10 @@
   {
    "ts": "2026-10-17T07:17:31Z",
    "followers": 196
+  },
+  {
+   "ts": "2026-10-17T08:17:52Z",
+   "followers": 199
   }
  ],
  "top": [
@@ -598,17 +602,37 @@
    "views": 222
   },
   {
-   "id": "2111353342119055732",
-   "url": "https://x.com/llermaly/status/2111353342119055732",
-   "created_at": "2026-10-17T07:07:18.000Z",
-   "text": "@thenamanraj @X is that some kind of AI bot that helps you with the process?",
+   "id": "2111356423645061405",
+   "url": "https://x.com/llermaly/status/2111356423645061405",
+   "created_at": "2026-10-17T07:19:33.000Z",
+   "text": "@zachteramura Agree physical jobs will be the last ones, but with robots who knows.",
    "likes": 1,
-   "replies": 1,
+   "replies": 0,
    "reposts": 0,
-   "views": 6
+   "views": 3
   }
  ],
  "recent": [
+  {
+   "id": "2111365950473728427",
+   "url": "https://x.com/llermaly/status/2111365950473728427",
+   "created_at": "2026-10-17T07:57:24.000Z",
+   "text": "@Shra_va_ni DeepSeek V4.1 Flash was released on September 10,  which in AI time is like 2 years ago.",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 19
+  },
+  {
+   "id": "2111356423645061405",
+   "url": "https://x.com/llermaly/status/2111356423645061405",
+   "created_at": "2026-10-17T07:19:33.000Z",
+   "text": "@zachteramura Agree physical jobs will be the last ones, but with robots who knows.",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
   {
    "id": "2111355747665690811",
    "url": "https://x.com/llermaly/status/2111355747665690811",
@@ -788,26 +812,6 @@
    "replies": 1,
    "reposts": 0,
    "views": 32
-  },
-  {
-   "id": "2111122338456752191",
-   "url": "https://x.com/llermaly/status/2111122338456752191",
-   "created_at": "2026-10-16T15:49:22.000Z",
-   "text": "@ardent__dev why not use @t3dotcodes and have both",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 6
-  },
-  {
-   "id": "2111122196680585320",
-   "url": "https://x.com/llermaly/status/2111122196680585320",
-   "created_at": "2026-10-16T15:48:49.000Z",
-   "text": "@pelloiafilippo @t3dotcodes the cool thing is you just add to your AGENTS.md something like: Use codex subagents if you need images, GLM 5.3 subagents if you need to do repetitive boring stuff, etc .. and it will automatically delegate",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 10
   }
  ]
 }
