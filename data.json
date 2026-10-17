@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-17T02:17:04Z",
+  "updated_at": "2026-10-17T03:20:31Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,16 +42,16 @@
   "day_number": 2,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 38,
+  "today_replies": 39,
   "streak": 2,
   "best_streak": 2,
   "days_hit": 2,
-  "total_replies": 72,
+  "total_replies": 73,
   "pre_start_replies": 22,
   "followers": 195,
-  "following": 318,
+  "following": 320,
   "followers_change": 50,
-  "best_day": 38
+  "best_day": 39
  },
  "days": [
   {
@@ -84,7 +84,7 @@
   {
    "date": "2026-10-16",
    "day": 2,
-   "replies": 38,
+   "replies": 39,
    "followers_end": 195,
    "delta": 47,
    "goal": 30,
@@ -192,7 +192,7 @@
    3,
    0,
    1,
-   0,
+   1,
    0,
    0
   ]
@@ -317,6 +317,10 @@
   {
    "ts": "2026-10-17T02:17:04Z",
    "followers": 195
+  },
+  {
+   "ts": "2026-10-17T03:20:31Z",
+   "followers": 195
   }
  ],
  "top": [
@@ -422,6 +426,16 @@
   }
  ],
  "recent": [
+  {
+   "id": "2111288498896712177",
+   "url": "https://x.com/llermaly/status/2111288498896712177",
+   "created_at": "2026-10-17T02:49:38.000Z",
+   "text": "@anusri_official really ? you need the impressions?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 4
+  },
   {
    "id": "2111265688774177235",
    "url": "https://x.com/llermaly/status/2111265688774177235",
@@ -611,16 +625,6 @@
    "replies": 1,
    "reposts": 0,
    "views": 9
-  },
-  {
-   "id": "2111089499359023374",
-   "url": "https://x.com/llermaly/status/2111089499359023374",
-   "created_at": "2026-10-16T13:38:53.000Z",
-   "text": "@wickedguro requirements to join? I really want to collab with you and/or @jackfriks if there aren't exclusivity clauses ofc",
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "views": 8
   }
  ]
 }
