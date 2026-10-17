@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-17T15:16:32Z",
+  "updated_at": "2026-10-17T16:21:30Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,15 +42,15 @@
   "day_number": 3,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 20,
-  "streak": 2,
-  "best_streak": 2,
-  "days_hit": 2,
-  "total_replies": 94,
+  "today_replies": 33,
+  "streak": 3,
+  "best_streak": 3,
+  "days_hit": 3,
+  "total_replies": 107,
   "pre_start_replies": 22,
-  "followers": 209,
-  "following": 331,
-  "followers_change": 64,
+  "followers": 212,
+  "following": 332,
+  "followers_change": 67,
   "best_day": 40
  },
  "days": [
@@ -93,11 +93,11 @@
   {
    "date": "2026-10-17",
    "day": 3,
-   "replies": 20,
-   "followers_end": 209,
-   "delta": 14,
+   "replies": 33,
+   "followers_end": 212,
+   "delta": 17,
    "goal": 30,
-   "hit": false
+   "hit": true
   }
  ],
  "hours": {
@@ -216,8 +216,8 @@
    0,
    0,
    7,
-   3,
-   0,
+   9,
+   7,
    0,
    0,
    0,
@@ -410,8 +410,12 @@
    "followers": 210
   },
   {
-   "ts": "2026-10-17T15:16:32Z",
-   "followers": 209
+   "ts": "2026-10-17T15:26:01Z",
+   "followers": 210
+  },
+  {
+   "ts": "2026-10-17T16:21:30Z",
+   "followers": 212
   }
  ],
  "top": [
@@ -518,6 +522,136 @@
  ],
  "recent": [
   {
+   "id": "2111491015135658307",
+   "url": "https://x.com/llermaly/status/2111491015135658307",
+   "created_at": "2026-10-17T16:14:22.000Z",
+   "text": "@Ionkosm there is some black magic behind the quality and cost it offers",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2111490812848545971",
+   "url": "https://x.com/llermaly/status/2111490812848545971",
+   "created_at": "2026-10-17T16:13:34.000Z",
+   "text": "@Cristina_AC_X yeah, you become some sort of master of distraction",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
+  {
+   "id": "2111490480085270842",
+   "url": "https://x.com/llermaly/status/2111490480085270842",
+   "created_at": "2026-10-17T16:12:14.000Z",
+   "text": "@ritesh_khokhani @AlexHormozi wisely say : note all your ideas down, and re-visit later, most of them will not feel as good as the first time",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2111490328377311640",
+   "url": "https://x.com/llermaly/status/2111490328377311640",
+   "created_at": "2026-10-17T16:11:38.000Z",
+   "text": "@patrick_kuhnke_ well, and having some one more experienced create the project based even better. Then the agents can stick to good patterns.",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2111490103420027337",
+   "url": "https://x.com/llermaly/status/2111490103420027337",
+   "created_at": "2026-10-17T16:10:44.000Z",
+   "text": "@danieldwalton @HyperFrames_ Opus5.5 is hard to beat. I'm figuring out if going with medium or High. Xhigh did not worth the $ and time on my tests but who knows",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 4
+  },
+  {
+   "id": "2111489838117511328",
+   "url": "https://x.com/llermaly/status/2111489838117511328",
+   "created_at": "2026-10-17T16:09:41.000Z",
+   "text": "@danieldwalton @t3dotcodes @maria_rcks @theo Yes. I had to create it because my limit was melting and I had no idea where",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 4
+  },
+  {
+   "id": "2111488001893421178",
+   "url": "https://x.com/llermaly/status/2111488001893421178",
+   "created_at": "2026-10-17T16:02:23.000Z",
+   "text": "@robertoblake I think about that all the time. We can potentially have an infinity supply issue (slopoly?). Algorithms will become key. I work in search and is tough to have multiple result pages with equally top performers.",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
+  {
+   "id": "2111486638706888785",
+   "url": "https://x.com/llermaly/status/2111486638706888785",
+   "created_at": "2026-10-17T15:56:58.000Z",
+   "text": "@kamilbaranek_ yeah, mostly about ai capabilities with threejs/blender",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 7
+  },
+  {
+   "id": "2111485711765361078",
+   "url": "https://x.com/llermaly/status/2111485711765361078",
+   "created_at": "2026-10-17T15:53:17.000Z",
+   "text": "@robertoblake Next year there will be no difference and most likely slop will be higher quality than real productions. We need to come up with some new format or life will be tough. If time is no longer the limitation the few best will produce infinite \"slop\"",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 13
+  },
+  {
+   "id": "2111484435254440238",
+   "url": "https://x.com/llermaly/status/2111484435254440238",
+   "created_at": "2026-10-17T15:48:13.000Z",
+   "text": "@Da7_Tech question is what Opus level will be at that time. I'm betting 10M+ context and Cerebras like speed.",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 25
+  },
+  {
+   "id": "2111478051653423123",
+   "url": "https://x.com/llermaly/status/2111478051653423123",
+   "created_at": "2026-10-17T15:22:51.000Z",
+   "text": "@ritesh_khokhani Bunch of them. I feel like I want to build it all",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 4
+  },
+  {
+   "id": "2111476899109364058",
+   "url": "https://x.com/llermaly/status/2111476899109364058",
+   "created_at": "2026-10-17T15:18:16.000Z",
+   "text": "@VicNexAI Excalidraw",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2111476709732262163",
+   "url": "https://x.com/llermaly/status/2111476709732262163",
+   "created_at": "2026-10-17T15:17:31.000Z",
+   "text": "@pmitu I need that shit !",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
    "id": "2111476095396753912",
    "url": "https://x.com/llermaly/status/2111476095396753912",
    "created_at": "2026-10-17T15:15:05.000Z",
@@ -586,136 +720,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 1
-  },
-  {
-   "id": "2111466710989775293",
-   "url": "https://x.com/llermaly/status/2111466710989775293",
-   "created_at": "2026-10-17T14:37:47.000Z",
-   "text": "@aaayandev There is this friend of a friend rule to be able to see more profiles. Be aware of the accounts market.",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 8
-  },
-  {
-   "id": "2111466035010555971",
-   "url": "https://x.com/llermaly/status/2111466035010555971",
-   "created_at": "2026-10-17T14:35:06.000Z",
-   "text": "@buildwithmaya @mansfieldrv6 Yeah kinda fun to brainstorm ideas with an AI and then finding out It was already done multiple times. The trick is to intentionally “leak” the context of your conversations so everything has a bit of you",
-   "likes": 2,
-   "replies": 1,
-   "reposts": 0,
-   "views": 6
-  },
-  {
-   "id": "2111465069695344971",
-   "url": "https://x.com/llermaly/status/2111465069695344971",
-   "created_at": "2026-10-17T14:31:16.000Z",
-   "text": "@pretzelhds @levelsio That’s cool. I like how thin the prompt is. Using too many skills/instructions can limit creativity",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 86
-  },
-  {
-   "id": "2111365950473728427",
-   "url": "https://x.com/llermaly/status/2111365950473728427",
-   "created_at": "2026-10-17T07:57:24.000Z",
-   "text": "@Shra_va_ni DeepSeek V4.1 Flash was released on September 10,  which in AI time is like 2 years ago.",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 19
-  },
-  {
-   "id": "2111356423645061405",
-   "url": "https://x.com/llermaly/status/2111356423645061405",
-   "created_at": "2026-10-17T07:19:33.000Z",
-   "text": "@zachteramura Agree physical jobs will be the last ones, but with robots who knows.",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
-  },
-  {
-   "id": "2111355747665690811",
-   "url": "https://x.com/llermaly/status/2111355747665690811",
-   "created_at": "2026-10-17T07:16:51.000Z",
-   "text": "@thenamanraj @X Impressive. I'm trying go keep up with 30/day. I guess when you start having longer conversations the number feels lighter.",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
-  },
-  {
-   "id": "2111354544881856801",
-   "url": "https://x.com/llermaly/status/2111354544881856801",
-   "created_at": "2026-10-17T07:12:05.000Z",
-   "text": "@buildwithdk Hi DK I'm looking for original projects/apps. You can check my profile for videos",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
-  },
-  {
-   "id": "2111353342119055732",
-   "url": "https://x.com/llermaly/status/2111353342119055732",
-   "created_at": "2026-10-17T07:07:18.000Z",
-   "text": "@thenamanraj @X is that some kind of AI bot that helps you with the process?",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 6
-  },
-  {
-   "id": "2111352667608064491",
-   "url": "https://x.com/llermaly/status/2111352667608064491",
-   "created_at": "2026-10-17T07:04:37.000Z",
-   "text": "@AlyssaSolen Hello! I just joined your community as well. I'm deep into SI existencialism.",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 8
-  },
-  {
-   "id": "2111351443747709000",
-   "url": "https://x.com/llermaly/status/2111351443747709000",
-   "created_at": "2026-10-17T06:59:45.000Z",
-   "text": "@KrishnaBuildsAI Kimi is weaker than Claude. And the big issue is let's say  on a task Claude makes 0% mistakes and Kimi 10% you don't know when it will happen and mistakes compound.",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 12
-  },
-  {
-   "id": "2111351037575467439",
-   "url": "https://x.com/llermaly/status/2111351037575467439",
-   "created_at": "2026-10-17T06:58:09.000Z",
-   "text": "@anusri_official keep posting nature and I will be there. I'm needing a retire",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 4
-  },
-  {
-   "id": "2111348244995613112",
-   "url": "https://x.com/llermaly/status/2111348244995613112",
-   "created_at": "2026-10-17T06:47:03.000Z",
-   "text": "@poteto final form feels more like a multidimensional grid",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 1
-  },
-  {
-   "id": "2111341092645835247",
-   "url": "https://x.com/llermaly/status/2111341092645835247",
-   "created_at": "2026-10-17T06:18:37.000Z",
-   "text": "@ArjungondCodes @StackOverflow Thanks Arjun! I'm doing my best to provide value to the community on every message I drop.  Wish you the best",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
   }
  ]
 }
