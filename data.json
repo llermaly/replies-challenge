@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-17T01:14:28Z",
+  "updated_at": "2026-10-17T02:17:04Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,16 +42,16 @@
   "day_number": 2,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 37,
+  "today_replies": 38,
   "streak": 2,
   "best_streak": 2,
   "days_hit": 2,
-  "total_replies": 71,
+  "total_replies": 72,
   "pre_start_replies": 22,
   "followers": 195,
-  "following": 317,
+  "following": 318,
   "followers_change": 50,
-  "best_day": 37
+  "best_day": 38
  },
  "days": [
   {
@@ -84,7 +84,7 @@
   {
    "date": "2026-10-16",
    "day": 2,
-   "replies": 37,
+   "replies": 38,
    "followers_end": 195,
    "delta": 47,
    "goal": 30,
@@ -191,7 +191,7 @@
    0,
    3,
    0,
-   0,
+   1,
    0,
    0,
    0
@@ -313,6 +313,10 @@
   {
    "ts": "2026-10-17T01:14:28Z",
    "followers": 195
+  },
+  {
+   "ts": "2026-10-17T02:17:04Z",
+   "followers": 195
   }
  ],
  "top": [
@@ -418,6 +422,16 @@
   }
  ],
  "recent": [
+  {
+   "id": "2111265688774177235",
+   "url": "https://x.com/llermaly/status/2111265688774177235",
+   "created_at": "2026-10-17T01:19:00.000Z",
+   "text": "@Cristina_AC_X I;m just starting here. So all that peopl thats doing 100+ replies a day is using AI? I thought they were only doing quick/light replies. I try to only jump in when I have something to sya",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 10
+  },
   {
    "id": "2111243533185130807",
    "url": "https://x.com/llermaly/status/2111243533185130807",
@@ -607,16 +621,6 @@
    "replies": 1,
    "reposts": 0,
    "views": 8
-  },
-  {
-   "id": "2111087481374544340",
-   "url": "https://x.com/llermaly/status/2111087481374544340",
-   "created_at": "2026-10-16T13:30:52.000Z",
-   "text": "@wickedguro that's cool, That program is different than the affiliates one right? https://t.co/EPkk8CFbaG",
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "views": 61
   }
  ]
 }
