@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-17T05:18:51Z",
+  "updated_at": "2026-10-17T06:20:49Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,11 +42,11 @@
   "day_number": 3,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 0,
+  "today_replies": 1,
   "streak": 2,
   "best_streak": 2,
   "days_hit": 2,
-  "total_replies": 74,
+  "total_replies": 75,
   "pre_start_replies": 22,
   "followers": 195,
   "following": 324,
@@ -93,7 +93,7 @@
   {
    "date": "2026-10-17",
    "day": 3,
-   "replies": 0,
+   "replies": 1,
    "followers_end": 195,
    "delta": 0,
    "goal": 30,
@@ -204,6 +204,32 @@
    1,
    0,
    1
+  ],
+  "2026-10-17": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
   ]
  },
  "snapshots": [
@@ -336,7 +362,11 @@
    "followers": 195
   },
   {
-   "ts": "2026-10-17T05:18:51Z",
+   "ts": "2026-10-17T05:21:26Z",
+   "followers": 195
+  },
+  {
+   "ts": "2026-10-17T06:20:49Z",
    "followers": 195
   }
  ],
@@ -443,6 +473,16 @@
   }
  ],
  "recent": [
+  {
+   "id": "2111341092645835247",
+   "url": "https://x.com/llermaly/status/2111341092645835247",
+   "created_at": "2026-10-17T06:18:37.000Z",
+   "text": "@ArjungondCodes @StackOverflow Thanks Arjun! I'm doing my best to provide value to the community on every message I drop.  Wish you the best",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
   {
    "id": "2111311581996777511",
    "url": "https://x.com/llermaly/status/2111311581996777511",
@@ -632,16 +672,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 24
-  },
-  {
-   "id": "2111093398283149508",
-   "url": "https://x.com/llermaly/status/2111093398283149508",
-   "created_at": "2026-10-16T13:54:23.000Z",
-   "text": "@samongaro_ Decide what and when to defeat everyone else letting the AI decide (all of them will be coming up with the same ideas)",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 16
   }
  ]
 }
