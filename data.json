@@ -31,27 +31,27 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-17T04:15:14Z",
+  "updated_at": "2026-10-17T05:18:51Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "started": true,
   "finished": false,
-  "days_left": 27,
-  "day_number": 2,
+  "days_left": 26,
+  "day_number": 3,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 39,
+  "today_replies": 0,
   "streak": 2,
   "best_streak": 2,
   "days_hit": 2,
-  "total_replies": 73,
+  "total_replies": 74,
   "pre_start_replies": 22,
   "followers": 195,
-  "following": 320,
+  "following": 324,
   "followers_change": 50,
-  "best_day": 39
+  "best_day": 40
  },
  "days": [
   {
@@ -84,11 +84,20 @@
   {
    "date": "2026-10-16",
    "day": 2,
-   "replies": 39,
+   "replies": 40,
    "followers_end": 195,
    "delta": 47,
    "goal": 30,
    "hit": true
+  },
+  {
+   "date": "2026-10-17",
+   "day": 3,
+   "replies": 0,
+   "followers_end": 195,
+   "delta": 0,
+   "goal": 30,
+   "hit": false
   }
  ],
  "hours": {
@@ -194,7 +203,7 @@
    1,
    1,
    0,
-   0
+   1
   ]
  },
  "snapshots": [
@@ -325,9 +334,83 @@
   {
    "ts": "2026-10-17T04:15:14Z",
    "followers": 195
+  },
+  {
+   "ts": "2026-10-17T05:18:51Z",
+   "followers": 195
   }
  ],
  "top": [
+  {
+   "id": "2111148681420218655",
+   "url": "https://x.com/llermaly/status/2111148681420218655",
+   "created_at": "2026-10-16T17:34:03.000Z",
+   "text": "@darrxgh I think whatever transmit the information the fastest. \n\nA well made video can be very effective if you are able to transmit the feelings around the project and speed.\n\nI've been experimenting with this concept of \"boring\" enterprise videos for a while with pretty good results.",
+   "likes": 3,
+   "replies": 1,
+   "reposts": 0,
+   "views": 32
+  },
+  {
+   "id": "2110931833697309156",
+   "url": "https://x.com/llermaly/status/2110931833697309156",
+   "created_at": "2026-10-16T03:12:23.000Z",
+   "text": "@taylorotwell it is insane the time I spent just asking how things work to the LLM over and over",
+   "likes": 3,
+   "replies": 0,
+   "reposts": 0,
+   "views": 343
+  },
+  {
+   "id": "2110916646084776393",
+   "url": "https://x.com/llermaly/status/2110916646084776393",
+   "created_at": "2026-10-16T02:12:02.000Z",
+   "text": "@Gaus450 Absolutely. People thinks that everyone can deliver the same stuff using AI but that's false. It requires skills",
+   "likes": 3,
+   "replies": 1,
+   "reposts": 0,
+   "views": 149
+  },
+  {
+   "id": "2111120367875961050",
+   "url": "https://x.com/llermaly/status/2111120367875961050",
+   "created_at": "2026-10-16T15:41:33.000Z",
+   "text": "@tonysimons starting liking grok bot a lot. It feels snappy and simpler than hermes",
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "views": 54
+  },
+  {
+   "id": "2111108448892968997",
+   "url": "https://x.com/llermaly/status/2111108448892968997",
+   "created_at": "2026-10-16T14:54:11.000Z",
+   "text": "@KI_Vater I'm super into cloning ourselves with AI",
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "views": 18
+  },
+  {
+   "id": "2110966986301682159",
+   "url": "https://x.com/llermaly/status/2110966986301682159",
+   "created_at": "2026-10-16T05:32:04.000Z",
+   "text": "@ankita0930 hello! whats your tech stack/favorite type of system to build?",
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "views": 34
+  },
+  {
+   "id": "2110934808725422443",
+   "url": "https://x.com/llermaly/status/2110934808725422443",
+   "created_at": "2026-10-16T03:24:12.000Z",
+   "text": "@Raedchen_ said minute? not second? cool",
+   "likes": 2,
+   "replies": 0,
+   "reposts": 0,
+   "views": 82
+  },
   {
    "id": "2110885766016479705",
    "url": "https://x.com/llermaly/status/2110885766016479705",
@@ -336,7 +419,17 @@
    "likes": 2,
    "replies": 1,
    "reposts": 0,
-   "views": 192
+   "views": 257
+  },
+  {
+   "id": "2110882792192221599",
+   "url": "https://x.com/llermaly/status/2110882792192221599",
+   "created_at": "2026-10-15T23:57:30.000Z",
+   "text": "@Henryf1w Finding people on my same situation, yes",
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "views": 222
   },
   {
    "id": "2111243533185130807",
@@ -347,89 +440,19 @@
    "replies": 1,
    "reposts": 0,
    "views": 14
-  },
-  {
-   "id": "2111236577242533921",
-   "url": "https://x.com/llermaly/status/2111236577242533921",
-   "created_at": "2026-10-16T23:23:19.000Z",
-   "text": "@leodev you post good stuff! I bet you will be on the top soon",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 37
-  },
-  {
-   "id": "2111148681420218655",
-   "url": "https://x.com/llermaly/status/2111148681420218655",
-   "created_at": "2026-10-16T17:34:03.000Z",
-   "text": "@darrxgh I think whatever transmit the information the fastest. \n\nA well made video can be very effective if you are able to transmit the feelings around the project and speed.\n\nI've been experimenting with this concept of \"boring\" enterprise videos for a while with pretty good results.",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 19
-  },
-  {
-   "id": "2111120367875961050",
-   "url": "https://x.com/llermaly/status/2111120367875961050",
-   "created_at": "2026-10-16T15:41:33.000Z",
-   "text": "@tonysimons starting liking grok bot a lot. It feels snappy and simpler than hermes",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 22
-  },
-  {
-   "id": "2111115285604577740",
-   "url": "https://x.com/llermaly/status/2111115285604577740",
-   "created_at": "2026-10-16T15:21:21.000Z",
-   "text": "@KI_Vater I'm experimenting with local models: LTX 2.5 for video + Qwen TTS for voice and running a youtube channel based on that. Not the fastest but I'm pretty happy with the results. Do you think Hermes is better than grokbot?",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 12
-  },
-  {
-   "id": "2111114810775785890",
-   "url": "https://x.com/llermaly/status/2111114810775785890",
-   "created_at": "2026-10-16T15:19:28.000Z",
-   "text": "@joshua_xu_ I agree. It is moving super fast. Last year was impossible to imagine generating anything useful locally with a consumer PC. Today I'm generating 5s of video in 2minutes which is not bad at all. I go with Heygen video when I feel impatient ha.",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 33
-  },
-  {
-   "id": "2111108448892968997",
-   "url": "https://x.com/llermaly/status/2111108448892968997",
-   "created_at": "2026-10-16T14:54:11.000Z",
-   "text": "@KI_Vater I'm super into cloning ourselves with AI",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 7
-  },
-  {
-   "id": "2111069857487769602",
-   "url": "https://x.com/llermaly/status/2111069857487769602",
-   "created_at": "2026-10-16T12:20:50.000Z",
-   "text": "@Denche2005 reminds me before people googled something, read the first one or two results and then copy-pasted/send the link , now is not even that",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 10
-  },
-  {
-   "id": "2110966986301682159",
-   "url": "https://x.com/llermaly/status/2110966986301682159",
-   "created_at": "2026-10-16T05:32:04.000Z",
-   "text": "@ankita0930 hello! whats your tech stack/favorite type of system to build?",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 12
   }
  ],
  "recent": [
+  {
+   "id": "2111311581996777511",
+   "url": "https://x.com/llermaly/status/2111311581996777511",
+   "created_at": "2026-10-17T04:21:22.000Z",
+   "text": "@melvindvivas so precise https://t.co/UYkVxsHOfx",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 21
+  },
   {
    "id": "2111288498896712177",
    "url": "https://x.com/llermaly/status/2111288498896712177",
@@ -438,7 +461,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 4
+   "views": 8
   },
   {
    "id": "2111265688774177235",
@@ -448,7 +471,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 10
+   "views": 18
   },
   {
    "id": "2111243533185130807",
@@ -468,7 +491,7 @@
    "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 37
+   "views": 51
   },
   {
    "id": "2111235300659716271",
@@ -478,17 +501,17 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 2
+   "views": 4
   },
   {
    "id": "2111202399020826765",
    "url": "https://x.com/llermaly/status/2111202399020826765",
    "created_at": "2026-10-16T21:07:30.000Z",
    "text": "@Da7_Tech Whats your take on videogen models in local machines compared to LLMs?",
-   "likes": 0,
+   "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 4
+   "views": 30
   },
   {
    "id": "2111201969117233403",
@@ -498,27 +521,27 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 2
+   "views": 5
   },
   {
    "id": "2111192669787439571",
    "url": "https://x.com/llermaly/status/2111192669787439571",
    "created_at": "2026-10-16T20:28:51.000Z",
    "text": "@BattMatter keep it up! I'm prepping for the Anthropic certs. would like to connect for some tips",
-   "likes": 0,
-   "replies": 0,
+   "likes": 1,
+   "replies": 1,
    "reposts": 0,
-   "views": 6
+   "views": 10
   },
   {
    "id": "2111148681420218655",
    "url": "https://x.com/llermaly/status/2111148681420218655",
    "created_at": "2026-10-16T17:34:03.000Z",
    "text": "@darrxgh I think whatever transmit the information the fastest. \n\nA well made video can be very effective if you are able to transmit the feelings around the project and speed.\n\nI've been experimenting with this concept of \"boring\" enterprise videos for a while with pretty good results.",
-   "likes": 1,
+   "likes": 3,
    "replies": 1,
    "reposts": 0,
-   "views": 19
+   "views": 32
   },
   {
    "id": "2111122338456752191",
@@ -528,47 +551,47 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 3
+   "views": 6
   },
   {
    "id": "2111122196680585320",
    "url": "https://x.com/llermaly/status/2111122196680585320",
    "created_at": "2026-10-16T15:48:49.000Z",
    "text": "@pelloiafilippo @t3dotcodes the cool thing is you just add to your AGENTS.md something like: Use codex subagents if you need images, GLM 5.3 subagents if you need to do repetitive boring stuff, etc .. and it will automatically delegate",
-   "likes": 0,
+   "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 7
+   "views": 10
   },
   {
    "id": "2111120677457817719",
    "url": "https://x.com/llermaly/status/2111120677457817719",
    "created_at": "2026-10-16T15:42:46.000Z",
    "text": "@KI_Vater I mean the Grok Bot you download on your PC. Hermes felt too confusing so I just then moved to Codex with self thread creation, now I'm using @t3dotcodes + grok bot but I don't really have a lot of automated pipelines",
-   "likes": 0,
-   "replies": 0,
+   "likes": 1,
+   "replies": 1,
    "reposts": 0,
-   "views": 12
+   "views": 19
   },
   {
    "id": "2111120367875961050",
    "url": "https://x.com/llermaly/status/2111120367875961050",
    "created_at": "2026-10-16T15:41:33.000Z",
    "text": "@tonysimons starting liking grok bot a lot. It feels snappy and simpler than hermes",
-   "likes": 1,
+   "likes": 2,
    "replies": 1,
    "reposts": 0,
-   "views": 22
+   "views": 54
   },
   {
    "id": "2111115607093788977",
    "url": "https://x.com/llermaly/status/2111115607093788977",
    "created_at": "2026-10-16T15:22:38.000Z",
    "text": "@darrxgh invoicing for sure. What I'm preparing to do is to help me more actively finding opportunities (e.g prospecting). Have you tried something like that?",
-   "likes": 0,
-   "replies": 0,
+   "likes": 1,
+   "replies": 1,
    "reposts": 0,
-   "views": 12
+   "views": 24
   },
   {
    "id": "2111115285604577740",
@@ -578,7 +601,7 @@
    "likes": 1,
    "replies": 1,
    "reposts": 0,
-   "views": 12
+   "views": 35
   },
   {
    "id": "2111114810775785890",
@@ -588,17 +611,17 @@
    "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 33
+   "views": 101
   },
   {
    "id": "2111108448892968997",
    "url": "https://x.com/llermaly/status/2111108448892968997",
    "created_at": "2026-10-16T14:54:11.000Z",
    "text": "@KI_Vater I'm super into cloning ourselves with AI",
-   "likes": 1,
-   "replies": 0,
+   "likes": 2,
+   "replies": 1,
    "reposts": 0,
-   "views": 7
+   "views": 18
   },
   {
    "id": "2111093509646176686",
@@ -608,27 +631,17 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 6
+   "views": 24
   },
   {
    "id": "2111093398283149508",
    "url": "https://x.com/llermaly/status/2111093398283149508",
    "created_at": "2026-10-16T13:54:23.000Z",
    "text": "@samongaro_ Decide what and when to defeat everyone else letting the AI decide (all of them will be coming up with the same ideas)",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 4
-  },
-  {
-   "id": "2111090447896420729",
-   "url": "https://x.com/llermaly/status/2111090447896420729",
-   "created_at": "2026-10-16T13:42:39.000Z",
-   "text": "@wickedguro @jackfriks I have big ideas and experiences! what's big audience? like 100k+ followers?",
-   "likes": 0,
+   "likes": 1,
    "replies": 1,
    "reposts": 0,
-   "views": 9
+   "views": 16
   }
  ]
 }
