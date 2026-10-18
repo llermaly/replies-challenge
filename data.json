@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-18T08:16:29Z",
+  "updated_at": "2026-10-18T09:21:55Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,15 +42,15 @@
   "day_number": 4,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 25,
+  "today_replies": 26,
   "streak": 3,
   "best_streak": 3,
   "days_hit": 3,
-  "total_replies": 152,
+  "total_replies": 153,
   "pre_start_replies": 22,
-  "followers": 234,
-  "following": 383,
-  "followers_change": 89,
+  "followers": 237,
+  "following": 385,
+  "followers_change": 92,
   "best_day": 53
  },
  "days": [
@@ -102,9 +102,9 @@
   {
    "date": "2026-10-18",
    "day": 4,
-   "replies": 25,
-   "followers_end": 234,
-   "delta": 12,
+   "replies": 26,
+   "followers_end": 237,
+   "delta": 15,
    "goal": 30,
    "hit": false
   }
@@ -244,7 +244,7 @@
    11,
    7,
    7,
-   0,
+   1,
    0,
    0,
    0,
@@ -521,12 +521,20 @@
    "followers": 227
   },
   {
+   "ts": "2026-10-18T07:23:17Z",
+   "followers": 231
+  },
+  {
    "ts": "2026-10-18T07:25:18Z",
    "followers": 231
   },
   {
    "ts": "2026-10-18T08:16:29Z",
    "followers": 234
+  },
+  {
+   "ts": "2026-10-18T09:21:55Z",
+   "followers": 237
   }
  ],
  "top": [
@@ -632,6 +640,16 @@
   }
  ],
  "recent": [
+  {
+   "id": "2111735533021901272",
+   "url": "https://x.com/llermaly/status/2111735533021901272",
+   "created_at": "2026-10-18T08:25:59.000Z",
+   "text": "@Sherifdeenolat2 yes it should, I was thinking on cases where the model can not fill the gaps like specific business logic. In that cases changing the prompt would be better than changing the model",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 8
+  },
   {
    "id": "2111716457104966022",
    "url": "https://x.com/llermaly/status/2111716457104966022",
@@ -821,16 +839,6 @@
    "replies": 1,
    "reposts": 0,
    "views": 7
-  },
-  {
-   "id": "2111692943971029012",
-   "url": "https://x.com/llermaly/status/2111692943971029012",
-   "created_at": "2026-10-18T05:36:45.000Z",
-   "text": "@darrxgh Do you use voice mode? or just STT ?",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 4
   }
  ]
 }
