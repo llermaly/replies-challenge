@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-18T03:15:55Z",
+  "updated_at": "2026-10-18T04:16:29Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,16 +42,16 @@
   "day_number": 3,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 45,
+  "today_replies": 52,
   "streak": 3,
   "best_streak": 3,
   "days_hit": 3,
-  "total_replies": 119,
+  "total_replies": 126,
   "pre_start_replies": 22,
   "followers": 222,
-  "following": 351,
+  "following": 366,
   "followers_change": 77,
-  "best_day": 45
+  "best_day": 52
  },
  "days": [
   {
@@ -93,7 +93,7 @@
   {
    "date": "2026-10-17",
    "day": 3,
-   "replies": 45,
+   "replies": 52,
    "followers_end": 222,
    "delta": 27,
    "goal": 30,
@@ -228,8 +228,8 @@
    1,
    1,
    0,
-   0,
-   0
+   5,
+   2
   ]
  },
  "snapshots": [
@@ -468,6 +468,14 @@
   {
    "ts": "2026-10-18T03:15:55Z",
    "followers": 222
+  },
+  {
+   "ts": "2026-10-18T03:52:45Z",
+   "followers": 222
+  },
+  {
+   "ts": "2026-10-18T04:16:29Z",
+   "followers": 222
   }
  ],
  "top": [
@@ -573,6 +581,76 @@
   }
  ],
  "recent": [
+  {
+   "id": "2111672490808209902",
+   "url": "https://x.com/llermaly/status/2111672490808209902",
+   "created_at": "2026-10-18T04:15:29.000Z",
+   "text": "@buildwithmaya @bot will @buildwithmaya make it?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2111671565389824298",
+   "url": "https://x.com/llermaly/status/2111671565389824298",
+   "created_at": "2026-10-18T04:11:48.000Z",
+   "text": "@buildwithmaya see you tomorrow at 4K ! you are a contribution for the community",
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "views": 6
+  },
+  {
+   "id": "2111668460816322695",
+   "url": "https://x.com/llermaly/status/2111668460816322695",
+   "created_at": "2026-10-18T03:59:28.000Z",
+   "text": "@RaviR_S one more! what kind of stuff do you automate?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2111666905807306875",
+   "url": "https://x.com/llermaly/status/2111666905807306875",
+   "created_at": "2026-10-18T03:53:17.000Z",
+   "text": "@HeyNikhila hyperframes skill for video gen",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2111665464497828083",
+   "url": "https://x.com/llermaly/status/2111665464497828083",
+   "created_at": "2026-10-18T03:47:34.000Z",
+   "text": "@neerajjj6785 I would put high and medium on S tier too. Medium is such a nice default. Fast, cheap, smart.",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 65
+  },
+  {
+   "id": "2111664845070217666",
+   "url": "https://x.com/llermaly/status/2111664845070217666",
+   "created_at": "2026-10-18T03:45:06.000Z",
+   "text": "@b4dgerr what app is that?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 5
+  },
+  {
+   "id": "2111664562256974041",
+   "url": "https://x.com/llermaly/status/2111664562256974041",
+   "created_at": "2026-10-18T03:43:59.000Z",
+   "text": "@leodev you will for sure",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 5
+  },
   {
    "id": "2111625127280718209",
    "url": "https://x.com/llermaly/status/2111625127280718209",
@@ -702,76 +780,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 2
-  },
-  {
-   "id": "2111490812848545971",
-   "url": "https://x.com/llermaly/status/2111490812848545971",
-   "created_at": "2026-10-17T16:13:34.000Z",
-   "text": "@Cristina_AC_X yeah, you become some sort of master of distraction",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
-  },
-  {
-   "id": "2111490480085270842",
-   "url": "https://x.com/llermaly/status/2111490480085270842",
-   "created_at": "2026-10-17T16:12:14.000Z",
-   "text": "@ritesh_khokhani @AlexHormozi wisely say : note all your ideas down, and re-visit later, most of them will not feel as good as the first time",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
-  },
-  {
-   "id": "2111490328377311640",
-   "url": "https://x.com/llermaly/status/2111490328377311640",
-   "created_at": "2026-10-17T16:11:38.000Z",
-   "text": "@patrick_kuhnke_ well, and having some one more experienced create the project based even better. Then the agents can stick to good patterns.",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
-  },
-  {
-   "id": "2111490103420027337",
-   "url": "https://x.com/llermaly/status/2111490103420027337",
-   "created_at": "2026-10-17T16:10:44.000Z",
-   "text": "@danieldwalton @HyperFrames_ Opus5.5 is hard to beat. I'm figuring out if going with medium or High. Xhigh did not worth the $ and time on my tests but who knows",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 4
-  },
-  {
-   "id": "2111489838117511328",
-   "url": "https://x.com/llermaly/status/2111489838117511328",
-   "created_at": "2026-10-17T16:09:41.000Z",
-   "text": "@danieldwalton @t3dotcodes @maria_rcks @theo Yes. I had to create it because my limit was melting and I had no idea where",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 4
-  },
-  {
-   "id": "2111488001893421178",
-   "url": "https://x.com/llermaly/status/2111488001893421178",
-   "created_at": "2026-10-17T16:02:23.000Z",
-   "text": "@robertoblake I think about that all the time. We can potentially have an infinity supply issue (slopoly?). Algorithms will become key. I work in search and is tough to have multiple result pages with equally top performers.",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
-  },
-  {
-   "id": "2111486638706888785",
-   "url": "https://x.com/llermaly/status/2111486638706888785",
-   "created_at": "2026-10-17T15:56:58.000Z",
-   "text": "@kamilbaranek_ yeah, mostly about ai capabilities with threejs/blender",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 7
   }
  ]
 }
