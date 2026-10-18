@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-18T16:14:49Z",
+  "updated_at": "2026-10-18T17:23:24Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,15 +42,15 @@
   "day_number": 4,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 27,
-  "streak": 3,
-  "best_streak": 3,
-  "days_hit": 3,
-  "total_replies": 154,
+  "today_replies": 31,
+  "streak": 4,
+  "best_streak": 4,
+  "days_hit": 4,
+  "total_replies": 158,
   "pre_start_replies": 22,
-  "followers": 243,
-  "following": 386,
-  "followers_change": 98,
+  "followers": 244,
+  "following": 388,
+  "followers_change": 99,
   "best_day": 53
  },
  "days": [
@@ -102,11 +102,11 @@
   {
    "date": "2026-10-18",
    "day": 4,
-   "replies": 27,
-   "followers_end": 243,
-   "delta": 21,
+   "replies": 31,
+   "followers_end": 244,
+   "delta": 22,
    "goal": 30,
-   "hit": false
+   "hit": true
   }
  ],
  "hours": {
@@ -252,8 +252,8 @@
    0,
    0,
    0,
-   1,
-   0,
+   3,
+   2,
    0,
    0,
    0,
@@ -563,6 +563,10 @@
   {
    "ts": "2026-10-18T16:14:49Z",
    "followers": 243
+  },
+  {
+   "ts": "2026-10-18T17:23:24Z",
+   "followers": 244
   }
  ],
  "top": [
@@ -668,6 +672,46 @@
   }
  ],
  "recent": [
+  {
+   "id": "2111869506876563619",
+   "url": "https://x.com/llermaly/status/2111869506876563619",
+   "created_at": "2026-10-18T17:18:21.000Z",
+   "text": "@srinivasre31765 Opus 5.5 medium is your best friend",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2111866723175383275",
+   "url": "https://x.com/llermaly/status/2111866723175383275",
+   "created_at": "2026-10-18T17:07:18.000Z",
+   "text": "@YashasGunderia @milindlabs lead the repo with screenshots/clips of the most visual attractive features.",
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "views": 6
+  },
+  {
+   "id": "2111858184063225927",
+   "url": "https://x.com/llermaly/status/2111858184063225927",
+   "created_at": "2026-10-18T16:33:22.000Z",
+   "text": "@BoboLinNotes Not a lot of people talk about tokenizers, synonyms, ngrams, phonetic, etc..  when talking about search/bm25 those can get you a long way",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2111857714406015209",
+   "url": "https://x.com/llermaly/status/2111857714406015209",
+   "created_at": "2026-10-18T16:31:30.000Z",
+   "text": "@0xMfox business now is selling outcome, right?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
   {
    "id": "2111851399851966564",
    "url": "https://x.com/llermaly/status/2111851399851966564",
@@ -827,46 +871,6 @@
    "replies": 1,
    "reposts": 0,
    "views": 12
-  },
-  {
-   "id": "2111696402782855426",
-   "url": "https://x.com/llermaly/status/2111696402782855426",
-   "created_at": "2026-10-18T05:50:30.000Z",
-   "text": "@Sherifdeenolat2 Depends on the use case and where the bottleneck is in my opinion.\n\nIf the task is predictable, domain heavy and not too complex better prompt should get a better outcome\n\nIf the task is unpredictable,  and complex then better model is probably a better adjustment",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
-  },
-  {
-   "id": "2111695087818170534",
-   "url": "https://x.com/llermaly/status/2111695087818170534",
-   "created_at": "2026-10-18T05:45:16.000Z",
-   "text": "@Henryf1w Agree. Is making you dumber in some areas but giving you the opportunity to become a master in other ones.",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 7
-  },
-  {
-   "id": "2111694501248942564",
-   "url": "https://x.com/llermaly/status/2111694501248942564",
-   "created_at": "2026-10-18T05:42:57.000Z",
-   "text": "@karanC_12 The trend has been :\n\n1. OpenAI Releases an incredible model\n2. Next day Claude releases something better",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 24
-  },
-  {
-   "id": "2111693786677973360",
-   "url": "https://x.com/llermaly/status/2111693786677973360",
-   "created_at": "2026-10-18T05:40:06.000Z",
-   "text": "@trikcode yep, people is burning out. I really hope you all being more productive with this new tool and not be just creating unfinished work",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
   }
  ]
 }
