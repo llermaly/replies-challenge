@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-18T15:16:21Z",
+  "updated_at": "2026-10-18T16:14:49Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,15 +42,15 @@
   "day_number": 4,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 26,
+  "today_replies": 27,
   "streak": 3,
   "best_streak": 3,
   "days_hit": 3,
-  "total_replies": 153,
+  "total_replies": 154,
   "pre_start_replies": 22,
-  "followers": 242,
-  "following": 385,
-  "followers_change": 97,
+  "followers": 243,
+  "following": 386,
+  "followers_change": 98,
   "best_day": 53
  },
  "days": [
@@ -102,9 +102,9 @@
   {
    "date": "2026-10-18",
    "day": 4,
-   "replies": 26,
-   "followers_end": 242,
-   "delta": 20,
+   "replies": 27,
+   "followers_end": 243,
+   "delta": 21,
    "goal": 30,
    "hit": false
   }
@@ -252,7 +252,7 @@
    0,
    0,
    0,
-   0,
+   1,
    0,
    0,
    0,
@@ -559,6 +559,10 @@
   {
    "ts": "2026-10-18T15:16:21Z",
    "followers": 242
+  },
+  {
+   "ts": "2026-10-18T16:14:49Z",
+   "followers": 243
   }
  ],
  "top": [
@@ -664,6 +668,16 @@
   }
  ],
  "recent": [
+  {
+   "id": "2111851399851966564",
+   "url": "https://x.com/llermaly/status/2111851399851966564",
+   "created_at": "2026-10-18T16:06:24.000Z",
+   "text": "@kamilbaranek_ Great article. I totally forgot about the algo source code, I will take a look. Also poker player. Thinking of creating EV+ posts changes the perspective",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 7
+  },
   {
    "id": "2111735533021901272",
    "url": "https://x.com/llermaly/status/2111735533021901272",
@@ -853,16 +867,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 2
-  },
-  {
-   "id": "2111693371374997657",
-   "url": "https://x.com/llermaly/status/2111693371374997657",
-   "created_at": "2026-10-18T05:38:27.000Z",
-   "text": "@joelsstafford oh no, do not mix! You can have an opencode acc with free models and offload some repetitive/easy/boring work. T3code does that natively. You just have to ask.",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 7
   }
  ]
 }
