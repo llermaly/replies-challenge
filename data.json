@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-18T18:19:12Z",
+  "updated_at": "2026-10-18T19:17:18Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,14 +42,14 @@
   "day_number": 4,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 32,
+  "today_replies": 35,
   "streak": 4,
   "best_streak": 4,
   "days_hit": 4,
-  "total_replies": 159,
+  "total_replies": 162,
   "pre_start_replies": 22,
   "followers": 246,
-  "following": 390,
+  "following": 391,
   "followers_change": 101,
   "best_day": 53
  },
@@ -102,7 +102,7 @@
   {
    "date": "2026-10-18",
    "day": 4,
-   "replies": 32,
+   "replies": 35,
    "followers_end": 246,
    "delta": 24,
    "goal": 30,
@@ -254,8 +254,8 @@
    0,
    3,
    3,
-   0,
-   0,
+   2,
+   1,
    0,
    0,
    0,
@@ -571,6 +571,10 @@
   {
    "ts": "2026-10-18T18:19:12Z",
    "followers": 246
+  },
+  {
+   "ts": "2026-10-18T19:17:18Z",
+   "followers": 246
   }
  ],
  "top": [
@@ -676,6 +680,36 @@
   }
  ],
  "recent": [
+  {
+   "id": "2111896862194040988",
+   "url": "https://x.com/llermaly/status/2111896862194040988",
+   "created_at": "2026-10-18T19:07:03.000Z",
+   "text": "@marieolivie they reply +500 times a day, do you?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 4
+  },
+  {
+   "id": "2111894338594590857",
+   "url": "https://x.com/llermaly/status/2111894338594590857",
+   "created_at": "2026-10-18T18:57:02.000Z",
+   "text": "@erden_xi Because astra drains limits too fast",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 9
+  },
+  {
+   "id": "2111892988314239061",
+   "url": "https://x.com/llermaly/status/2111892988314239061",
+   "created_at": "2026-10-18T18:51:40.000Z",
+   "text": "@melvindvivas if the average person loses money when trading, and LLMs tend to the average is realistic to think grok bot will lose money too?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 95
+  },
   {
    "id": "2111878145834172601",
    "url": "https://x.com/llermaly/status/2111878145834172601",
@@ -845,36 +879,6 @@
    "replies": 1,
    "reposts": 0,
    "views": 38
-  },
-  {
-   "id": "2111706477421367770",
-   "url": "https://x.com/llermaly/status/2111706477421367770",
-   "created_at": "2026-10-18T06:30:32.000Z",
-   "text": "@konig0000 AI is better than me at executing my ideas",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
-  },
-  {
-   "id": "2111704994755826004",
-   "url": "https://x.com/llermaly/status/2111704994755826004",
-   "created_at": "2026-10-18T06:24:38.000Z",
-   "text": "@chanduuu_cs I think all of us want to achieve, but it is very easy to get stuck and distract from the goal with all the other people building around",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 12
-  },
-  {
-   "id": "2111704286660804869",
-   "url": "https://x.com/llermaly/status/2111704286660804869",
-   "created_at": "2026-10-18T06:21:50.000Z",
-   "text": "@MartinReese @robertoblake Absolutely. And LLMs are pretty bad telling stories. Specially jokes/sarcasm. I'm preparing a benchmark",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
   }
  ]
 }
