@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-18T05:20:21Z",
+  "updated_at": "2026-10-18T06:15:06Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,15 +42,15 @@
   "day_number": 4,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 0,
+  "today_replies": 11,
   "streak": 3,
   "best_streak": 3,
   "days_hit": 3,
-  "total_replies": 127,
+  "total_replies": 138,
   "pre_start_replies": 22,
-  "followers": 225,
-  "following": 368,
-  "followers_change": 80,
+  "followers": 227,
+  "following": 370,
+  "followers_change": 82,
   "best_day": 53
  },
  "days": [
@@ -102,9 +102,9 @@
   {
    "date": "2026-10-18",
    "day": 4,
-   "replies": 0,
-   "followers_end": 225,
-   "delta": 3,
+   "replies": 11,
+   "followers_end": 227,
+   "delta": 5,
    "goal": 30,
    "hit": false
   }
@@ -239,6 +239,32 @@
    0,
    5,
    3
+  ],
+  "2026-10-18": [
+   11,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
   ]
  },
  "snapshots": [
@@ -489,6 +515,10 @@
   {
    "ts": "2026-10-18T05:20:21Z",
    "followers": 225
+  },
+  {
+   "ts": "2026-10-18T06:15:06Z",
+   "followers": 227
   }
  ],
  "top": [
@@ -595,6 +625,116 @@
  ],
  "recent": [
   {
+   "id": "2111696402782855426",
+   "url": "https://x.com/llermaly/status/2111696402782855426",
+   "created_at": "2026-10-18T05:50:30.000Z",
+   "text": "@Sherifdeenolat2 Depends on the use case and where the bottleneck is in my opinion.\n\nIf the task is predictable, domain heavy and not too complex better prompt should get a better outcome\n\nIf the task is unpredictable,  and complex then better model is probably a better adjustment",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
+  {
+   "id": "2111695087818170534",
+   "url": "https://x.com/llermaly/status/2111695087818170534",
+   "created_at": "2026-10-18T05:45:16.000Z",
+   "text": "@Henryf1w Agree. Is making you dumber in some areas but giving you the opportunity to become a master in other ones.",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 7
+  },
+  {
+   "id": "2111694501248942564",
+   "url": "https://x.com/llermaly/status/2111694501248942564",
+   "created_at": "2026-10-18T05:42:57.000Z",
+   "text": "@karanC_12 The trend has been :\n\n1. OpenAI Releases an incredible model\n2. Next day Claude releases something better",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 24
+  },
+  {
+   "id": "2111693786677973360",
+   "url": "https://x.com/llermaly/status/2111693786677973360",
+   "created_at": "2026-10-18T05:40:06.000Z",
+   "text": "@trikcode yep, people is burning out. I really hope you all being more productive with this new tool and not be just creating unfinished work",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2111693371374997657",
+   "url": "https://x.com/llermaly/status/2111693371374997657",
+   "created_at": "2026-10-18T05:38:27.000Z",
+   "text": "@joelsstafford oh no, do not mix! You can have an opencode acc with free models and offload some repetitive/easy/boring work. T3code does that natively. You just have to ask.",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 7
+  },
+  {
+   "id": "2111692943971029012",
+   "url": "https://x.com/llermaly/status/2111692943971029012",
+   "created_at": "2026-10-18T05:36:45.000Z",
+   "text": "@darrxgh Do you use voice mode? or just STT ?",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 4
+  },
+  {
+   "id": "2111692771832774805",
+   "url": "https://x.com/llermaly/status/2111692771832774805",
+   "created_at": "2026-10-18T05:36:04.000Z",
+   "text": "@kamilbaranek_ Congrats! happy to follow you, man. I would ask for help but not sure where to start. For now I'm just posting about what I know, when I feel I want to",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 9
+  },
+  {
+   "id": "2111692005738770445",
+   "url": "https://x.com/llermaly/status/2111692005738770445",
+   "created_at": "2026-10-18T05:33:02.000Z",
+   "text": "@emollick we are all flies in someone elses world?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 37
+  },
+  {
+   "id": "2111691850499183080",
+   "url": "https://x.com/llermaly/status/2111691850499183080",
+   "created_at": "2026-10-18T05:32:25.000Z",
+   "text": "@designwkarthick I baited.",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 32
+  },
+  {
+   "id": "2111691612825014688",
+   "url": "https://x.com/llermaly/status/2111691612825014688",
+   "created_at": "2026-10-18T05:31:28.000Z",
+   "text": "@joelsstafford if you use t3 code you can keep the threads across accounts",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 13
+  },
+  {
+   "id": "2111691475893235713",
+   "url": "https://x.com/llermaly/status/2111691475893235713",
+   "created_at": "2026-10-18T05:30:55.000Z",
+   "text": "@HeyNikhila I use it to report to the company about project progress and features. And personally to create videos for X and youtube channel documentary style",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
+  {
    "id": "2111673631310835917",
    "url": "https://x.com/llermaly/status/2111673631310835917",
    "created_at": "2026-10-18T04:20:01.000Z",
@@ -683,116 +823,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 12
-  },
-  {
-   "id": "2111620006425321944",
-   "url": "https://x.com/llermaly/status/2111620006425321944",
-   "created_at": "2026-10-18T00:46:56.000Z",
-   "text": "@kamilbaranek_ 14 y/o actionscript",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 17
-  },
-  {
-   "id": "2111541396133818694",
-   "url": "https://x.com/llermaly/status/2111541396133818694",
-   "created_at": "2026-10-17T19:34:34.000Z",
-   "text": "@0xrux This is pretty cool. Does it have good MLX support?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 14
-  },
-  {
-   "id": "2111540706619875831",
-   "url": "https://x.com/llermaly/status/2111540706619875831",
-   "created_at": "2026-10-17T19:31:49.000Z",
-   "text": "@PythonDvz it depends a lot on the kind of data and the kind of queries. \n\nFor systems where users are experts and usually just type the keywords around what they need, vectorizing everything may be EV-\n\nAgree though vectors + reranker is a powerful combo",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 17
-  },
-  {
-   "id": "2111531457630130284",
-   "url": "https://x.com/llermaly/status/2111531457630130284",
-   "created_at": "2026-10-17T18:55:04.000Z",
-   "text": "@russellbrunson the millionaire master plan. Very interesting about different profiles based on your skills and personality",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 21
-  },
-  {
-   "id": "2111509396924813498",
-   "url": "https://x.com/llermaly/status/2111509396924813498",
-   "created_at": "2026-10-17T17:27:24.000Z",
-   "text": "@gailcweiner Computer use is not as good as Codex and Claude does not have image/video gen either. What I do is to use T3 code and have Claude as the main driver with the ability to spawn codex subagents.",
-   "likes": 1,
-   "replies": 3,
-   "reposts": 0,
-   "views": 107
-  },
-  {
-   "id": "2111508998650237012",
-   "url": "https://x.com/llermaly/status/2111508998650237012",
-   "created_at": "2026-10-17T17:25:49.000Z",
-   "text": "@MystiqueMide yeah mostly. You may argue that there are cheaper models for easier tasks but Opus5.5 is cheap and very good. https://t.co/NRcfgdsCtQ",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 36
-  },
-  {
-   "id": "2111506778207011047",
-   "url": "https://x.com/llermaly/status/2111506778207011047",
-   "created_at": "2026-10-17T17:17:00.000Z",
-   "text": "@mazeincoding Opus5.5 is so good that I would forgive a failure like what Opus5 was",
-   "likes": 9,
-   "replies": 1,
-   "reposts": 0,
-   "views": 586
-  },
-  {
-   "id": "2111506605313237030",
-   "url": "https://x.com/llermaly/status/2111506605313237030",
-   "created_at": "2026-10-17T17:16:19.000Z",
-   "text": "@icreatelife what comes after \"slop\" gets better than reality?",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 37
-  },
-  {
-   "id": "2111505858047955184",
-   "url": "https://x.com/llermaly/status/2111505858047955184",
-   "created_at": "2026-10-17T17:13:21.000Z",
-   "text": "@robj3d3 warming up for that day!",
-   "likes": 2,
-   "replies": 0,
-   "reposts": 0,
-   "views": 41
-  },
-  {
-   "id": "2111504922193928271",
-   "url": "https://x.com/llermaly/status/2111504922193928271",
-   "created_at": "2026-10-17T17:09:37.000Z",
-   "text": "@Tech_girl optimize cost and latency for tasks that require less intelligence and can be done with less consuming models",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 117
-  },
-  {
-   "id": "2111492823992398152",
-   "url": "https://x.com/llermaly/status/2111492823992398152",
-   "created_at": "2026-10-17T16:21:33.000Z",
-   "text": "@danieldwalton @HyperFrames_ sure thing! I will learn a lot about telehealth",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 5
   }
  ]
 }
