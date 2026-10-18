@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-18T06:15:06Z",
+  "updated_at": "2026-10-18T07:23:17Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,15 +42,15 @@
   "day_number": 4,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 11,
+  "today_replies": 25,
   "streak": 3,
   "best_streak": 3,
   "days_hit": 3,
-  "total_replies": 138,
+  "total_replies": 152,
   "pre_start_replies": 22,
-  "followers": 227,
-  "following": 370,
-  "followers_change": 82,
+  "followers": 231,
+  "following": 382,
+  "followers_change": 86,
   "best_day": 53
  },
  "days": [
@@ -102,9 +102,9 @@
   {
    "date": "2026-10-18",
    "day": 4,
-   "replies": 11,
-   "followers_end": 227,
-   "delta": 5,
+   "replies": 25,
+   "followers_end": 231,
+   "delta": 9,
    "goal": 30,
    "hit": false
   }
@@ -242,8 +242,8 @@
   ],
   "2026-10-18": [
    11,
-   0,
-   0,
+   7,
+   7,
    0,
    0,
    0,
@@ -519,6 +519,10 @@
   {
    "ts": "2026-10-18T06:15:06Z",
    "followers": 227
+  },
+  {
+   "ts": "2026-10-18T07:23:17Z",
+   "followers": 231
   }
  ],
  "top": [
@@ -625,6 +629,146 @@
  ],
  "recent": [
   {
+   "id": "2111716457104966022",
+   "url": "https://x.com/llermaly/status/2111716457104966022",
+   "created_at": "2026-10-18T07:10:11.000Z",
+   "text": "@codewithkhalil t3code",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2111716248803529143",
+   "url": "https://x.com/llermaly/status/2111716248803529143",
+   "created_at": "2026-10-18T07:09:22.000Z",
+   "text": "@_vmlops Yeah is hard to explain people Claude/Claude code, then Opus/Sonnet/Haiku",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 6
+  },
+  {
+   "id": "2111715706421031272",
+   "url": "https://x.com/llermaly/status/2111715706421031272",
+   "created_at": "2026-10-18T07:07:12.000Z",
+   "text": "@madhugogineni97 not sure about Warp but I jumped from Terminal to iTerm2 and now Ghostty and I'm not coming back",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 9
+  },
+  {
+   "id": "2111715196330807370",
+   "url": "https://x.com/llermaly/status/2111715196330807370",
+   "created_at": "2026-10-18T07:05:11.000Z",
+   "text": "@MartinReese Oh yes. The ones who know the theory and have execution experience should be able to produce magnificent pieces",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
+  {
+   "id": "2111714839068385760",
+   "url": "https://x.com/llermaly/status/2111714839068385760",
+   "created_at": "2026-10-18T07:03:46.000Z",
+   "text": "@hardik2004s You must use binary evals instead of graded for more reliable results. Decompose complex eval questions into multiple yes/no. \n\nEvals are also useful to decide if using cheaper models in certain situations, so in that case the larger model produce the golden set",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 8
+  },
+  {
+   "id": "2111714198241648643",
+   "url": "https://x.com/llermaly/status/2111714198241648643",
+   "created_at": "2026-10-18T07:01:13.000Z",
+   "text": "@WolframRvnwlf how fast it is?",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
+  {
+   "id": "2111713941801877917",
+   "url": "https://x.com/llermaly/status/2111713941801877917",
+   "created_at": "2026-10-18T07:00:12.000Z",
+   "text": "@NoemiTitarenco @m_zokov Amen! and expert users in a focused environment would value keyword search much more than vectors.\n\nWhat is true is that \"search\" is being replaced with \"grep\" in some workflows",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 4
+  },
+  {
+   "id": "2111712853132820839",
+   "url": "https://x.com/llermaly/status/2111712853132820839",
+   "created_at": "2026-10-18T06:55:52.000Z",
+   "text": "@aartiles24 @HyperFrames_ That's pretty awesome.  In my experience what works pretty good is to have a frontier model to give very detailed instructions about the video composition and take it from there with an open model",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2111711933237715449",
+   "url": "https://x.com/llermaly/status/2111711933237715449",
+   "created_at": "2026-10-18T06:52:13.000Z",
+   "text": "@samongaro_ Not worth it. You better hire an \"AI Operator\" which is someone that can help you babysitting your agents. It can be a junior or senior but it must understand agentic coding deply.",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 5
+  },
+  {
+   "id": "2111707161336111563",
+   "url": "https://x.com/llermaly/status/2111707161336111563",
+   "created_at": "2026-10-18T06:33:15.000Z",
+   "text": "@kamilbaranek_ gpt will probably create more tests around",
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "views": 38
+  },
+  {
+   "id": "2111706477421367770",
+   "url": "https://x.com/llermaly/status/2111706477421367770",
+   "created_at": "2026-10-18T06:30:32.000Z",
+   "text": "@konig0000 AI is better than me at executing my ideas",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2111704994755826004",
+   "url": "https://x.com/llermaly/status/2111704994755826004",
+   "created_at": "2026-10-18T06:24:38.000Z",
+   "text": "@chanduuu_cs I think all of us want to achieve, but it is very easy to get stuck and distract from the goal with all the other people building around",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 12
+  },
+  {
+   "id": "2111704286660804869",
+   "url": "https://x.com/llermaly/status/2111704286660804869",
+   "created_at": "2026-10-18T06:21:50.000Z",
+   "text": "@MartinReese @robertoblake Absolutely. And LLMs are pretty bad telling stories. Specially jokes/sarcasm. I'm preparing a benchmark",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
+  {
+   "id": "2111703708602126746",
+   "url": "https://x.com/llermaly/status/2111703708602126746",
+   "created_at": "2026-10-18T06:19:32.000Z",
+   "text": "@madhugogineni97 Ghostty",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 12
+  },
+  {
    "id": "2111696402782855426",
    "url": "https://x.com/llermaly/status/2111696402782855426",
    "created_at": "2026-10-18T05:50:30.000Z",
@@ -683,146 +827,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 4
-  },
-  {
-   "id": "2111692771832774805",
-   "url": "https://x.com/llermaly/status/2111692771832774805",
-   "created_at": "2026-10-18T05:36:04.000Z",
-   "text": "@kamilbaranek_ Congrats! happy to follow you, man. I would ask for help but not sure where to start. For now I'm just posting about what I know, when I feel I want to",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 9
-  },
-  {
-   "id": "2111692005738770445",
-   "url": "https://x.com/llermaly/status/2111692005738770445",
-   "created_at": "2026-10-18T05:33:02.000Z",
-   "text": "@emollick we are all flies in someone elses world?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 37
-  },
-  {
-   "id": "2111691850499183080",
-   "url": "https://x.com/llermaly/status/2111691850499183080",
-   "created_at": "2026-10-18T05:32:25.000Z",
-   "text": "@designwkarthick I baited.",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 32
-  },
-  {
-   "id": "2111691612825014688",
-   "url": "https://x.com/llermaly/status/2111691612825014688",
-   "created_at": "2026-10-18T05:31:28.000Z",
-   "text": "@joelsstafford if you use t3 code you can keep the threads across accounts",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 13
-  },
-  {
-   "id": "2111691475893235713",
-   "url": "https://x.com/llermaly/status/2111691475893235713",
-   "created_at": "2026-10-18T05:30:55.000Z",
-   "text": "@HeyNikhila I use it to report to the company about project progress and features. And personally to create videos for X and youtube channel documentary style",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
-  },
-  {
-   "id": "2111673631310835917",
-   "url": "https://x.com/llermaly/status/2111673631310835917",
-   "created_at": "2026-10-18T04:20:01.000Z",
-   "text": "@PythonDvz Thats what I'm saying. I'm routing the queries on the first place and only vectorizing when needed. Not everything, not every time.",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
-  },
-  {
-   "id": "2111672490808209902",
-   "url": "https://x.com/llermaly/status/2111672490808209902",
-   "created_at": "2026-10-18T04:15:29.000Z",
-   "text": "@buildwithmaya @bot will @buildwithmaya make it?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
-  },
-  {
-   "id": "2111671565389824298",
-   "url": "https://x.com/llermaly/status/2111671565389824298",
-   "created_at": "2026-10-18T04:11:48.000Z",
-   "text": "@buildwithmaya see you tomorrow at 4K ! you are a contribution for the community",
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "views": 11
-  },
-  {
-   "id": "2111668460816322695",
-   "url": "https://x.com/llermaly/status/2111668460816322695",
-   "created_at": "2026-10-18T03:59:28.000Z",
-   "text": "@RaviR_S one more! what kind of stuff do you automate?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 5
-  },
-  {
-   "id": "2111666905807306875",
-   "url": "https://x.com/llermaly/status/2111666905807306875",
-   "created_at": "2026-10-18T03:53:17.000Z",
-   "text": "@HeyNikhila hyperframes skill for video gen",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 8
-  },
-  {
-   "id": "2111665464497828083",
-   "url": "https://x.com/llermaly/status/2111665464497828083",
-   "created_at": "2026-10-18T03:47:34.000Z",
-   "text": "@neerajjj6785 I would put high and medium on S tier too. Medium is such a nice default. Fast, cheap, smart.",
-   "likes": 5,
-   "replies": 1,
-   "reposts": 0,
-   "views": 750
-  },
-  {
-   "id": "2111664845070217666",
-   "url": "https://x.com/llermaly/status/2111664845070217666",
-   "created_at": "2026-10-18T03:45:06.000Z",
-   "text": "@b4dgerr what app is that?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 6
-  },
-  {
-   "id": "2111664562256974041",
-   "url": "https://x.com/llermaly/status/2111664562256974041",
-   "created_at": "2026-10-18T03:43:59.000Z",
-   "text": "@leodev you will for sure",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 9
-  },
-  {
-   "id": "2111625127280718209",
-   "url": "https://x.com/llermaly/status/2111625127280718209",
-   "created_at": "2026-10-18T01:07:17.000Z",
-   "text": "@LLMJunky All the situation makes me think on that quote:  Fool me once, shame on you; fool me twice, shame on me. Keep expectations controlled and enjoy",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 12
   }
  ]
 }
