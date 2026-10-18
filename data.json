@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-18T19:17:18Z",
+  "updated_at": "2026-10-18T20:20:17Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,14 +42,14 @@
   "day_number": 4,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 35,
+  "today_replies": 39,
   "streak": 4,
   "best_streak": 4,
   "days_hit": 4,
-  "total_replies": 162,
+  "total_replies": 166,
   "pre_start_replies": 22,
   "followers": 246,
-  "following": 391,
+  "following": 392,
   "followers_change": 101,
   "best_day": 53
  },
@@ -102,7 +102,7 @@
   {
    "date": "2026-10-18",
    "day": 4,
-   "replies": 35,
+   "replies": 39,
    "followers_end": 246,
    "delta": 24,
    "goal": 30,
@@ -256,7 +256,7 @@
    3,
    2,
    1,
-   0,
+   4,
    0,
    0,
    0,
@@ -575,6 +575,10 @@
   {
    "ts": "2026-10-18T19:17:18Z",
    "followers": 246
+  },
+  {
+   "ts": "2026-10-18T20:20:17Z",
+   "followers": 246
   }
  ],
  "top": [
@@ -680,6 +684,46 @@
   }
  ],
  "recent": [
+  {
+   "id": "2111912599835090969",
+   "url": "https://x.com/llermaly/status/2111912599835090969",
+   "created_at": "2026-10-18T20:09:35.000Z",
+   "text": "@Sherifdeenolat2 Probably not! users and MRR can not be videcoded that easy",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2111912326437708115",
+   "url": "https://x.com/llermaly/status/2111912326437708115",
+   "created_at": "2026-10-18T20:08:30.000Z",
+   "text": "@itssotsot OpenMaus",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 48
+  },
+  {
+   "id": "2111911938682683740",
+   "url": "https://x.com/llermaly/status/2111911938682683740",
+   "created_at": "2026-10-18T20:06:58.000Z",
+   "text": "@kamilbaranek_ deep code reviews, new features",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 3
+  },
+  {
+   "id": "2111911654619254978",
+   "url": "https://x.com/llermaly/status/2111911654619254978",
+   "created_at": "2026-10-18T20:05:50.000Z",
+   "text": "@FelipeFr1702 Comparison is against Opus5 which is still impressive",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 9
+  },
   {
    "id": "2111896862194040988",
    "url": "https://x.com/llermaly/status/2111896862194040988",
@@ -839,46 +883,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 1
-  },
-  {
-   "id": "2111713941801877917",
-   "url": "https://x.com/llermaly/status/2111713941801877917",
-   "created_at": "2026-10-18T07:00:12.000Z",
-   "text": "@NoemiTitarenco @m_zokov Amen! and expert users in a focused environment would value keyword search much more than vectors.\n\nWhat is true is that \"search\" is being replaced with \"grep\" in some workflows",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 4
-  },
-  {
-   "id": "2111712853132820839",
-   "url": "https://x.com/llermaly/status/2111712853132820839",
-   "created_at": "2026-10-18T06:55:52.000Z",
-   "text": "@aartiles24 @HyperFrames_ That's pretty awesome.  In my experience what works pretty good is to have a frontier model to give very detailed instructions about the video composition and take it from there with an open model",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
-  },
-  {
-   "id": "2111711933237715449",
-   "url": "https://x.com/llermaly/status/2111711933237715449",
-   "created_at": "2026-10-18T06:52:13.000Z",
-   "text": "@samongaro_ Not worth it. You better hire an \"AI Operator\" which is someone that can help you babysitting your agents. It can be a junior or senior but it must understand agentic coding deply.",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 5
-  },
-  {
-   "id": "2111707161336111563",
-   "url": "https://x.com/llermaly/status/2111707161336111563",
-   "created_at": "2026-10-18T06:33:15.000Z",
-   "text": "@kamilbaranek_ gpt will probably create more tests around",
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "views": 38
   }
  ]
 }
