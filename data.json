@@ -31,27 +31,27 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-18T04:16:29Z",
+  "updated_at": "2026-10-18T05:20:21Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "started": true,
   "finished": false,
-  "days_left": 26,
-  "day_number": 3,
+  "days_left": 25,
+  "day_number": 4,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 52,
+  "today_replies": 0,
   "streak": 3,
   "best_streak": 3,
   "days_hit": 3,
-  "total_replies": 126,
+  "total_replies": 127,
   "pre_start_replies": 22,
-  "followers": 222,
-  "following": 366,
-  "followers_change": 77,
-  "best_day": 52
+  "followers": 225,
+  "following": 368,
+  "followers_change": 80,
+  "best_day": 53
  },
  "days": [
   {
@@ -93,11 +93,20 @@
   {
    "date": "2026-10-17",
    "day": 3,
-   "replies": 52,
+   "replies": 53,
    "followers_end": 222,
    "delta": 27,
    "goal": 30,
    "hit": true
+  },
+  {
+   "date": "2026-10-18",
+   "day": 4,
+   "replies": 0,
+   "followers_end": 225,
+   "delta": 3,
+   "goal": 30,
+   "hit": false
   }
  ],
  "hours": {
@@ -229,7 +238,7 @@
    1,
    0,
    5,
-   2
+   3
   ]
  },
  "snapshots": [
@@ -476,9 +485,43 @@
   {
    "ts": "2026-10-18T04:16:29Z",
    "followers": 222
+  },
+  {
+   "ts": "2026-10-18T05:20:21Z",
+   "followers": 225
   }
  ],
  "top": [
+  {
+   "id": "2111506778207011047",
+   "url": "https://x.com/llermaly/status/2111506778207011047",
+   "created_at": "2026-10-17T17:17:00.000Z",
+   "text": "@mazeincoding Opus5.5 is so good that I would forgive a failure like what Opus5 was",
+   "likes": 9,
+   "replies": 1,
+   "reposts": 0,
+   "views": 586
+  },
+  {
+   "id": "2111665464497828083",
+   "url": "https://x.com/llermaly/status/2111665464497828083",
+   "created_at": "2026-10-18T03:47:34.000Z",
+   "text": "@neerajjj6785 I would put high and medium on S tier too. Medium is such a nice default. Fast, cheap, smart.",
+   "likes": 5,
+   "replies": 1,
+   "reposts": 0,
+   "views": 750
+  },
+  {
+   "id": "2110931833697309156",
+   "url": "https://x.com/llermaly/status/2110931833697309156",
+   "created_at": "2026-10-16T03:12:23.000Z",
+   "text": "@taylorotwell it is insane the time I spent just asking how things work to the LLM over and over",
+   "likes": 4,
+   "replies": 1,
+   "reposts": 0,
+   "views": 388
+  },
   {
    "id": "2111148681420218655",
    "url": "https://x.com/llermaly/status/2111148681420218655",
@@ -487,17 +530,7 @@
    "likes": 3,
    "replies": 1,
    "reposts": 0,
-   "views": 32
-  },
-  {
-   "id": "2110931833697309156",
-   "url": "https://x.com/llermaly/status/2110931833697309156",
-   "created_at": "2026-10-16T03:12:23.000Z",
-   "text": "@taylorotwell it is insane the time I spent just asking how things work to the LLM over and over",
-   "likes": 3,
-   "replies": 0,
-   "reposts": 0,
-   "views": 343
+   "views": 38
   },
   {
    "id": "2110916646084776393",
@@ -510,6 +543,26 @@
    "views": 149
   },
   {
+   "id": "2111505858047955184",
+   "url": "https://x.com/llermaly/status/2111505858047955184",
+   "created_at": "2026-10-17T17:13:21.000Z",
+   "text": "@robj3d3 warming up for that day!",
+   "likes": 2,
+   "replies": 0,
+   "reposts": 0,
+   "views": 41
+  },
+  {
+   "id": "2111490812848545971",
+   "url": "https://x.com/llermaly/status/2111490812848545971",
+   "created_at": "2026-10-17T16:13:34.000Z",
+   "text": "@Cristina_AC_X yeah, you become some sort of master of distraction",
+   "likes": 2,
+   "replies": 0,
+   "reposts": 0,
+   "views": 34
+  },
+  {
    "id": "2111466035010555971",
    "url": "https://x.com/llermaly/status/2111466035010555971",
    "created_at": "2026-10-17T14:35:06.000Z",
@@ -517,70 +570,40 @@
    "likes": 2,
    "replies": 1,
    "reposts": 0,
-   "views": 6
+   "views": 9
   },
   {
-   "id": "2111120367875961050",
-   "url": "https://x.com/llermaly/status/2111120367875961050",
-   "created_at": "2026-10-16T15:41:33.000Z",
-   "text": "@tonysimons starting liking grok bot a lot. It feels snappy and simpler than hermes",
+   "id": "2111356423645061405",
+   "url": "https://x.com/llermaly/status/2111356423645061405",
+   "created_at": "2026-10-17T07:19:33.000Z",
+   "text": "@zachteramura Agree physical jobs will be the last ones, but with robots who knows.",
    "likes": 2,
    "replies": 1,
    "reposts": 0,
-   "views": 54
+   "views": 30
   },
   {
-   "id": "2111108448892968997",
-   "url": "https://x.com/llermaly/status/2111108448892968997",
-   "created_at": "2026-10-16T14:54:11.000Z",
-   "text": "@KI_Vater I'm super into cloning ourselves with AI",
+   "id": "2111354544881856801",
+   "url": "https://x.com/llermaly/status/2111354544881856801",
+   "created_at": "2026-10-17T07:12:05.000Z",
+   "text": "@buildwithdk Hi DK I'm looking for original projects/apps. You can check my profile for videos",
    "likes": 2,
    "replies": 1,
    "reposts": 0,
-   "views": 18
-  },
-  {
-   "id": "2110966986301682159",
-   "url": "https://x.com/llermaly/status/2110966986301682159",
-   "created_at": "2026-10-16T05:32:04.000Z",
-   "text": "@ankita0930 hello! whats your tech stack/favorite type of system to build?",
-   "likes": 2,
-   "replies": 1,
-   "reposts": 0,
-   "views": 34
-  },
-  {
-   "id": "2110934808725422443",
-   "url": "https://x.com/llermaly/status/2110934808725422443",
-   "created_at": "2026-10-16T03:24:12.000Z",
-   "text": "@Raedchen_ said minute? not second? cool",
-   "likes": 2,
-   "replies": 0,
-   "reposts": 0,
-   "views": 82
-  },
-  {
-   "id": "2110885766016479705",
-   "url": "https://x.com/llermaly/status/2110885766016479705",
-   "created_at": "2026-10-16T00:09:19.000Z",
-   "text": "@LLMJunky Considering how fast Chinese labs are cooking efficient models, and that you can also use the studio for content I would go with 512. \n\nFrom a usage only perspective the investment is hard to justify anyways, so when they reach high tps + frontier intelligence you will want to",
-   "likes": 2,
-   "replies": 1,
-   "reposts": 0,
-   "views": 257
-  },
-  {
-   "id": "2110882792192221599",
-   "url": "https://x.com/llermaly/status/2110882792192221599",
-   "created_at": "2026-10-15T23:57:30.000Z",
-   "text": "@Henryf1w Finding people on my same situation, yes",
-   "likes": 2,
-   "replies": 1,
-   "reposts": 0,
-   "views": 222
+   "views": 19
   }
  ],
  "recent": [
+  {
+   "id": "2111673631310835917",
+   "url": "https://x.com/llermaly/status/2111673631310835917",
+   "created_at": "2026-10-18T04:20:01.000Z",
+   "text": "@PythonDvz Thats what I'm saying. I'm routing the queries on the first place and only vectorizing when needed. Not everything, not every time.",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
   {
    "id": "2111672490808209902",
    "url": "https://x.com/llermaly/status/2111672490808209902",
@@ -589,7 +612,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 1
+   "views": 2
   },
   {
    "id": "2111671565389824298",
@@ -599,7 +622,7 @@
    "likes": 0,
    "replies": 1,
    "reposts": 0,
-   "views": 6
+   "views": 11
   },
   {
    "id": "2111668460816322695",
@@ -609,27 +632,27 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 2
+   "views": 5
   },
   {
    "id": "2111666905807306875",
    "url": "https://x.com/llermaly/status/2111666905807306875",
    "created_at": "2026-10-18T03:53:17.000Z",
    "text": "@HeyNikhila hyperframes skill for video gen",
-   "likes": 0,
-   "replies": 0,
+   "likes": 1,
+   "replies": 1,
    "reposts": 0,
-   "views": 2
+   "views": 8
   },
   {
    "id": "2111665464497828083",
    "url": "https://x.com/llermaly/status/2111665464497828083",
    "created_at": "2026-10-18T03:47:34.000Z",
    "text": "@neerajjj6785 I would put high and medium on S tier too. Medium is such a nice default. Fast, cheap, smart.",
-   "likes": 1,
+   "likes": 5,
    "replies": 1,
    "reposts": 0,
-   "views": 65
+   "views": 750
   },
   {
    "id": "2111664845070217666",
@@ -639,7 +662,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 5
+   "views": 6
   },
   {
    "id": "2111664562256974041",
@@ -649,7 +672,7 @@
    "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 5
+   "views": 9
   },
   {
    "id": "2111625127280718209",
@@ -659,7 +682,7 @@
    "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 3
+   "views": 12
   },
   {
    "id": "2111620006425321944",
@@ -669,7 +692,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 3
+   "views": 17
   },
   {
    "id": "2111541396133818694",
@@ -679,17 +702,17 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 6
+   "views": 14
   },
   {
    "id": "2111540706619875831",
    "url": "https://x.com/llermaly/status/2111540706619875831",
    "created_at": "2026-10-17T19:31:49.000Z",
    "text": "@PythonDvz it depends a lot on the kind of data and the kind of queries. \n\nFor systems where users are experts and usually just type the keywords around what they need, vectorizing everything may be EV-\n\nAgree though vectors + reranker is a powerful combo",
-   "likes": 0,
-   "replies": 0,
+   "likes": 1,
+   "replies": 1,
    "reposts": 0,
-   "views": 5
+   "views": 17
   },
   {
    "id": "2111531457630130284",
@@ -699,7 +722,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 4
+   "views": 21
   },
   {
    "id": "2111509396924813498",
@@ -707,9 +730,9 @@
    "created_at": "2026-10-17T17:27:24.000Z",
    "text": "@gailcweiner Computer use is not as good as Codex and Claude does not have image/video gen either. What I do is to use T3 code and have Claude as the main driver with the ability to spawn codex subagents.",
    "likes": 1,
-   "replies": 2,
+   "replies": 3,
    "reposts": 0,
-   "views": 42
+   "views": 107
   },
   {
    "id": "2111508998650237012",
@@ -719,37 +742,37 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 12
+   "views": 36
   },
   {
    "id": "2111506778207011047",
    "url": "https://x.com/llermaly/status/2111506778207011047",
    "created_at": "2026-10-17T17:17:00.000Z",
    "text": "@mazeincoding Opus5.5 is so good that I would forgive a failure like what Opus5 was",
-   "likes": 0,
-   "replies": 0,
+   "likes": 9,
+   "replies": 1,
    "reposts": 0,
-   "views": 1
+   "views": 586
   },
   {
    "id": "2111506605313237030",
    "url": "https://x.com/llermaly/status/2111506605313237030",
    "created_at": "2026-10-17T17:16:19.000Z",
    "text": "@icreatelife what comes after \"slop\" gets better than reality?",
-   "likes": 0,
+   "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 1
+   "views": 37
   },
   {
    "id": "2111505858047955184",
    "url": "https://x.com/llermaly/status/2111505858047955184",
    "created_at": "2026-10-17T17:13:21.000Z",
    "text": "@robj3d3 warming up for that day!",
-   "likes": 0,
+   "likes": 2,
    "replies": 0,
    "reposts": 0,
-   "views": 4
+   "views": 41
   },
   {
    "id": "2111504922193928271",
@@ -759,7 +782,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 7
+   "views": 117
   },
   {
    "id": "2111492823992398152",
@@ -769,17 +792,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 3
-  },
-  {
-   "id": "2111491015135658307",
-   "url": "https://x.com/llermaly/status/2111491015135658307",
-   "created_at": "2026-10-17T16:14:22.000Z",
-   "text": "@Ionkosm there is some black magic behind the quality and cost it offers",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
+   "views": 5
   }
  ]
 }
