@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-18T23:22:10Z",
+  "updated_at": "2026-10-19T00:19:27Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,11 +42,11 @@
   "day_number": 4,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 43,
+  "today_replies": 45,
   "streak": 4,
   "best_streak": 4,
   "days_hit": 4,
-  "total_replies": 170,
+  "total_replies": 172,
   "pre_start_replies": 22,
   "followers": 250,
   "following": 399,
@@ -102,7 +102,7 @@
   {
    "date": "2026-10-18",
    "day": 4,
-   "replies": 43,
+   "replies": 45,
    "followers_end": 250,
    "delta": 28,
    "goal": 30,
@@ -259,7 +259,7 @@
    4,
    0,
    0,
-   4,
+   6,
    0,
    0,
    0,
@@ -591,6 +591,10 @@
   {
    "ts": "2026-10-18T23:22:10Z",
    "followers": 250
+  },
+  {
+   "ts": "2026-10-19T00:19:27Z",
+   "followers": 250
   }
  ],
  "top": [
@@ -696,6 +700,26 @@
   }
  ],
  "recent": [
+  {
+   "id": "2111966997168652731",
+   "url": "https://x.com/llermaly/status/2111966997168652731",
+   "created_at": "2026-10-18T23:45:45.000Z",
+   "text": "@jjacky https://t.co/fLm2HUn5Vs",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 4
+  },
+  {
+   "id": "2111961300972798114",
+   "url": "https://x.com/llermaly/status/2111961300972798114",
+   "created_at": "2026-10-18T23:23:07.000Z",
+   "text": "@mikeev in my work mechanical kind of skills have reduced, but business related ones increased",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 5
+  },
   {
    "id": "2111960707080102081",
    "url": "https://x.com/llermaly/status/2111960707080102081",
@@ -875,26 +899,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 8
-  },
-  {
-   "id": "2111716457104966022",
-   "url": "https://x.com/llermaly/status/2111716457104966022",
-   "created_at": "2026-10-18T07:10:11.000Z",
-   "text": "@codewithkhalil t3code",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
-  },
-  {
-   "id": "2111716248803529143",
-   "url": "https://x.com/llermaly/status/2111716248803529143",
-   "created_at": "2026-10-18T07:09:22.000Z",
-   "text": "@_vmlops Yeah is hard to explain people Claude/Claude code, then Opus/Sonnet/Haiku",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 6
   }
  ]
 }
