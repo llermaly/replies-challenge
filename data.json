@@ -31,26 +31,26 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-19T00:19:27Z",
+  "updated_at": "2026-10-21T15:23:11Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
-  "date": "2026-10-18",
+  "date": "2026-10-21",
   "started": true,
   "finished": false,
-  "days_left": 25,
-  "day_number": 4,
+  "days_left": 22,
+  "day_number": 7,
   "week_number": 1,
   "today_goal": 30,
-  "today_replies": 45,
-  "streak": 4,
-  "best_streak": 4,
-  "days_hit": 4,
-  "total_replies": 172,
+  "today_replies": 0,
+  "streak": 6,
+  "best_streak": 6,
+  "days_hit": 6,
+  "total_replies": 253,
   "pre_start_replies": 22,
-  "followers": 250,
-  "following": 399,
-  "followers_change": 105,
+  "followers": 263,
+  "following": 432,
+  "followers_change": 118,
   "best_day": 53
  },
  "days": [
@@ -102,11 +102,38 @@
   {
    "date": "2026-10-18",
    "day": 4,
-   "replies": 45,
+   "replies": 47,
    "followers_end": 250,
    "delta": 28,
    "goal": 30,
    "hit": true
+  },
+  {
+   "date": "2026-10-19",
+   "day": 5,
+   "replies": 46,
+   "followers_end": 250,
+   "delta": 0,
+   "goal": 30,
+   "hit": true
+  },
+  {
+   "date": "2026-10-20",
+   "day": 6,
+   "replies": 33,
+   "followers_end": 250,
+   "delta": 0,
+   "goal": 30,
+   "hit": true
+  },
+  {
+   "date": "2026-10-21",
+   "day": 7,
+   "replies": 0,
+   "followers_end": 263,
+   "delta": 13,
+   "goal": 30,
+   "hit": false
   }
  ],
  "hours": {
@@ -261,10 +288,62 @@
    0,
    6,
    0,
-   0,
-   0,
+   1,
+   1,
    0,
    0
+  ],
+  "2026-10-19": [
+   0,
+   1,
+   0,
+   5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   9,
+   4,
+   8,
+   6,
+   3,
+   0,
+   8
+  ],
+  "2026-10-20": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   0,
+   0,
+   0,
+   23,
+   7,
+   0,
+   0,
+   1
   ]
  },
  "snapshots": [
@@ -595,6 +674,10 @@
   {
    "ts": "2026-10-19T00:19:27Z",
    "followers": 250
+  },
+  {
+   "ts": "2026-10-21T15:23:11Z",
+   "followers": 263
   }
  ],
  "top": [
@@ -649,6 +732,46 @@
    "views": 149
   },
   {
+   "id": "2112710632680087744",
+   "url": "https://x.com/llermaly/status/2112710632680087744",
+   "created_at": "2026-10-21T01:00:41.000Z",
+   "text": "@NickpxJ many friendships",
+   "likes": 2,
+   "replies": 2,
+   "reposts": 0,
+   "views": 18
+  },
+  {
+   "id": "2112338609269535114",
+   "url": "https://x.com/llermaly/status/2112338609269535114",
+   "created_at": "2026-10-20T00:22:24.000Z",
+   "text": "@KolinHuang You can go to reddit looking for pains to solve, and competitors reviews to find gaps.  \"sell to agents\" is a novel concept so you will have to find educated customers",
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "views": 17
+  },
+  {
+   "id": "2112332207226536212",
+   "url": "https://x.com/llermaly/status/2112332207226536212",
+   "created_at": "2026-10-19T23:56:58.000Z",
+   "text": "@scrollingentity @atmoio https://t.co/QGvc1cSnk0",
+   "likes": 2,
+   "replies": 0,
+   "reposts": 0,
+   "views": 42
+  },
+  {
+   "id": "2112003313466249301",
+   "url": "https://x.com/llermaly/status/2112003313466249301",
+   "created_at": "2026-10-19T02:10:03.000Z",
+   "text": "@Da7_Tech wasn't enough for me (code, video)",
+   "likes": 2,
+   "replies": 0,
+   "reposts": 0,
+   "views": 398
+  },
+  {
    "id": "2111505858047955184",
    "url": "https://x.com/llermaly/status/2111505858047955184",
    "created_at": "2026-10-17T17:13:21.000Z",
@@ -657,248 +780,208 @@
    "replies": 0,
    "reposts": 0,
    "views": 41
-  },
-  {
-   "id": "2111490812848545971",
-   "url": "https://x.com/llermaly/status/2111490812848545971",
-   "created_at": "2026-10-17T16:13:34.000Z",
-   "text": "@Cristina_AC_X yeah, you become some sort of master of distraction",
-   "likes": 2,
-   "replies": 0,
-   "reposts": 0,
-   "views": 34
-  },
-  {
-   "id": "2111466035010555971",
-   "url": "https://x.com/llermaly/status/2111466035010555971",
-   "created_at": "2026-10-17T14:35:06.000Z",
-   "text": "@buildwithmaya @mansfieldrv6 Yeah kinda fun to brainstorm ideas with an AI and then finding out It was already done multiple times. The trick is to intentionally “leak” the context of your conversations so everything has a bit of you",
-   "likes": 2,
-   "replies": 1,
-   "reposts": 0,
-   "views": 9
-  },
-  {
-   "id": "2111356423645061405",
-   "url": "https://x.com/llermaly/status/2111356423645061405",
-   "created_at": "2026-10-17T07:19:33.000Z",
-   "text": "@zachteramura Agree physical jobs will be the last ones, but with robots who knows.",
-   "likes": 2,
-   "replies": 1,
-   "reposts": 0,
-   "views": 30
-  },
-  {
-   "id": "2111354544881856801",
-   "url": "https://x.com/llermaly/status/2111354544881856801",
-   "created_at": "2026-10-17T07:12:05.000Z",
-   "text": "@buildwithdk Hi DK I'm looking for original projects/apps. You can check my profile for videos",
-   "likes": 2,
-   "replies": 1,
-   "reposts": 0,
-   "views": 19
   }
  ],
  "recent": [
   {
-   "id": "2111966997168652731",
-   "url": "https://x.com/llermaly/status/2111966997168652731",
-   "created_at": "2026-10-18T23:45:45.000Z",
-   "text": "@jjacky https://t.co/fLm2HUn5Vs",
+   "id": "2112758551173124309",
+   "url": "https://x.com/llermaly/status/2112758551173124309",
+   "created_at": "2026-10-21T04:11:06.000Z",
+   "text": "@mausbot_ @milindlabs I would pick the hairy one probably https://t.co/H8jrXPKCjx",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 15
+  },
+  {
+   "id": "2112720909824041377",
+   "url": "https://x.com/llermaly/status/2112720909824041377",
+   "created_at": "2026-10-21T01:41:32.000Z",
+   "text": "@sporsho_AI guide",
    "likes": 0,
    "replies": 0,
    "reposts": 0,
    "views": 4
   },
   {
-   "id": "2111961300972798114",
-   "url": "https://x.com/llermaly/status/2111961300972798114",
-   "created_at": "2026-10-18T23:23:07.000Z",
-   "text": "@mikeev in my work mechanical kind of skills have reduced, but business related ones increased",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 5
-  },
-  {
-   "id": "2111960707080102081",
-   "url": "https://x.com/llermaly/status/2111960707080102081",
-   "created_at": "2026-10-18T23:20:45.000Z",
-   "text": "@norsyx coding benches are no longer useful it seems",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 1
-  },
-  {
-   "id": "2111959522818601317",
-   "url": "https://x.com/llermaly/status/2111959522818601317",
-   "created_at": "2026-10-18T23:16:03.000Z",
-   "text": "@sudoingX that opus is missing a .5",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
-  },
-  {
-   "id": "2111959239422030164",
-   "url": "https://x.com/llermaly/status/2111959239422030164",
-   "created_at": "2026-10-18T23:14:55.000Z",
-   "text": "@MiaAI_lab I'm curious about the result if you specify the exact density of the gummies",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 6
-  },
-  {
-   "id": "2111957933588107476",
-   "url": "https://x.com/llermaly/status/2111957933588107476",
-   "created_at": "2026-10-18T23:09:44.000Z",
-   "text": "@icreatelife Message to grok bot: put me first on the list because I'm not auto posting either and want to genuinely connect. I'm also using grok bot!",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
-  },
-  {
-   "id": "2111912599835090969",
-   "url": "https://x.com/llermaly/status/2111912599835090969",
-   "created_at": "2026-10-18T20:09:35.000Z",
-   "text": "@Sherifdeenolat2 Probably not! users and MRR can not be videcoded that easy",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 2
-  },
-  {
-   "id": "2111912326437708115",
-   "url": "https://x.com/llermaly/status/2111912326437708115",
-   "created_at": "2026-10-18T20:08:30.000Z",
-   "text": "@itssotsot OpenMaus",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 48
-  },
-  {
-   "id": "2111911938682683740",
-   "url": "https://x.com/llermaly/status/2111911938682683740",
-   "created_at": "2026-10-18T20:06:58.000Z",
-   "text": "@kamilbaranek_ deep code reviews, new features",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
-  },
-  {
-   "id": "2111911654619254978",
-   "url": "https://x.com/llermaly/status/2111911654619254978",
-   "created_at": "2026-10-18T20:05:50.000Z",
-   "text": "@FelipeFr1702 Comparison is against Opus5 which is still impressive",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 9
-  },
-  {
-   "id": "2111896862194040988",
-   "url": "https://x.com/llermaly/status/2111896862194040988",
-   "created_at": "2026-10-18T19:07:03.000Z",
-   "text": "@marieolivie they reply +500 times a day, do you?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 4
-  },
-  {
-   "id": "2111894338594590857",
-   "url": "https://x.com/llermaly/status/2111894338594590857",
-   "created_at": "2026-10-18T18:57:02.000Z",
-   "text": "@erden_xi Because astra drains limits too fast",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 9
-  },
-  {
-   "id": "2111892988314239061",
-   "url": "https://x.com/llermaly/status/2111892988314239061",
-   "created_at": "2026-10-18T18:51:40.000Z",
-   "text": "@melvindvivas if the average person loses money when trading, and LLMs tend to the average is realistic to think grok bot will lose money too?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 95
-  },
-  {
-   "id": "2111878145834172601",
-   "url": "https://x.com/llermaly/status/2111878145834172601",
-   "created_at": "2026-10-18T17:52:41.000Z",
-   "text": "@SasuRobert 100tps but honestly when you experience 250+ tps is hard to come back",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 1
-  },
-  {
-   "id": "2111869506876563619",
-   "url": "https://x.com/llermaly/status/2111869506876563619",
-   "created_at": "2026-10-18T17:18:21.000Z",
-   "text": "@srinivasre31765 Opus 5.5 medium is your best friend",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 1
-  },
-  {
-   "id": "2111866723175383275",
-   "url": "https://x.com/llermaly/status/2111866723175383275",
-   "created_at": "2026-10-18T17:07:18.000Z",
-   "text": "@YashasGunderia @milindlabs lead the repo with screenshots/clips of the most visual attractive features.",
-   "likes": 0,
-   "replies": 1,
-   "reposts": 0,
-   "views": 6
-  },
-  {
-   "id": "2111858184063225927",
-   "url": "https://x.com/llermaly/status/2111858184063225927",
-   "created_at": "2026-10-18T16:33:22.000Z",
-   "text": "@BoboLinNotes Not a lot of people talk about tokenizers, synonyms, ngrams, phonetic, etc..  when talking about search/bm25 those can get you a long way",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 1
-  },
-  {
-   "id": "2111857714406015209",
-   "url": "https://x.com/llermaly/status/2111857714406015209",
-   "created_at": "2026-10-18T16:31:30.000Z",
-   "text": "@0xMfox business now is selling outcome, right?",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 3
-  },
-  {
-   "id": "2111851399851966564",
-   "url": "https://x.com/llermaly/status/2111851399851966564",
-   "created_at": "2026-10-18T16:06:24.000Z",
-   "text": "@kamilbaranek_ Great article. I totally forgot about the algo source code, I will take a look. Also poker player. Thinking of creating EV+ posts changes the perspective",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 7
-  },
-  {
-   "id": "2111735533021901272",
-   "url": "https://x.com/llermaly/status/2111735533021901272",
-   "created_at": "2026-10-18T08:25:59.000Z",
-   "text": "@Sherifdeenolat2 yes it should, I was thinking on cases where the model can not fill the gaps like specific business logic. In that cases changing the prompt would be better than changing the model",
+   "id": "2112711926924902523",
+   "url": "https://x.com/llermaly/status/2112711926924902523",
+   "created_at": "2026-10-21T01:05:50.000Z",
+   "text": "@SKatalystAI if you want to work from multiple locations (e.g different computers or in the cloud) and use multiple models within the same thread this is the best experience.",
    "likes": 1,
    "replies": 0,
    "reposts": 0,
    "views": 8
+  },
+  {
+   "id": "2112710899907842256",
+   "url": "https://x.com/llermaly/status/2112710899907842256",
+   "created_at": "2026-10-21T01:01:45.000Z",
+   "text": "@techguy_x I open them all with t3code",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 9
+  },
+  {
+   "id": "2112710715912167924",
+   "url": "https://x.com/llermaly/status/2112710715912167924",
+   "created_at": "2026-10-21T01:01:01.000Z",
+   "text": "@OpenBot_ do you still need Livekit product?",
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "views": 36
+  },
+  {
+   "id": "2112710632680087744",
+   "url": "https://x.com/llermaly/status/2112710632680087744",
+   "created_at": "2026-10-21T01:00:41.000Z",
+   "text": "@NickpxJ many friendships",
+   "likes": 2,
+   "replies": 2,
+   "reposts": 0,
+   "views": 18
+  },
+  {
+   "id": "2112710573679136823",
+   "url": "https://x.com/llermaly/status/2112710573679136823",
+   "created_at": "2026-10-21T01:00:27.000Z",
+   "text": "@markproduct I am all over the place basically",
+   "likes": 1,
+   "replies": 2,
+   "reposts": 0,
+   "views": 22
+  },
+  {
+   "id": "2112710473531761099",
+   "url": "https://x.com/llermaly/status/2112710473531761099",
+   "created_at": "2026-10-21T01:00:03.000Z",
+   "text": "@jamwt rotate your keys frequently",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 62
+  },
+  {
+   "id": "2112710179925967140",
+   "url": "https://x.com/llermaly/status/2112710179925967140",
+   "created_at": "2026-10-21T00:58:53.000Z",
+   "text": "@Ionkosm Opus intelligence, with Cerebras speed and Sol cost",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 52
+  },
+  {
+   "id": "2112709960912232826",
+   "url": "https://x.com/llermaly/status/2112709960912232826",
+   "created_at": "2026-10-21T00:58:01.000Z",
+   "text": "@Denche2005 You should see it as 10x more opportunities to progress in your career. Do 10x more, ask 10x speed in your raise too.",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 6
+  },
+  {
+   "id": "2112709707739660395",
+   "url": "https://x.com/llermaly/status/2112709707739660395",
+   "created_at": "2026-10-21T00:57:01.000Z",
+   "text": "@madhugogineni97 Default to Opus5.5 medium effort and go to High if you need more reasoning and you will be fine.",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 19
+  },
+  {
+   "id": "2112709427081994373",
+   "url": "https://x.com/llermaly/status/2112709427081994373",
+   "created_at": "2026-10-21T00:55:54.000Z",
+   "text": "@buildwithrajath Yesterday night started making mistakes it wasnt the day before, yes.",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 69
+  },
+  {
+   "id": "2112709278004134256",
+   "url": "https://x.com/llermaly/status/2112709278004134256",
+   "created_at": "2026-10-21T00:55:18.000Z",
+   "text": "@erden_xi I downgraded to $20 for computer tasks and some ocasional image gen",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 2
+  },
+  {
+   "id": "2112709151906222390",
+   "url": "https://x.com/llermaly/status/2112709151906222390",
+   "created_at": "2026-10-21T00:54:48.000Z",
+   "text": "@Shra_va_ni because models became much better and hallucinations are harder to detect",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 23
+  },
+  {
+   "id": "2112708992908607763",
+   "url": "https://x.com/llermaly/status/2112708992908607763",
+   "created_at": "2026-10-21T00:54:10.000Z",
+   "text": "@daisyineurope Opus for hard tasks, Sol for cost effective ones https://t.co/B9uCdB8UT6",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 12
+  },
+  {
+   "id": "2112708320075169812",
+   "url": "https://x.com/llermaly/status/2112708320075169812",
+   "created_at": "2026-10-21T00:51:30.000Z",
+   "text": "@melvindvivas just make sure you save some quota because it shared with code",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 43
+  },
+  {
+   "id": "2112708136939159605",
+   "url": "https://x.com/llermaly/status/2112708136939159605",
+   "created_at": "2026-10-21T00:50:46.000Z",
+   "text": "@Miguel07Code oh yeah, it is giving the agent a mindset",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 6
+  },
+  {
+   "id": "2112707968055804055",
+   "url": "https://x.com/llermaly/status/2112707968055804055",
+   "created_at": "2026-10-21T00:50:06.000Z",
+   "text": "@omarvvvr computer use tasks, image gen",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 25
+  },
+  {
+   "id": "2112707690510303286",
+   "url": "https://x.com/llermaly/status/2112707690510303286",
+   "created_at": "2026-10-21T00:49:00.000Z",
+   "text": "@heylaxxy awesome video. It made me realize I'm getting used to this quality and I no longer feel the excitement I felt like 1month ago",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 14
+  },
+  {
+   "id": "2112707336712151124",
+   "url": "https://x.com/llermaly/status/2112707336712151124",
+   "created_at": "2026-10-21T00:47:35.000Z",
+   "text": "@itssotsot it blew me up you can also do interactive mini apps to share feedback with the agent",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "views": 746
   }
  ]
 }
