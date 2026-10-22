@@ -31,26 +31,26 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-21T15:23:11Z",
+  "updated_at": "2026-10-22T20:19:54Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "started": true,
   "finished": false,
-  "days_left": 22,
-  "day_number": 7,
-  "week_number": 1,
-  "today_goal": 30,
-  "today_replies": 0,
-  "streak": 6,
+  "days_left": 21,
+  "day_number": 8,
+  "week_number": 2,
+  "today_goal": 40,
+  "today_replies": 1,
+  "streak": 0,
   "best_streak": 6,
   "days_hit": 6,
-  "total_replies": 253,
+  "total_replies": 257,
   "pre_start_replies": 22,
-  "followers": 263,
-  "following": 432,
-  "followers_change": 118,
+  "followers": 260,
+  "following": 438,
+  "followers_change": 115,
   "best_day": 53
  },
  "days": [
@@ -129,10 +129,19 @@
   {
    "date": "2026-10-21",
    "day": 7,
-   "replies": 0,
+   "replies": 3,
    "followers_end": 263,
    "delta": 13,
    "goal": 30,
+   "hit": false
+  },
+  {
+   "date": "2026-10-22",
+   "day": 8,
+   "replies": 1,
+   "followers_end": 260,
+   "delta": -3,
+   "goal": 40,
    "hit": false
   }
  ],
@@ -344,6 +353,58 @@
    0,
    0,
    1
+  ],
+  "2026-10-21": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  "2026-10-22": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
   ]
  },
  "snapshots": [
@@ -678,6 +739,10 @@
   {
    "ts": "2026-10-21T15:23:11Z",
    "followers": 263
+  },
+  {
+   "ts": "2026-10-22T20:19:54Z",
+   "followers": 260
   }
  ],
  "top": [
@@ -732,6 +797,16 @@
    "views": 149
   },
   {
+   "id": "2113129288685724029",
+   "url": "https://x.com/llermaly/status/2113129288685724029",
+   "created_at": "2026-10-22T04:44:17.000Z",
+   "text": "@Bentist it is a blessing to have the \"problem\" part figured out. Most of us have the solution figured out and aren't quite sure where to apply it ha",
+   "likes": 2,
+   "replies": 0,
+   "reposts": 0,
+   "views": 20
+  },
+  {
    "id": "2112710632680087744",
    "url": "https://x.com/llermaly/status/2112710632680087744",
    "created_at": "2026-10-21T01:00:41.000Z",
@@ -739,7 +814,17 @@
    "likes": 2,
    "replies": 2,
    "reposts": 0,
-   "views": 18
+   "views": 19
+  },
+  {
+   "id": "2112707157019738592",
+   "url": "https://x.com/llermaly/status/2112707157019738592",
+   "created_at": "2026-10-21T00:46:53.000Z",
+   "text": "@sarthakguptadev whats the difference with openmaus ?",
+   "likes": 2,
+   "replies": 2,
+   "reposts": 0,
+   "views": 118
   },
   {
    "id": "2112338609269535114",
@@ -760,29 +845,49 @@
    "replies": 0,
    "reposts": 0,
    "views": 42
-  },
-  {
-   "id": "2112003313466249301",
-   "url": "https://x.com/llermaly/status/2112003313466249301",
-   "created_at": "2026-10-19T02:10:03.000Z",
-   "text": "@Da7_Tech wasn't enough for me (code, video)",
-   "likes": 2,
-   "replies": 0,
-   "reposts": 0,
-   "views": 398
-  },
-  {
-   "id": "2111505858047955184",
-   "url": "https://x.com/llermaly/status/2111505858047955184",
-   "created_at": "2026-10-17T17:13:21.000Z",
-   "text": "@robj3d3 warming up for that day!",
-   "likes": 2,
-   "replies": 0,
-   "reposts": 0,
-   "views": 41
   }
  ],
  "recent": [
+  {
+   "id": "2113149818893721980",
+   "url": "https://x.com/llermaly/status/2113149818893721980",
+   "created_at": "2026-10-22T06:05:51.000Z",
+   "text": "@manxlab Yes. I would keep Opus5.5 as is",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 39
+  },
+  {
+   "id": "2113129288685724029",
+   "url": "https://x.com/llermaly/status/2113129288685724029",
+   "created_at": "2026-10-22T04:44:17.000Z",
+   "text": "@Bentist it is a blessing to have the \"problem\" part figured out. Most of us have the solution figured out and aren't quite sure where to apply it ha",
+   "likes": 2,
+   "replies": 0,
+   "reposts": 0,
+   "views": 20
+  },
+  {
+   "id": "2113111578908459486",
+   "url": "https://x.com/llermaly/status/2113111578908459486",
+   "created_at": "2026-10-22T03:33:54.000Z",
+   "text": "@noname_oni @Freeeborn @fframes_rust thats cool. Any chance to see a 4k version? it looks like low res video gen but it is code generated right?",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 93
+  },
+  {
+   "id": "2112956463417020439",
+   "url": "https://x.com/llermaly/status/2112956463417020439",
+   "created_at": "2026-10-21T17:17:32.000Z",
+   "text": "@samongaro_ someone must prompt for that 100 designs",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "views": 35
+  },
   {
    "id": "2112758551173124309",
    "url": "https://x.com/llermaly/status/2112758551173124309",
@@ -791,7 +896,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 15
+   "views": 17
   },
   {
    "id": "2112720909824041377",
@@ -811,7 +916,7 @@
    "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 8
+   "views": 14
   },
   {
    "id": "2112710899907842256",
@@ -831,7 +936,7 @@
    "likes": 0,
    "replies": 1,
    "reposts": 0,
-   "views": 36
+   "views": 42
   },
   {
    "id": "2112710632680087744",
@@ -841,7 +946,7 @@
    "likes": 2,
    "replies": 2,
    "reposts": 0,
-   "views": 18
+   "views": 19
   },
   {
    "id": "2112710573679136823",
@@ -851,7 +956,7 @@
    "likes": 1,
    "replies": 2,
    "reposts": 0,
-   "views": 22
+   "views": 24
   },
   {
    "id": "2112710473531761099",
@@ -861,7 +966,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 62
+   "views": 69
   },
   {
    "id": "2112710179925967140",
@@ -871,7 +976,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 52
+   "views": 54
   },
   {
    "id": "2112709960912232826",
@@ -891,7 +996,7 @@
    "likes": 1,
    "replies": 1,
    "reposts": 0,
-   "views": 19
+   "views": 25
   },
   {
    "id": "2112709427081994373",
@@ -901,7 +1006,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 69
+   "views": 70
   },
   {
    "id": "2112709278004134256",
@@ -941,47 +1046,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 43
-  },
-  {
-   "id": "2112708136939159605",
-   "url": "https://x.com/llermaly/status/2112708136939159605",
-   "created_at": "2026-10-21T00:50:46.000Z",
-   "text": "@Miguel07Code oh yeah, it is giving the agent a mindset",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 6
-  },
-  {
-   "id": "2112707968055804055",
-   "url": "https://x.com/llermaly/status/2112707968055804055",
-   "created_at": "2026-10-21T00:50:06.000Z",
-   "text": "@omarvvvr computer use tasks, image gen",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 25
-  },
-  {
-   "id": "2112707690510303286",
-   "url": "https://x.com/llermaly/status/2112707690510303286",
-   "created_at": "2026-10-21T00:49:00.000Z",
-   "text": "@heylaxxy awesome video. It made me realize I'm getting used to this quality and I no longer feel the excitement I felt like 1month ago",
-   "likes": 1,
-   "replies": 1,
-   "reposts": 0,
-   "views": 14
-  },
-  {
-   "id": "2112707336712151124",
-   "url": "https://x.com/llermaly/status/2112707336712151124",
-   "created_at": "2026-10-21T00:47:35.000Z",
-   "text": "@itssotsot it blew me up you can also do interactive mini apps to share feedback with the agent",
-   "likes": 1,
-   "replies": 0,
-   "reposts": 0,
-   "views": 746
+   "views": 45
   }
  ]
 }
