@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-23T22:17:45Z",
+  "updated_at": "2026-10-23T23:17:26Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -42,11 +42,11 @@
   "day_number": 9,
   "week_number": 2,
   "today_goal": 40,
-  "today_replies": 2,
+  "today_replies": 3,
   "streak": 0,
   "best_streak": 6,
   "days_hit": 6,
-  "total_replies": 259,
+  "total_replies": 260,
   "pre_start_replies": 22,
   "followers": 261,
   "following": 439,
@@ -147,7 +147,7 @@
   {
    "date": "2026-10-23",
    "day": 9,
-   "replies": 2,
+   "replies": 3,
    "followers_end": 261,
    "delta": 2,
    "goal": 40,
@@ -434,7 +434,7 @@
    0,
    0,
    0,
-   0,
+   1,
    0,
    0,
    0,
@@ -882,6 +882,10 @@
   {
    "ts": "2026-10-23T22:17:45Z",
    "followers": 261
+  },
+  {
+   "ts": "2026-10-23T23:17:26Z",
+   "followers": 261
   }
  ],
  "top": [
@@ -987,6 +991,16 @@
   }
  ],
  "recent": [
+  {
+   "id": "2113768156259086337",
+   "url": "https://x.com/llermaly/status/2113768156259086337",
+   "created_at": "2026-10-23T23:02:55.000Z",
+   "text": "@CodeWithTamara Try articles",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "views": 1
+  },
   {
    "id": "2113713613076660636",
    "url": "https://x.com/llermaly/status/2113713613076660636",
@@ -1176,16 +1190,6 @@
    "replies": 0,
    "reposts": 0,
    "views": 2
-  },
-  {
-   "id": "2112709151906222390",
-   "url": "https://x.com/llermaly/status/2112709151906222390",
-   "created_at": "2026-10-21T00:54:48.000Z",
-   "text": "@Shra_va_ni because models became much better and hallucinations are harder to detect",
-   "likes": 0,
-   "replies": 0,
-   "reposts": 0,
-   "views": 23
   }
  ]
 }
