@@ -31,18 +31,18 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-24T04:18:12Z",
+  "updated_at": "2026-10-24T05:19:38Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "started": true,
   "finished": false,
-  "days_left": 20,
-  "day_number": 9,
+  "days_left": 19,
+  "day_number": 10,
   "week_number": 2,
   "today_goal": 40,
-  "today_replies": 4,
+  "today_replies": 0,
   "streak": 0,
   "best_streak": 6,
   "days_hit": 6,
@@ -150,6 +150,15 @@
    "replies": 4,
    "followers_end": 261,
    "delta": 2,
+   "goal": 40,
+   "hit": false
+  },
+  {
+   "date": "2026-10-24",
+   "day": 10,
+   "replies": 0,
+   "followers_end": 261,
+   "delta": 0,
    "goal": 40,
    "hit": false
   }
@@ -906,6 +915,10 @@
   {
    "ts": "2026-10-24T04:18:12Z",
    "followers": 261
+  },
+  {
+   "ts": "2026-10-24T05:19:38Z",
+   "followers": 261
   }
  ],
  "top": [
@@ -967,7 +980,7 @@
    "likes": 2,
    "replies": 0,
    "reposts": 0,
-   "views": 21
+   "views": 22
   },
   {
    "id": "2112710632680087744",
@@ -1019,7 +1032,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 7
+   "views": 35
   },
   {
    "id": "2113768156259086337",
@@ -1029,7 +1042,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 1
+   "views": 5
   },
   {
    "id": "2113713613076660636",
@@ -1039,7 +1052,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 1
+   "views": 2
   },
   {
    "id": "2113712355075125420",
@@ -1049,7 +1062,7 @@
    "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 109
+   "views": 224
   },
   {
    "id": "2113149818893721980",
@@ -1069,7 +1082,7 @@
    "likes": 2,
    "replies": 0,
    "reposts": 0,
-   "views": 21
+   "views": 22
   },
   {
    "id": "2113111578908459486",
@@ -1079,7 +1092,7 @@
    "likes": 1,
    "replies": 1,
    "reposts": 0,
-   "views": 103
+   "views": 113
   },
   {
    "id": "2112956463417020439",
