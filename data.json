@@ -31,15 +31,15 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-25T04:21:56Z",
+  "updated_at": "2026-10-25T05:23:18Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "started": true,
   "finished": false,
-  "days_left": 19,
-  "day_number": 10,
+  "days_left": 18,
+  "day_number": 11,
   "week_number": 2,
   "today_goal": 40,
   "today_replies": 0,
@@ -159,6 +159,15 @@
    "replies": 0,
    "followers_end": 259,
    "delta": -2,
+   "goal": 40,
+   "hit": false
+  },
+  {
+   "date": "2026-10-25",
+   "day": 11,
+   "replies": 0,
+   "followers_end": 259,
+   "delta": 0,
    "goal": 40,
    "hit": false
   }
@@ -1011,6 +1020,10 @@
   {
    "ts": "2026-10-25T04:21:56Z",
    "followers": 259
+  },
+  {
+   "ts": "2026-10-25T05:23:18Z",
+   "followers": 259
   }
  ],
  "top": [
@@ -1124,17 +1137,17 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 35
+   "views": 61
   },
   {
    "id": "2113768156259086337",
    "url": "https://x.com/llermaly/status/2113768156259086337",
    "created_at": "2026-10-23T23:02:55.000Z",
    "text": "@CodeWithTamara Try articles",
-   "likes": 0,
+   "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 5
+   "views": 6
   },
   {
    "id": "2113713613076660636",
@@ -1144,17 +1157,17 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 2
+   "views": 3
   },
   {
    "id": "2113712355075125420",
    "url": "https://x.com/llermaly/status/2113712355075125420",
    "created_at": "2026-10-23T19:21:10.000Z",
    "text": "@AlexFinn Meh. Looks like a big compromise. I was xpecting unfolded space to feel bigger",
-   "likes": 1,
+   "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 224
+   "views": 247
   },
   {
    "id": "2113149818893721980",
