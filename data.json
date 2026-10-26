@@ -31,26 +31,26 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-26T04:13:41Z",
+  "updated_at": "2026-10-26T05:18:33Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "started": true,
   "finished": false,
-  "days_left": 18,
-  "day_number": 11,
+  "days_left": 17,
+  "day_number": 12,
   "week_number": 2,
   "today_goal": 40,
-  "today_replies": 1,
+  "today_replies": 0,
   "streak": 0,
   "best_streak": 6,
   "days_hit": 6,
   "total_replies": 262,
   "pre_start_replies": 22,
-  "followers": 256,
+  "followers": 255,
   "following": 438,
-  "followers_change": 111,
+  "followers_change": 110,
   "best_day": 53
  },
  "days": [
@@ -168,6 +168,15 @@
    "replies": 1,
    "followers_end": 256,
    "delta": -3,
+   "goal": 40,
+   "hit": false
+  },
+  {
+   "date": "2026-10-26",
+   "day": 12,
+   "replies": 0,
+   "followers_end": 255,
+   "delta": -1,
    "goal": 40,
    "hit": false
   }
@@ -1142,6 +1151,10 @@
   {
    "ts": "2026-10-26T04:13:41Z",
    "followers": 256
+  },
+  {
+   "ts": "2026-10-26T05:18:33Z",
+   "followers": 255
   }
  ],
  "top": [
@@ -1255,17 +1268,17 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 7
+   "views": 8
   },
   {
    "id": "2113783238603030562",
    "url": "https://x.com/llermaly/status/2113783238603030562",
    "created_at": "2026-10-24T00:02:50.000Z",
    "text": "@pablostanley When will be available for outside US users ?",
-   "likes": 0,
+   "likes": 1,
    "replies": 0,
    "reposts": 0,
-   "views": 61
+   "views": 68
   },
   {
    "id": "2113768156259086337",
@@ -1295,7 +1308,7 @@
    "likes": 0,
    "replies": 0,
    "reposts": 0,
-   "views": 247
+   "views": 249
   },
   {
    "id": "2113149818893721980",
