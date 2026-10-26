@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-26T22:16:17Z",
+  "updated_at": "2026-10-26T23:23:07Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -48,9 +48,9 @@
   "days_hit": 6,
   "total_replies": 262,
   "pre_start_replies": 22,
-  "followers": 252,
+  "followers": 253,
   "following": 438,
-  "followers_change": 107,
+  "followers_change": 108,
   "best_day": 53
  },
  "days": [
@@ -175,8 +175,8 @@
    "date": "2026-10-26",
    "day": 12,
    "replies": 0,
-   "followers_end": 252,
-   "delta": -4,
+   "followers_end": 253,
+   "delta": -3,
    "goal": 40,
    "hit": false
   }
@@ -1223,6 +1223,10 @@
   {
    "ts": "2026-10-26T22:16:17Z",
    "followers": 252
+  },
+  {
+   "ts": "2026-10-26T23:23:07Z",
+   "followers": 253
   }
  ],
  "top": [
