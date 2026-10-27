@@ -31,7 +31,7 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-27T09:15:51Z",
+  "updated_at": "2026-10-27T10:15:59Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
@@ -1275,6 +1275,10 @@
   },
   {
    "ts": "2026-10-27T09:15:51Z",
+   "followers": 252
+  },
+  {
+   "ts": "2026-10-27T10:15:59Z",
    "followers": 252
   }
  ],
