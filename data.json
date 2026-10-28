@@ -31,15 +31,15 @@
   },
   "tz": "America/Panama (UTC-5)",
   "announcement": "https://x.com/llermaly/status/2110910573873393725",
-  "updated_at": "2026-10-28T04:16:00Z",
+  "updated_at": "2026-10-28T05:17:21Z",
   "rule": "Counts posts that are replies to other people. Self-thread replies, quotes and retweets are excluded."
  },
  "now": {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "started": true,
   "finished": false,
-  "days_left": 16,
-  "day_number": 13,
+  "days_left": 15,
+  "day_number": 14,
   "week_number": 2,
   "today_goal": 40,
   "today_replies": 0,
@@ -186,6 +186,15 @@
    "replies": 0,
    "followers_end": 251,
    "delta": -2,
+   "goal": 40,
+   "hit": false
+  },
+  {
+   "date": "2026-10-28",
+   "day": 14,
+   "replies": 0,
+   "followers_end": 251,
+   "delta": 0,
    "goal": 40,
    "hit": false
   }
@@ -1351,6 +1360,10 @@
   },
   {
    "ts": "2026-10-28T04:16:00Z",
+   "followers": 251
+  },
+  {
+   "ts": "2026-10-28T05:17:21Z",
    "followers": 251
   }
  ],
